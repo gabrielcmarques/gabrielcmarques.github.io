@@ -463,7 +463,7 @@ body:not(.user-is-tabbing) a:focus {
 .work {
     background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), 
         url('./images/bg.jpg');
-        height: var(--screen-height-fill) fit-content;
+        height: var(--screen-height-fill);
         /* height: fit-content; */
         background-size: cover;
         background-position: center;
@@ -473,7 +473,7 @@ body:not(.user-is-tabbing) a:focus {
 .client {
     background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), 
         url('./images/bg.jpg');
-        height: var(--screen-height-fill) fit-content;
+        height: var(--screen-height-fill);
         /* height: fit-content; */
         background-size: cover;
         background-position: center;
@@ -482,7 +482,7 @@ body:not(.user-is-tabbing) a:focus {
 .about {
     background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), 
         url('./images/bg.jpg');
-        height: var(--screen-height-fill) fit-content;
+        height: var(--screen-height-fill);
         /* height: fit-content; */
         background-size: cover;
         background-position: center;
