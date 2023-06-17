@@ -713,6 +713,7 @@ body:not(.user-is-tabbing) a:focus {
   flex-direction: column;
   align-items: center;
 }
+
 .tab{
   cursor: pointer;
   padding:10px 20px;
@@ -724,6 +725,12 @@ body:not(.user-is-tabbing) a:focus {
   box-shadow: 0 0.5rem 0.8rem #00000080;
 }
 
+.panels {    
+    width: 100%;
+    height: 100%;
+    min-height: 1000rem;
+}
+
 .panel{
   display:none;
   margin: 0.5em;
@@ -731,7 +738,14 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 1rem;
   animation: fadein .8s;
   background-color: #0e4b55;
+  /* width: 100rem; */
 }
+
+.panel > p {
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -747,10 +761,15 @@ body:not(.user-is-tabbing) a:focus {
 .radio{
   display:none;
 }
+
 #one:checked ~ .panels #one-panel,
 #two:checked ~ .panels #two-panel,
 #three:checked ~ .panels #three-panel{
-  display:block
+/* width: 100%; */
+ height: 30em auto;
+ margin: 0.5em;
+ padding: 0.7em;
+ display:block
 }
 #one:checked ~ .tabs #one-tab,
 #two:checked ~ .tabs #two-tab,
@@ -775,19 +794,39 @@ body:not(.user-is-tabbing) a:focus {
     width: 17rem;
   }
 
-  .skill-items{
+  .skill-items{    
+    /* margin: 2rem;
+    padding: 2rem; */
+    /* max-height: 195px; */
+    margin: 0.5em;
+    padding: 0.7em;
     display: flex;
     justify-content: center;
+    gap: 2.5rem;
     flex-wrap: wrap;
 }
 
 @media(max-width: 600px) {
 
     .tools--md {    
-        max-height: 10rem;
-        max-width: 10rem;
-        display: flex;
-        flex-flow: row;
-        }
+        max-height: 9rem;
+        max-width: 9rem;
     }
+}
+
+@media(max-width: 1240px) {
+
+    .tools--md {    
+        max-height: 15rem;
+        max-width: 15rem;
+    }
+}
+
+@media(max-width: 1075px) {
+
+    .tools--md {    
+        max-height: 14rem;
+        max-width: 14rem;
+    }
+}
 
