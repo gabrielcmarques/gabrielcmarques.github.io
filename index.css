@@ -231,7 +231,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid #fff;
     font-weight: 400;
 }
 
@@ -347,8 +347,16 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* ----- Back to Top ----- */
-
 .back-to-top {
+    visibility: hidden;
+}
+
+/* Show the back-to-top button when the user scrolls to the bottom */
+body.show-back-to-top .back-to-top {
+    visibility: visible;
+}
+
+.arrow-button {
     position: fixed;
     bottom: 4rem;
     right: 4rem;
@@ -364,18 +372,29 @@ body:not(.user-is-tabbing) a:focus {
     transition: all .4s;
 }
 
-.back-to-top__image {
-    height: 70%;
+.next-section {
+    height: 3.5rem;
+    width: 3.5rem;
+    visibility: visible;
+    transform: rotate(90deg);
+    right: 50%;
+    transform-origin: center center;
+    transform: rotate(90deg);
+    visibility: visible;
+}
+
+.arrow-button__image {
+    height: 70%;    
 }
 
 @media(max-width: 900px) {
-    .back-to-top {
+    .arrow-button, .arrow-button__image {
         right: 2rem;
     }
 }
 
 @media(max-width: 500px) {
-    .back-to-top {
+    .arrow-button, .arrow-button__image {
         right: 1rem;
     }
  
@@ -672,10 +691,19 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .footer__social-links {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    padding: var(--gutter-normal) 0;
+    padding: 5px;
     list-style: none;
+}
+
+.email-btn{
+    bottom: 7%;
+    /* display: ruby-text; */
+}
+
+div.contact__info{
+    justify-content: center;
 }
 
 .footer__social-link-item:not(:last-of-type) {
@@ -777,6 +805,7 @@ body:not(.user-is-tabbing) a:focus {
  padding: 0.7em;
  display:block
 }
+
 #one:checked ~ .tabs #one-tab,
 #two:checked ~ .tabs #two-tab,
 #three:checked ~ .tabs #three-tab{
@@ -812,6 +841,11 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 @media(max-width: 600px) {
+
+    .tab {
+        /* outline: red solid; */
+        font-size: small;
+    }
 
     .tools--md {    
         height: 9rem;
