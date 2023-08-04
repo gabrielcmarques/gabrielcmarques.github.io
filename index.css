@@ -7,13 +7,15 @@
     font-style: normal;
     font-weight: 400;
     src: url('./fonts/HKGrotesk-Regular.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/Jost-Regular.ttf') format('woff');
+    src: url('./fonts/Jost-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 
 * {
@@ -76,7 +78,7 @@ html {
 
 body {
     font-size: var(--font-size-small);
-    font-family: var(--font-stack);
+    font-family: var(--font-stack), sans-serif;
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
@@ -810,7 +812,7 @@ div.contact__info{
 #two:checked ~ .tabs #two-tab,
 #three:checked ~ .tabs #three-tab{
   
-  background:#298661;
+  background:#1c6447;
   color:#ffffff;
   border-top: 1px solid #000;
 }
