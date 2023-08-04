@@ -486,7 +486,7 @@ body.show-back-to-top .back-to-top {
 
 .work {
     background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), 
-        url('./images/bg.jpg');
+        url('./images/bg.webp');
         /* height: var(--screen-height-fill); */
         background-size: cover;
         background-position: center;
@@ -496,7 +496,7 @@ body.show-back-to-top .back-to-top {
 }
 .client {
     background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), 
-        url('./images/bg.jpg');
+        url('./images/bg.webp');
         height: var(--screen-height-fill) fit-content;
         /* height: fit-content; */
         background-size: cover;
@@ -506,7 +506,7 @@ body.show-back-to-top .back-to-top {
 }
 .about {
     background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), 
-        url('./images/bg.jpg');
+        url('./images/bg.webp');
         height: var(--screen-height-fill);
         height: fit-content;
         background-size: cover;
@@ -516,7 +516,7 @@ body.show-back-to-top .back-to-top {
 }
 .contact {
     background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), 
-        url('./images/bg.jpg');
+        url('./images/bg.webp');
         /* height: var(--screen-height-fill) fit-content; */
         height: fit-content;
         background-size: cover;
