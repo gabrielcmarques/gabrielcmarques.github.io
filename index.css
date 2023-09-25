@@ -71,14 +71,12 @@ html {
 @media(max-width: 1000px) {
     html {
         font-size: 52%;
-    }
-
-    
+    }    
 }
 
 body {
     font-size: var(--font-size-small);
-    font-family: var(--font-stack), sans-serif;
+    font-family: var(--font-stack);
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
