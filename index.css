@@ -474,7 +474,7 @@ body.show-back-to-top .back-to-top {
 
 .header {
     background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), 
-        url('./images/headerr.webp');
+        url('./images/headerr_img.webp');
     height: var(--screen-height-fill);
     background-size: cover;
     background-position: center;

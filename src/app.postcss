@@ -1,0 +1,49 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: regular;
+    font-weight: 400;
+    src: url('./fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face  {
+    font-family: 'Raleway Italic';
+    font-style: regular;
+    font-weight: 400;
+    src: url('./fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+/* body {
+	@apply bg-surface-50-900-token;
+} */
+
+/* html, body { @apply h-full overflow-hidden; } */
+
+/* :root [data-theme='wintry'] {
+    --theme-font-family-base: 'Raleway', sans-serif;
+    --theme-font-family-heading: 'Inter', sans-serif;
+}                        	
+
+:root [data-theme='wintry'] {
+	--theme-rounded-base: 20px;
+	--theme-rounded-container: 4px;
+}
+
+
+
+*/
+html,
+body {
+	@apply h-full;
+} 
+
+body {
+  background-image: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .7)), url('$lib/assets/images/headerr_img.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}

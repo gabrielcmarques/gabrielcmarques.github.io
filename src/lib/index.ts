@@ -1,1 +1,33 @@
-// place files you want to import through the `$lib` alias in this folder.
+// $lib/index.js
+
+export { default as bg_img_webp } from './assets/images/bg_img.webp';
+export { default as codepen_svg } from './assets/images/codepen.svg';
+export { default as css3_logo_webp } from './assets/images/css3_logo.webp';
+export { default as django_logo_webp } from './assets/images/django_logo.webp';
+export { default as docker_logo_webp } from './assets/images/docker_logo.webp';
+export { default as doge_img_webp } from './assets/images/doge_img.webp';
+export { default as favicon_webp } from './assets/images/favicon.webp';
+export { default as foto_perfil_webp } from './assets/images/foto_perfil.webp';
+export { default as github_svg } from './assets/images/github.svg';
+export { default as github_logo_jpeg } from './assets/images/github_logo.jpeg';
+export { default as header_img_webp } from './assets/images/header_img.webp';
+export { default as headerr_img_webp } from './assets/images/headerr_img.webp';
+export { default as heart_svg } from './assets/images/heart.svg';
+export { default as html5_logo_webp } from './assets/images/html5_logo.webp';
+export { default as linkedin_svg } from './assets/images/linkedin.svg';
+export { default as mongodb_logo_webp } from './assets/images/mongodb_logo.webp';
+export { default as mysql_logo_webp } from './assets/images/mysql_logo.webp';
+export { default as nodejs_logo_webp } from './assets/images/nodejs_logo.webp';
+export { default as notepad_logo_webp } from './assets/images/notepad_logo.webp';
+export { default as pandas_logo_webp } from './assets/images/pandas_logo.webp';
+export { default as prisma_logo_webp } from './assets/images/prisma_logo.webp';
+export { default as python_logo_webp } from './assets/images/python_logo.webp';
+export { default as reactjs_logo_webp } from './assets/images/reactjs_logo.webp';
+export { default as sveltekit_logo_webp } from './assets/images/sveltekit_logo.webp';
+export { default as tailwind_logo_webp } from './assets/images/tailwind_logo.webp';
+export { default as twitter_svg } from './assets/images/twitter.svg';
+export { default as typescript_logo_webp } from './assets/images/typescript_logo.webp';
+export { default as uninter_logo_webp } from './assets/images/uninter_logo.webp';
+export { default as vscode_logo_webp } from './assets/images/vscode_logo.webp';
+export { default as vuejs_logo_webp } from './assets/images/vuejs_logo.webp';
+export { default as wsl_logo_webp } from './assets/images/wsl_logo.webp';
