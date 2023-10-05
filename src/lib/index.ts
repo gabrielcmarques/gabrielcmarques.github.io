@@ -31,3 +31,13 @@ export { default as uninter_logo_webp } from './assets/images/uninter_logo.webp'
 export { default as vscode_logo_webp } from './assets/images/vscode_logo.webp';
 export { default as vuejs_logo_webp } from './assets/images/vuejs_logo.webp';
 export { default as wsl_logo_webp } from './assets/images/wsl_logo.webp';
+export { default as lousa1_webp } from './assets/images/lousakanban/lousa1.webp'
+export { default as lousa2_webp } from './assets/images/lousakanban/lousa2.webp'
+export { default as lousa3_webp } from './assets/images/lousakanban/lousa3.webp'
+export { default as statmed_thumb_webp } from './assets/images/statmed/statmedthumb.webp'
+export { default as statmed_1_webp } from './assets/images/statmed/statmed1.webp'
+export { default as statmed_2_webp } from './assets/images/statmed/statmed2.webp'
+export { default as statmed_3_webp } from './assets/images/statmed/statmed3.webp'
+export { default as statmed_4_webp } from './assets/images/statmed/statmed4.webp'
+export { default as statmed_5_webp } from './assets/images/statmed/statmed5.webp'
+export { default as statmed_6_webp } from './assets/images/statmed/statmed6.webp'

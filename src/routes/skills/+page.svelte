@@ -20,7 +20,7 @@
 	import { Avatar } from '@skeletonlabs/skeleton';
 </script>
 
-<div class="flex flex-col items-center space-y-10 translate-y-5">
+<div class="flex flex-col items-center space-y-10 translate-y-5 mt-10">
 	<h1 class="h1">Conhecimentos</h1>
 	<div class="max-w-screen-lg">
 		<div class="gap-5">

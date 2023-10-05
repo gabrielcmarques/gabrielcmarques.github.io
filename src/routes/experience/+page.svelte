@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center space-y-5">
+<div class="flex flex-col items-center space-y-5 mt-10">
 	<h1 class="h1 my-6">Experiência</h1>
 	<div class="max-w-screen-lg">
 		<div class="flex flex-center">

@@ -2,7 +2,7 @@
 	import { github_svg, linkedin_svg } from '$lib';
 </script>
 
-<div class="flex flex-col items-center space-y-5 translate-y-5">
+<div class="flex flex-col items-center space-y-5 translate-y-5 mt-14">
 	<h1 class="h1">Entre em Contato</h1>
 	<div class="max-w-screen-lg">
 		<p class="text-xl m-4">

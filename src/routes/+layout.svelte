@@ -54,7 +54,7 @@
 		<Navigation />
 	</svelte:fragment> -->
 
-	<div class="h-full m-0 p-0 border">
+	<div class="h-full w-screen m-0 p-0 border">
 		<slot />
 	</div>
 	<svelte:fragment slot="footer h3">Footer</svelte:fragment>
