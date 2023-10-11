@@ -1,0 +1,68 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Disable View Transitions */
+/* :root {  view-transition-name: none} */
+
+header {
+  view-transition-name: header;
+}
+
+
+
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+
+@keyframes fade-out {
+  to { opacity: 0; }
+}
+
+@keyframes slide-from-right {
+  from { transform: translateX(30px); }
+}
+
+@keyframes slide-to-left {
+  to { transform: translateX(-30px); }
+}
+
+:root::view-transition-old(root) {
+	animation: 190ms cubic-bezier(0.4, 0, 1, 1) both fade-out, 400ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+}
+
+:root::view-transition-new(root) {
+	animation: 510ms cubic-bezier(0, 0, 0.2, 1) 20ms both fade-in, 500ms cubic-bezier(0.4, 0, 0.2, 1) both
+			slide-from-right;
+}
+
+
+.full-embed {
+  view-transition-name: full-embed;
+}
+
+
+@font-face {
+  font-family: 'HKGrotesk-Regular';
+  font-style: regular;
+  font-weight: 400;
+  src: url('fonts/HKGrotesk-Regular.woff')
+}
+
+* {
+  font-family: 'HKGrotesk-Regular';
+}
+
+html,
+body {
+	@apply h-full;
+  @apply overflow-hidden
+} 
+
+body {
+  background-image: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .7)), url('$lib/assets/images/bg_website.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  
+}
