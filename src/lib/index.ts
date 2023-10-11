@@ -10,6 +10,7 @@ export { default as statmed_thumb_webp } from './assets/images/statmed/statmedth
 
 export { default as uninter_logo_webp } from './assets/images/tools/etc/uninter_logo.webp';
 export { default as website_portfolio_webm } from './assets/images/website_portfolio.webp';
+
 export { default as codepen_svg } from './assets/svgs/codepen.svg';
 export { default as github_svg } from './assets/svgs/github.svg';
 export { default as hamburger_svg } from './assets/svgs/hamburger.svg';
