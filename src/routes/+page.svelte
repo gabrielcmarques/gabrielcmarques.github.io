@@ -37,7 +37,7 @@
       <img src="https://i.imgur.com/gOriNAM.png" loading="lazy" style="display: none;" />
     </div> -->
 
-<div class="flex flex-col items-center justify-center mt-60">
+<div class="flex flex-col items-center justify-center mt-60 max-sm:mt-[5.5rem]">
 	<div class="max-w-screen-lg text-center mb-32 space-y-15">
 		<h1 class="text-4xl md:text-5xl">Gabriel Christo Marques</h1>
 		<h2 class="text-2xl md:text-3xl">Desenvolvedor Web Fullstack</h2>
