@@ -9,8 +9,8 @@
 	export let parent: any;
 
 	// Base Classes
-	const cBase = 'relative w-modal-wide shadow-xl';
-	const cButton = 'absolute -top-3 -right-3 z-1 btn-icon variant-filled';
+	const cBase = 'w-full lg:w-modal-wide shadow-xl z-10 absolute';
+	const cButton = 'absolute -top-1 -right-1 z-1 btn-icon variant-filled';
 	const cIframe = 'bg-black w-full aspect-video rounded-container-token overflow-hidden';
 </script>
 
@@ -22,10 +22,11 @@
 		<iframe
 			class={cIframe}
 			src="{statmed_webm}"
-			title="YouTube video player"
+			title="Statmed video project"
 			frameborder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-			allowfullscreen
+			allowfullscreen 
+			playsinline  
 		/>
 	</div>
 {/if}

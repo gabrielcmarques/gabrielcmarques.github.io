@@ -6,7 +6,7 @@
   <title>Sobre - Portfolio Gabriel C Marques</title>
 </svelte:head>
 
-<div class="flex flex-col items-center justify-center min-h-full">
+<div class="flex flex-col items-center justify-center mt-52">
 	<div class="items-center">
 		<h1 class="text-4xl md:text-5xl text-center">Sobre mim</h1>
 

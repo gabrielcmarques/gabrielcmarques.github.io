@@ -6,9 +6,9 @@
 	<title>Experiencia - Portfolio Gabriel C Marques</title>
 </svelte:head>
 
-<div class="flex flex-col items-center space-y-5 mt-20">
-	<h1 class="text-4xl md:text-5xl mt-10">Experiência</h1>
-	<div class="max-w-screen-lg">
+<div class="flex flex-col items-center justify-center mt-40">
+	<h1 class="text-4xl md:text-5xl">Experiência</h1>
+	<div class="max-w-screen-lg ">
 		<div class="flex flex-center">
 			<a class="grayscale hover:grayscale-0" href="https://itgoal.com.br/" target="_blank">
 				<img src="https://i.imgur.com/Sikljn2.png" width="150" alt="ItGoal Digital Solutions" />

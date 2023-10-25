@@ -1,4 +1,5 @@
-<nav class="nav-list font-semibold text-lg hidden md:flex justify-center">
+<!-- nav-list font-semibold text-lg hidden md:flex justify-center fixed top-0 left-0 w-full z-10 -->
+<nav class="nav-list font-semibold text-lg hidden md:flex justify-center ml-60 z-10">
 	<ul class="md:flex justify-center">
 		<li
 			class="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active"

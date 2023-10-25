@@ -2,14 +2,14 @@
 	import ImageGrid from './ImageGrid.svelte';	
 
 	const stack: any[] = Object.values(
-		import.meta.glob('$lib/assets/images/stack/*.webp', {
+		import.meta.glob('$lib/assets/images/stack/*.svg', {
 			import: 'default',
 			eager: true
 		})
 	);
 
 	import {
-		DEFAULT_OG_IMAGE,
+		// DEFAULT_OG_IMAGE,
 		MY_TWITTER_HANDLE,
 		SITE_DESCRIPTION,
 		SITE_TITLE,
@@ -25,19 +25,19 @@
 	<meta property="og:title" content={SITE_TITLE} />
 	<meta name="Description" content={SITE_DESCRIPTION} />
 	<meta property="og:description" content={SITE_DESCRIPTION} />
-	<meta property="og:image" content={DEFAULT_OG_IMAGE} />
+	<!-- <meta property="og:image" content={DEFAULT_OG_IMAGE} /> -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:creator" content={'@' + MY_TWITTER_HANDLE} />
 	<meta name="twitter:title" content={SITE_TITLE} />
 	<meta name="twitter:description" content={SITE_DESCRIPTION} />
-	<meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
+	<!-- <meta name="twitter:image" content={DEFAULT_OG_IMAGE} /> -->
 </svelte:head>
 
 <!-- <div class="img-thumb">
       <img src="https://i.imgur.com/gOriNAM.png" loading="lazy" style="display: none;" />
     </div> -->
 
-<div class="flex items-center justify-center min-h-screen">
+<div class="flex flex-col items-center justify-center mt-60">
 	<div class="max-w-screen-lg text-center mb-32 space-y-15">
 		<h1 class="text-4xl md:text-5xl">Gabriel Christo Marques</h1>
 		<h2 class="text-2xl md:text-3xl">Desenvolvedor Web Fullstack</h2>
