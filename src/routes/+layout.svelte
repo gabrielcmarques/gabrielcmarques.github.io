@@ -107,10 +107,18 @@
 		<Navigation />
 	</svelte:fragment> -->
 
-	<div class="h-full w-screen m-0 p-0 border">
+	<div class="main-c h-full w-screen">
 		<PageTransition url={data.url}>
 			<slot />
 		</PageTransition>
 	</div>
 	<!-- <svelte:fragment slot="footer h3">Footer</svelte:fragment> -->
 </AppShell>
+
+<style>
+	.main-c {
+		margin: 0 auto;
+		padding: 0 1em;
+		/* border: 2px solid red; */
+	}
+</style>

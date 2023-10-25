@@ -2,7 +2,7 @@
 	import ImageGrid from './ImageGrid.svelte';	
 
 	const stack: any[] = Object.values(
-		import.meta.glob('$lib/assets/images/stack/*.webp', {
+		import.meta.glob('$lib/assets/images/stack/*.svg', {
 			import: 'default',
 			eager: true
 		})
