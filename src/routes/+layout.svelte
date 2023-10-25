@@ -53,7 +53,7 @@
 <!-- <ViewTransition /> -->
 <AppShell slotSidebarLeft="w-0 md:w-52">
 	<svelte:fragment slot="header">
-		<AppBar>
+		<AppBar class="z-10">
 			<svelte:fragment slot="lead">
 				<button class="md:hidden btn btn-sm mr-4" on:click={drawerOpen}>
 					<span>
@@ -63,7 +63,7 @@
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<Toggle />
-				<ul class="flex absolute right-3">
+				<ul class="flex right-3 nav-list font-semibold text-lg top-0 z-10">
 					<li
 						class="p-4 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:outline-blue-500 duration-200 cursor-pointer active"
 					>
@@ -102,11 +102,11 @@
 			<NavigationHeader />
 		</AppBar>
 	</svelte:fragment>
-
+	
 	<!-- <svelte:fragment slot="sidebarLeft">
 		<Navigation />
 	</svelte:fragment> -->
-
+	
 	<div class="main-c h-full w-screen">
 		<PageTransition url={data.url}>
 			<slot />
@@ -120,5 +120,5 @@
 		margin: 0 auto;
 		padding: 0 1em;
 		/* border: 2px solid red; */
-	}
+	}	
 </style>

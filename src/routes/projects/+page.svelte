@@ -23,9 +23,10 @@
 
 <svelte:head>
 	<title>Projetos - Portfolio Gabriel C Marques</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
-<div class="text-white flex items-center justify-center min-h-screen">
+<div class="text-white flex items-center justify-center mt-30">
 	<div class="px-5 md:px-10">
 		<div class="mx-auto w-full max-w-7xl">
 			<div class="py-12 md:py-4 lg:py-3">

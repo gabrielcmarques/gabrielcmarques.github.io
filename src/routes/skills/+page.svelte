@@ -20,7 +20,7 @@
 	<title>Conhecimentos - Portfolio Gabriel C Marques</title>
 </svelte:head>
 
-<div class="flex flex-col items-center space-y-10 mt-20 max-sm:mt-10 min-h-screen">
+<div class="flex flex-col items-center justify-center mt-24">
 	<h1 class="text-4xl md:text-5xl">Conhecimentos</h1>
 	<div class="max-w-screen-lg">
 		<div class="gap-5">

@@ -7,12 +7,28 @@
 </svelte:head>
 
 <div class="flex flex-col items-center space-y-5">
-	<div class="max-w-screen-2xl">
-		<div class="flex flex-center">
-			<!-- svelte-ignore a11y-media-has-caption -->
-			<video width="1920" height="auto" controls>
-				<source src={statmed_webm} type="video/webm" />
-			</video>
-		</div>
-	</div>
+    <div class="max-w-screen-2xl">
+        <div class="video-container">
+            <!-- svelte-ignore a11y-media-has-caption -->
+            <video controls playsinline style="width: 100%; height: 100%;">
+                <source src={statmed_webm} type="video/webm" />
+            </video>
+        </div>
+    </div>
 </div>
+
+<style>
+
+	.video-container {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+		overflow: hidden;
+	}
+	
+	.video-container video {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	
+	</style>
