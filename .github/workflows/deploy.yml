@@ -11,24 +11,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
-      # - name: Install pnpm
-      #   uses: pnpm/action-setup@v2
-      #   with:
-      #     version: 8
-
-      - name: Install Node.js
-        uses: actions/setup-node@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
         with:
-          node-version: 20
-          cache: pnpm
+          version: 8
 
       - name: Install dependencies
         run: pnpm install
 
       - name: build
         env:
-          BASE_PATH: '/gabrielcmarques.github.io'
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           pnpm run build
       - name: Upload Artifacts
