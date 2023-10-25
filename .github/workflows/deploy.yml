@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20
-          cache: pnpm
+          cache: npm
 
       - name: Install dependencies
         run: npm install
@@ -30,8 +30,7 @@ jobs:
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
-          pnpm run build
-
+          npm run build
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v2
         with:
