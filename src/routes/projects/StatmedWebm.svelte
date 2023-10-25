@@ -21,12 +21,11 @@
 		<button class={cButton} on:click={parent.onClose}>✕</button>
 		<iframe
 			class={cIframe}
-			src="{statmed_webm}"
+			src={statmed_webm}
 			title="Statmed video project"
 			frameborder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-			allowfullscreen 
-			playsinline  
+			allowfullscreen
 		/>
 	</div>
 {/if}
