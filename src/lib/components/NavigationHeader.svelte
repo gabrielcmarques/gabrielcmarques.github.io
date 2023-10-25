@@ -1,4 +1,5 @@
 <!-- nav-list font-semibold text-lg hidden md:flex justify-center fixed top-0 left-0 w-full z-10 -->
+
 <nav class="nav-list font-semibold text-lg hidden md:flex justify-center ml-60 z-10">
 	<ul class="md:flex justify-center">
 		<li

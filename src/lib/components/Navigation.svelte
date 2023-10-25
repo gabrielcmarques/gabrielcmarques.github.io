@@ -1,12 +1,14 @@
 <!-- (optionally you can provide a label here) -->
 <script lang="ts">
 	import { getDrawerStore } from '@skeletonlabs/skeleton';
+	
 
 	const drawerStore = getDrawerStore();
 	function drawerClose(): void {
 		drawerStore.close();
 	}
 </script>
+
 
 <nav class="flex justify-center list-nav p-4 md:hidden">
 	<ul>

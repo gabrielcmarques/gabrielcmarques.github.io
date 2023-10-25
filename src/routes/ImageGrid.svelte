@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Avatar } from '@skeletonlabs/skeleton';
+	import { blur, fade, fly } from 'svelte/transition';
 	export let images: any[] = [];
 	export let title = '';
 
@@ -9,13 +10,14 @@
 	const imageStyle = `width: 100%; height: 100%; object-fit: contain; `;
 </script>
 
-<div class="">
+<div>
 	{#if title}
 		<h2>{title}</h2>
 	{/if}
-	<div class="flex flex-wrap gap-3 max-sm:gap-[2px] ">
+	<div class="flex flex-wrap gap-3 max-sm:gap-[2px] " transition in:blur={{ delay: 50, duration: 225 }}>
+	<!-- <div class="flex flex-wrap gap-3 max-sm:gap-[2px] " transition in:fade={{ delay: 100, duration: 200 }}> -->
 		{#each Object.entries(images) as [key, image]}
-			<div class={containerClass}>
+			<div class={containerClass} >
 				<Avatar src={image} title={key} alt={key} class={avatarClass} style={imageStyle} />
 			</div>
 		{/each}

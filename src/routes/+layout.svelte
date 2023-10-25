@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { github_svg, hamburger_svg, linkedin_svg, twitter_svg } from '$lib';
+	import { crossfade, draw, fade, fly, scale, slide } from 'svelte/transition';
+
 	import Toggle from './Toggle.svelte';
 	import PageTransition from './Transition.svelte';
 
@@ -37,6 +39,18 @@
 		statmedWebm: { ref: StatmedWebm },
 		kanbanWebm: { ref: KanbanWebm }
 	};
+
+	// function sleepSpinner(ms) {
+	// 	return new Promise((resolve) => setTimeout(resolve, ms));
+	// }
+
+	// export async function loadSpinner() {
+	// 	await sleepSpinner(3000);
+
+	// 	return {
+	// 		status: 200
+	// 	};
+	// }
 	export let data;
 </script>
 
@@ -45,6 +59,7 @@
 </svelte:head>
 
 <Modal components={modalComponentRegistry} />
+
 <Drawer>
 	<Navigation />
 	<NavigationHeader />
@@ -102,16 +117,17 @@
 			<NavigationHeader />
 		</AppBar>
 	</svelte:fragment>
-	
+
 	<!-- <svelte:fragment slot="sidebarLeft">
 		<Navigation />
 	</svelte:fragment> -->
-	
+
 	<div class="main-c h-full w-screen">
 		<PageTransition url={data.url}>
 			<slot />
 		</PageTransition>
 	</div>
+
 	<!-- <svelte:fragment slot="footer h3">Footer</svelte:fragment> -->
 </AppShell>
 
@@ -120,5 +136,5 @@
 		margin: 0 auto;
 		padding: 0 1em;
 		/* border: 2px solid red; */
-	}	
+	}
 </style>

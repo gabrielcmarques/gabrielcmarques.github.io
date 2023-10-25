@@ -1,3 +1,9 @@
+
+// const sleep = (ms: number) => 
+//     new Promise((resolve)) => 
+//         setTimeout(resolve, ms),
+//         );
+
 // import type { Handle, HandleServerError } from '@sveltejs/kit';
 
 // --- Internacionalização
