@@ -2,6 +2,8 @@
 
 export { default as kanbanjs_webm } from './assets/images/lousakanban/kanbanjs.webm';
 export { default as lousa1_webp } from './assets/images/lousakanban/lousa1.webp';
+export { default as devsearch_mp4 } from './assets/images/devsearch/devsearch.mp4';
+export { default as devsearch_webp } from './assets/images/devsearch/devsearch.webp';
 
 export { default as statmed_1_webp } from './assets/images/statmed/statmed1.webp';
 

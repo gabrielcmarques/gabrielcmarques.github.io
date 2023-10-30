@@ -27,6 +27,7 @@
 
 	import KanbanWebm from './projects/KanbanWebm.svelte';
 	import StatmedWebm from './projects/StatmedWebm.svelte';
+	import DevSearch from './projects/DevSearchMp4.svelte';
 
 	initializeStores();
 	const drawerStore = getDrawerStore();
@@ -37,7 +38,8 @@
 
 	const modalComponentRegistry: Record<string, ModalComponent> = {
 		statmedWebm: { ref: StatmedWebm },
-		kanbanWebm: { ref: KanbanWebm }
+		kanbanWebm: { ref: KanbanWebm },
+		devSearchMp4: { ref: DevSearch },
 	};
 
 	// function sleepSpinner(ms) {

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { lousa1_webp, statmed_thumb_webp, website_portfolio_webm } from '$lib';
+	import { devsearch_webp, lousa1_webp, statmed_thumb_webp, website_portfolio_webm } from '$lib';
 	import type { ModalComponent, ModalSettings } from '@skeletonlabs/skeleton';
 	import { getModalStore } from '@skeletonlabs/skeleton';
 
@@ -16,6 +16,13 @@
 		const modal: ModalSettings = {
 			type: 'component',
 			component: 'kanbanWebm'
+		};
+		modalStore.trigger(modal);
+	}
+	function devSearchModalTrigger(): void {
+		const modal: ModalSettings = {
+			type: 'component',
+			component: 'devSearchMp4'
 		};
 		modalStore.trigger(modal);
 	}
@@ -155,6 +162,46 @@
 								</div>
 							</div>
 						</div>
+
+						<button on:click={devSearchModalTrigger}>
+							<div
+								class="flex-col flex grid-cols-1 gap-4 bg-[#161d59e9] p-5 text-white max-[991px]:text-left max-[767px]:items-center max-[767px]:px-4 max-[767px]:py-8 max-[479px]:w-full rounded-xl hover:cursor-pointer hover:border"
+							>
+								<div class="relative h-full w-full projeto">
+									<!-- svelte-ignore a11y-img-redundant-alt -->
+									<img
+										src={devsearch_webp}
+										alt="Testimonial Image"
+										class="inline-block w-full max-w-full object-cover rounded-md h-60"
+										style:--projeto={'proj-devsearch'}
+									/>
+								</div>
+								<h5 class="text-xl font-bold">DevSearch</h5>
+								<div class="flex-col flex w-full items-start gap-5 p-0">
+									<div>
+										Uma das primeiras aulas que realizei na plataforma Udemy para aprender Python.
+										Um blog com funcionalidade crud conectado a um db postgresql e AWS S3 bucket.
+									</div>
+									<div class="mt-6 flex-wrap flex gap-2 mb-5 md:mb-6 lg:mb-8 self-center">
+										<div
+											class="bg-[#d9d9d9] p-2 text-sm font-semibold uppercase text-[#474747] rounded-sm"
+										>
+											<div>PYTHON</div>
+										</div>
+										<div
+											class="bg-[#d9d9d9] p-2 text-sm font-semibold uppercase text-[#474747] rounded-sm"
+										>
+											<div>DJANGO</div>
+										</div>
+										<div
+											class="bg-[#d9d9d9] p-2 text-sm font-semibold uppercase text-[#474747] rounded-sm"
+										>
+											<div>SQL</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</button>
 					</div>
 				</div>
 			</div>

@@ -8,13 +8,14 @@
 
 <div class="flex flex-col items-center justify-center mt-40 max-sm:mt-[5.5rem]">
 	<h1 class="text-4xl md:text-5xl">Experiência</h1>
-	<div class="max-w-screen-lg ">
-		<div class="flex flex-center">
+	<div class="max-w-screen-lg">
+		<div class="flex max-sm:flex-col items-center">
+			<h2 class="text-2xl m-4 p-4 md:text-3xl max-sm: self-start">Desenvolvedor de Software</h2>
 			<a class="grayscale hover:grayscale-0" href="https://itgoal.com.br/" target="_blank">
-				<img src="https://i.imgur.com/Sikljn2.png" width="150" alt="ItGoal Digital Solutions" />
+				<img src="https://i.imgur.com/Sikljn2.png" class="w-28 max-sm:w-20"  alt="ItGoal Digital Solutions" />
 			</a>
-			<h2 class="text-center text-2xl md:text-3xl my-4 mx-10">Desenvolvedor de Software</h2>
 		</div>
+		
 
 		<p class="text-xl m-4">
 			Automações de softwares da plataforma <a href="https://www.zoho.com/" target="_blank">Zoho</a>
@@ -25,9 +26,9 @@
 	<h1 class="text-4xl md:text-5xl mt-10">Formação:</h1>
 	<div class="max-w-screen-lg">
 		<div class="flex flex-center">
-			<h2 class=" text-2xl md:text-3xl my-4 mx-4">Faculdade Uninter</h2>
+			<h2 class=" text-center text-2xl md:text-3xl my-4 mx-10">Faculdade Uninter</h2>
 		</div>
-		<p class="text-xl m-4">
+		<p class="text-xl m-4 px-4">
 			Graduação em Análise e Desenvolvimento de Sistemas: <br />
 			Algorítmos, Solução de Problemas, Fundamentos, Lógica, Banco de Dados, Árvores Binárias, POO, SI
 			e SO. Exercícios em C++, C# e Java.
