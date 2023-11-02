@@ -44,6 +44,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@floating-ui/dom": "^1.5.3",
     "pnpm": "^8.9.0"
   }
 }

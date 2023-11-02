@@ -1,4 +1,8 @@
 <script lang="ts">
+	import { arrow, autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom';
+	import { storePopup } from '@skeletonlabs/skeleton';
+	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
+
 	import { page } from '$app/stores';
 	import { github_svg, hamburger_svg, linkedin_svg, twitter_svg } from '$lib';
 	import { crossfade, draw, fade, fly, scale, slide } from 'svelte/transition';
@@ -25,9 +29,9 @@
 	} from '@skeletonlabs/skeleton';
 	import '../app.postcss';
 
+	import DevSearch from './projects/DevSearchMp4.svelte';
 	import KanbanWebm from './projects/KanbanWebm.svelte';
 	import StatmedWebm from './projects/StatmedWebm.svelte';
-	import DevSearch from './projects/DevSearchMp4.svelte';
 
 	initializeStores();
 	const drawerStore = getDrawerStore();
@@ -39,7 +43,7 @@
 	const modalComponentRegistry: Record<string, ModalComponent> = {
 		statmedWebm: { ref: StatmedWebm },
 		kanbanWebm: { ref: KanbanWebm },
-		devSearchMp4: { ref: DevSearch },
+		devSearchMp4: { ref: DevSearch }
 	};
 
 	// function sleepSpinner(ms) {
@@ -136,7 +140,7 @@
 <style>
 	.main-c {
 		margin: 0 auto;
-		padding: 0 1em;
+		/* padding: 0 1em; */
 		/* border: 2px solid red; */
 	}
 </style>

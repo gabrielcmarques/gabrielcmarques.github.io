@@ -33,20 +33,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
-<div class="text-white flex items-center justify-center mt-30">
-	<div class="px-5 md:px-10">
+<div class="text-white flex items-center justify-center mt-[5vh] max-sm:mt-[4vh]">
+	<div class="px-5 md:px-10 max-sm:px-0">
 		<div class="mx-auto w-full max-w-7xl">
-			<div class="py-12 md:py-4 lg:py-3">
+			<div class="md:py-4 lg:py-3">
 				<div class="flex-col flex items-center">
 					<div class="max-w-[800px] text-center mb-8 md:mb-12 lg:mb-16">
-						<h1 class="text-4xl md:text-5xl mt-10">Projetos</h1>
+						<h1 class="text-4xl md:text-5xl">Projetos</h1>
 					</div>
 					<div
 						class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-4 lg:gap-6 justify-items-center sm:justify-items-stretch mb-12 md:mb-16 lg:mb-20"
 					>
 						<button on:click={statmedModalTrigger}>
 							<div
-								class="flex-col flex grid-cols-1 gap-4 bg-[#161d59e9] p-5 text-white max-[991px]:text-left max-[767px]:items-center max-[767px]:px-4 max-[767px]:py-8 max-[479px]:w-full rounded-xl hover:cursor-pointer hover:border"
+								class="flex-col flex grid-cols-1 gap-4 bg-[#161d59e9] text-white max-[991px]:text-left max-[767px]:items-center max-[767px]:px-1 max-[767px]:py-8 max-[479px]:w-full rounded-xl hover:cursor-pointer hover:border"
 							>
 								<div class="relative h-full w-full projeto">
 									<!-- svelte-ignore a11y-img-redundant-alt -->
@@ -87,7 +87,7 @@
 
 						<button on:click={kanbanModalTrigger}>
 							<div
-								class="flex-col flex grid-cols-1 gap-4 bg-[#161d59e9] p-5 text-white max-[991px]:text-left max-[767px]:items-center max-[767px]:px-4 max-[767px]:py-8 max-[479px]:w-full rounded-xl hover:cursor-pointer hover:border"
+								class="flex-col flex grid-cols-1 gap-4 bg-[#161d59e9] p-2 text-white max-[991px]:text-left max-[767px]:items-center max-[767px]:px-1 max-[767px]:py-8 max-[479px]:w-full rounded-xl hover:cursor-pointer hover:border"
 							>
 								<div class="relative h-full w-full projeto">
 									<!-- svelte-ignore a11y-img-redundant-alt -->
@@ -126,7 +126,7 @@
 						</button>
 
 						<div
-							class="flex-col flex grid-cols-1 gap-4 bg-[#161d59e9] p-5 text-white max-[991px]:text-left max-[767px]:items-center max-[767px]:px-4 max-[767px]:py-8 max-[479px]:w-full rounded-xl hover:cursor-pointer hover:border"
+							class="flex-col flex grid-cols-1 gap-4 bg-[#161d59e9] p-2 text-white max-[991px]:text-left max-[767px]:items-center max-[767px]:px-1 max-[767px]:py-8 max-[479px]:w-full rounded-xl hover:cursor-pointer hover:border"
 						>
 							<div class="relative h-full w-full projeto">
 								<!-- svelte-ignore a11y-img-redundant-alt -->
@@ -165,7 +165,7 @@
 
 						<button on:click={devSearchModalTrigger}>
 							<div
-								class="flex-col flex grid-cols-1 gap-4 bg-[#161d59e9] p-5 text-white max-[991px]:text-left max-[767px]:items-center max-[767px]:px-4 max-[767px]:py-8 max-[479px]:w-full rounded-xl hover:cursor-pointer hover:border"
+								class="flex-col flex grid-cols-1 gap-4 bg-[#161d59e9] p-2 text-white max-[991px]:text-left max-[767px]:items-center max-[767px]:px-1 max-[767px]:py-8 max-[479px]:w-full rounded-xl hover:cursor-pointer hover:border"
 							>
 								<div class="relative h-full w-full projeto">
 									<!-- svelte-ignore a11y-img-redundant-alt -->
