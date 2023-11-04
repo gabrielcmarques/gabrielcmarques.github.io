@@ -11,7 +11,7 @@
 		<h1 class="text-4xl md:text-5xl text-center mb-3">Sobre mim</h1>
 
 		<div class="max-w-screen-lg">
-			<p class="text-xl m-0 p-2 w-full sm:w-auto">
+			<p class="text-xl max-sm:text-lg m-0 p-2 w-full sm:w-auto">
 				Sou um programador especializado em desenvolvimento web. Sempre fui entusiasta na área de
 				computação, então decidi ir para o caminho da programação e automação de sistemas, nos
 				últimos 5 anos tenho me dedicado para adquirir o conhecimento necessário para trabalhar com
@@ -23,7 +23,7 @@
 	<div class="my-10">
 		<a
 			href="/skills"
-			class="btn-xl variant-filled-primary hover:variant-ringed hover:text-white max-sm:p-2 max-md:p-4"
+			class="btn-xl variant-filled-primary hover:variant-ringed hover:text-white max-sm:p-3 max-md:p-4"
 			>Conhecimentos e Tecnologias</a
 		>
 	</div>
@@ -32,7 +32,7 @@
 	<div class="mt-2">
 		<h1 class="text-4xl md:text-5xl text-center mb-3">Entre em Contato</h1>
 		<div class="max-w-screen-lg">
-			<p class="text-xl mx-2 p-1 w-full sm:w-auto">
+			<p class="text-xl max-sm:text-lg m-0 p-2 w-full sm:w-auto">
 				Se você precisa de um desenvolvedor web para criar uma aplicação ou solução para o seu
 				negócio, estou pronto para ajudar. Entre em contato através do e-mail e responderei o mais
 				rápido possível em busca da solução do seu negócio.

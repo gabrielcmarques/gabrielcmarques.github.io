@@ -6,7 +6,7 @@
 </script>
 
 {#key url}
-	<div
+	<div class=""
 		transition
 		in:fly={{ delay: 200, duration: 350, x: 0, y: 600, opacity: 0.5, easing: cubicInOut }}
 		out:fly={{ delay: 100, duration: 300, x: 0, y: 1000, opacity: 0.1, easing: cubicInOut }}

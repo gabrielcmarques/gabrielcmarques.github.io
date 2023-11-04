@@ -10,20 +10,24 @@
 	<div class="">
 		<h1 class="text-4xl md:text-5xl text-center md:mb-10 max-sm:mb-3">Experiência</h1>
 		<div class="max-w-screen-lg">
-			<div class="flex max-sm:flex-col items-center">
+			<div class="flex max-sm:place-content-around max-sm:mr-10">
 				<h2 class="text-2xl m-0 mt-5 p-1 md:text-3xl max-sm: self-start">
 					Desenvolvedor de Software
 				</h2>
-				<a class="grayscale hover:grayscale-0" href="https://itgoal.com.br/" target="_blank">
+				<a
+					class="grayscale hover:grayscale-0 self-end"
+					href="https://itgoal.com.br/"
+					target="_blank"
+				>
 					<img
 						src="https://i.imgur.com/Sikljn2.png"
-						class="w-28 max-sm:w-20"
+						class="w-24 max-sm:w-20"
 						alt="ItGoal Digital Solutions"
 					/>
 				</a>
 			</div>
 
-			<p class="text-xl m-2 w-full sm:w-auto">
+			<p class="text-xl max-sm:text-lg m-0 p-2 w-full sm:w-auto">
 				Automações de softwares da plataforma <a href="https://www.zoho.com/" target="_blank"
 					>Zoho</a
 				>
@@ -34,18 +38,32 @@
 	</div>
 
 	<div class="mt-10">
-		<h1 class="text-4xl md:text-5xl mx-2">Formação:</h1>
+		<h1 class="text-4xl md:text-5xl text-center md:mb-10 max-sm:mb-3">Formação:</h1>
 		<div class="max-w-screen-lg">
-			<h2 class="text-start text-2xl md:text-3xl my-4 mx-2">Faculdade Uninter</h2>
+			<h2 class="text-2xl m-0 mt-5 ml-2 p-1 md:text-3xl max-sm: self-start hover:text-cyan-300">
+				<a href="https://www.uninter.com/consulta-publica-de-diploma/" target="_blank"
+					>Faculdade Uninter</a
+				>
+			</h2>
 
-			<p class="text-xl mx-2 p-1 w-full sm:w-auto">
-				Graduação em Análise e Desenvolvimento de Sistemas: <br />
-				Algorítmos, Solução de Problemas, Fundamentos, Lógica, Banco de Dados, Árvores Binárias, POO,
-				SI e SO. Exercícios em C++, C# e Java.
+			<!-- text-xl m-0 p-2 px-8 w-full sm:w-auto -->
+			<p class="text-xl max-sm:text-lg m-0 p-2 w-full sm:w-auto">
+				Graduação em Análise e Desenvolvimento de Sistemas: Algorítmos, Solução de Problemas,
+				Fundamentos, Lógica, Banco de Dados, Árvores Binárias, POO, SI e SO. Exercícios em C++, C# e
+				Java.
 				<br />
-				<u>Código Verificador:</u> 1092828C0D27E6B8FEE9C0572189DFC7,
+				<u class="hover:text-cyan-300"
+					><a href="https://www.uninter.com/consulta-publica-de-diploma/" target="_blank"
+						>Código Verificador:</a
+					></u
+				>
+				1092828C0D27E6B8FEE9C0572189DFC7,
 				<br />
-				<u>Código de registro:</u>
+				<u class="hover:text-cyan-300"
+					><a href="https://www.uninter.com/consulta-publica-de-diploma/" target="_blank"
+						>Código de registro:</a
+					></u
+				>
 				190316|1621427|2464
 			</p>
 		</div>
