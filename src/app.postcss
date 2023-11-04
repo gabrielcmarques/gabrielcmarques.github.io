@@ -7,8 +7,13 @@
 /* :root {  view-transition-name: none} */
 
 header {
-  view-transition-name: header;
+  view-transition-name: 'header';
 }
+
+/* TODO: */
+/* .navbarheader {
+  view-transition-name: 'navbarheader';
+} */
 
 @keyframes fade-in {
   from { opacity: 0; }
@@ -37,7 +42,7 @@ header {
 
 
 .full-embed {
-  view-transition-name: full-embed;
+  view-transition-name: 'full-embed';
 }
 
 
@@ -46,6 +51,7 @@ header {
   font-style: regular;
   font-weight: 400;
   src: url('/fonts/HKGrotesk-Regular.woff') format('woff');
+  font-display: swap;
 }
 
 * {
@@ -62,5 +68,4 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;  
-  position: fixed;
 }

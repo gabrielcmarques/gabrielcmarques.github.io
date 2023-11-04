@@ -78,7 +78,7 @@
 			<svelte:fragment slot="lead">
 				<button class="md:hidden btn btn-sm mr-4" on:click={drawerOpen}>
 					<span>
-						<img src={hamburger_svg} alt="hamburger_svg" />
+						<img src={hamburger_svg} alt="hamburger_svg" width="35px" height="35px" />
 					</span>
 				</button>
 			</svelte:fragment>
