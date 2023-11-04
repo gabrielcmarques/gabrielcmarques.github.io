@@ -8,7 +8,7 @@
 		})
 	);
 
-	console.log('stack', stack);
+	// console.log('stack', stack);
 
 	import {
 		// DEFAULT_OG_IMAGE,
@@ -42,13 +42,13 @@
 <div class="flex flex-col items-center justify-center mt-[20vh] max-sm:mt-[10vh]">
 	<div class="max-w-screen-lg text-center mb-32 space-y-15">
 		<h1 class="text-4xl md:text-5xl">Gabriel Christo Marques</h1>
-		<h2 class="text-2xl md:text-3xl">Desenvolvedor Web Fullstack</h2>
-		<div class="mt-10">
+		<h2 class="text-2xl md:text-3xl mt-3">Desenvolvedor Web Fullstack</h2>
+		<div class="mt-8">
 			<a href="/about" class="btn-xl variant-filled-primary hover:variant-ringed hover:text-white"
 				>Entre em contato!</a
 			>
 		</div>
-		<div class="mt-16 gap-5 rounded-3xl">
+		<div class="mt-12 gap-5 rounded-3xl">
 			<div>
 				<a href="/skills" class="hover:variant-form-material cursor-pointer">
 					<div id="one-panel">

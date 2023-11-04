@@ -6,7 +6,7 @@
 	export let images: any[] = [];
 	export let title = '';
 
-	const containerClass = 'w-28'; // Use the flex-grow class to make the containers grow to fill the available space
+	const containerClass = 'w-28 max-sm:w-20'; // Use the flex-grow class to make the containers grow to fill the available space
 	const avatarClass =
 		'w-full h-auto p-3 hover:border transition-transform transform hover:scale-110'; // Ensure the image doesn't stretch
 

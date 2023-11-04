@@ -6,7 +6,7 @@
 	<title>Experiencia - Portfolio Gabriel C Marques</title>
 </svelte:head>
 
-<div class="flex flex-col md:items-center justify-center mt-[10vh] max-sm:mt-[5vh]">
+<div class="flex flex-col md:items-center justify-center mt-[18vh] max-sm:mt-[5vh]">
 	<div class="">
 		<h1 class="text-4xl md:text-5xl text-center md:mb-10 max-sm:mb-3">Experiência</h1>
 		<div class="max-w-screen-lg">
