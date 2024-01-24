@@ -25,7 +25,7 @@
 	<div class="arrow variant-filled-secondary" />
 </div> -->
 
-<div>
+<div class="skills-img">
 	{#if title}
 		<h2>{title}</h2>
 	{/if}

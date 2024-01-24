@@ -128,11 +128,11 @@
 		<Navigation />
 	</svelte:fragment> -->
 
-	<div class="main-c h-full w-screen">
+	<main class="main-c min-w-0 ">
 		<PageTransition url={data.url}>
 			<slot />
 		</PageTransition>
-	</div>
+	</main>
 
 	<!-- <svelte:fragment slot="footer h3">Footer</svelte:fragment> -->
 </AppShell>
