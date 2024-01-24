@@ -38,9 +38,6 @@
 	<Header />
 	<Section1 />
 	<Section2 />
-	<div class="relative">
-		<Orbit />
-	</div>
 	<Section3 />
 	<Footer />
 </div>

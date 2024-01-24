@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ImageGrid from './ImageGrid.svelte';
+	import Orbit from './Orbit.svelte';
 
 	const tools: any[] = Object.values(
 		import.meta.glob('$lib/assets/images/tools/*.svg', {
@@ -16,18 +17,10 @@
 	);
 </script>
 
-<section class="flex flex-col items-center justify-center mt-[10vh] max-sm:mt-[5vh]">
-	<h1 class="text-7xl mb-1">Utilizando tecnologias e ferramentas modernas</h1>
-
-	<div class="my-20">
-		<div class="gap-5 w-full h-full">
-			<div id="one-panel">
-				<ImageGrid images={stack} />
-			</div>
-
-			<div id="one-two ">
-				<ImageGrid images={tools} />
-			</div>
+<section class="flex flex-col items-center justify-center my-[5vh]">
+	<div class="mt-80 -z-10">
+		<div class="relative">
+			<Orbit />
 		</div>
 	</div>
 </section>

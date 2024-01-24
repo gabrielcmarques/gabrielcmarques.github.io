@@ -1,13 +1,13 @@
-<section class="flex flex-col gap-4 md:flex-row md:justify-center md:gap-6 my-20">
-	<article class="card p-4 hover:opacity-95 max-w-md text-lg md:text-4xl">
+<section class="flex flex-col gap-4 md:flex-row md:justify-center md:gap-6">
+	<article class="max-w-2xl card p-4 opacity-95 hover:opacity-90 text-lg md:text-4xl">
 		<p>
-			Olá, tudo bem? Meu nome é Gabriel Christo Marques, e eu sou um entusiasta Desenvolvedor Web Fullstack,
-			apaixonado por transformar conceitos em experiências digitais memoráveis. Ao combinar
-			habilidades técnicas sólidas com uma abordagem criativa, estou comprometido em proporcionar
-			soluções completas e inovadoras para os desafios do mundo digital.
+			Olá, tudo bem? Meu nome é Gabriel Christo Marques, e eu sou um entusiasta Desenvolvedor Web
+			Fullstack, apaixonado por transformar conceitos em experiências digitais memoráveis. Ao
+			combinar habilidades técnicas sólidas com uma abordagem criativa, estou comprometido em
+			proporcionar soluções completas e inovadoras para os desafios do mundo digital.
 		</p>
 	</article>
-	<article class="card p-4 hover:opacity-95 max-w-md text-lg md:text-4xl">
+	<article class="max-w-2xl card p-4 opacity-95 hover:opacity-90 text-lg md:text-4xl">
 		<p>
 			Com expertise tanto no front-end quanto no back-end, desenvolvo websites e aplicações que não
 			apenas cativam visualmente, mas também oferecem desempenho robusto e uma experiência de
