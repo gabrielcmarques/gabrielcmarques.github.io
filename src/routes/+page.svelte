@@ -1,15 +1,4 @@
 <script lang="ts">
-	import ImageGrid from './ImageGrid.svelte';	
-
-	const stack: any[] = Object.values(
-		import.meta.glob('$lib/assets/images/stack/*.svg', {
-			import: 'default',
-			eager: true
-		})
-	);
-
-	// console.log('stack', stack);
-
 	import {
 		// DEFAULT_OG_IMAGE,
 		MY_TWITTER_HANDLE,
@@ -17,10 +6,16 @@
 		SITE_TITLE,
 		SITE_URL
 	} from '$lib/siteConfig';
+	import Footer from './Footer.svelte';
+	import Header from './Header.svelte';
+	import Orbit from './Orbit.svelte';
+	import Section1 from './Section1.svelte';
+	import Section2 from './Section2.svelte';
+	import Section3 from './Section3.svelte';
 </script>
 
 <svelte:head>
-	<title>Home - Portfolio Gabriel C Marques</title>
+	<title>Home - Gabriel Christo, Web Developer</title>
 	<link rel="canonical" href={SITE_URL} />
 	<meta property="og:url" content={SITE_URL} />
 	<meta property="og:type" content="article" />
@@ -39,23 +34,10 @@
       <img src="https://i.imgur.com/gOriNAM.png" loading="lazy" style="display: none;" />
     </div> -->
 
-<div class="flex flex-col items-center justify-center mt-[20vh] max-sm:mt-[10vh]">
-	<div class="max-w-screen-lg text-center mb-32 space-y-15">
-		<h1 class="text-4xl md:text-5xl">Gabriel Christo Marques</h1>
-		<h2 class="text-2xl md:text-3xl mt-3">Desenvolvedor Web Fullstack</h2>
-		<div class="mt-8">
-			<a href="/about" class="btn-xl variant-filled-primary hover:variant-ringed hover:text-white"
-				>Entre em contato!</a
-			>
-		</div>
-		<div class="mt-12 gap-5 rounded-3xl">
-			<div>
-				<a href="/skills" class="hover:variant-form-material cursor-pointer">
-					<div id="one-panel">
-						<ImageGrid images={stack} />
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
+<div>
+	<Header />
+	<Section1 />
+	<Section2 />
+	<Section3 />
+	<Footer />
 </div>

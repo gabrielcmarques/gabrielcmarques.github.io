@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { popup, type PopupSettings } from '@skeletonlabs/skeleton';
-	
+
 	import { Avatar } from '@skeletonlabs/skeleton';
-	import { blur, fade, fly } from 'svelte/transition';
+	// import { blur, fade, fly } from 'svelte/transition';
 	export let images: any[] = [];
 	export let title = '';
 
@@ -25,7 +25,7 @@
 	<div class="arrow variant-filled-secondary" />
 </div> -->
 
-<div>
+<div class="skills-img">
 	{#if title}
 		<h2>{title}</h2>
 	{/if}
