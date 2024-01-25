@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { linkedin_svg } from '$lib';
 	import { Avatar } from '@skeletonlabs/skeleton';
-	
+
 	const ring1: any[] = Object.values(
 		import.meta.glob('$lib/assets/images/orbit/ring1/*.svg', {
 			import: 'default',
@@ -26,7 +26,6 @@
 		'w-full h-auto p-3 hover:border transition-transform transform hover:scale-110'; // Ensure the image doesn't stretch
 
 	const imageStyle = `width: 100%; height: 100%; object-fit: contain; `;
-	
 </script>
 
 <h1 class="text-6xl text-center">Utilizando tecnologias <br /> e ferramentas modernas</h1>
@@ -207,31 +206,31 @@
 	/*
   center;
 */
-	.orbit-center {
-		z-index: 1;
-		font-size: 2em;
-		width: 1.8em;
-		height: 1.8em;
-		line-height: 1.8em;
-		text-align: center;
-		background: hotpink;
-		border-radius: 50%;
+	// .orbit-center {
+	// 	z-index: 1;
+		// font-size: 2em;
+		// width: 1.8em;
+		// height: 1.8em;
+		// line-height: 1.8em;
+		// text-align: center;
+		// background: hotpink;
+		// border-radius: 50%;
 
-		&:hover .orbit-center__icon {
-			transform: rotateZ(0deg);
-		}
-	}
-	.orbit-center__icon {
-		transform: rotateZ(-360deg);
-		transition: all 300ms ease-in-out;
-	}
-	.orbit-wrap > li.orbit-center:hover ~ li > ul {
-		width: 0;
-		height: 0;
-		* {
-			transform: translate(0, 0);
-		}
-	}
+		// &:hover .orbit-center__icon {
+		// 	transform: rotateZ(0deg);
+		// }
+	// }
+	// .orbit-center__icon {
+	// 	transform: rotateZ(-360deg);
+	// 	transition: all 300ms ease-in-out;
+	// }
+	// .orbit-wrap > li.orbit-center:hover ~ li > ul {
+	// 	width: 0;
+	// 	height: 0;
+	// 	* {
+	// 		transform: translate(0, 0);
+	// 	}
+	// }
 
 	/* 
 animations 

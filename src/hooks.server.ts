@@ -1,6 +1,5 @@
-
-// const sleep = (ms: number) => 
-//     new Promise((resolve)) => 
+// const sleep = (ms: number) =>
+//     new Promise((resolve)) =>
 //         setTimeout(resolve, ms),
 //         );
 
@@ -23,4 +22,3 @@
 //         message: 'ERRO!'
 //     }
 // }
-

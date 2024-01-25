@@ -6,27 +6,27 @@
 	<div
 		class="card div1 opacity-95 hover:opacity-90 text-lg md:text-4xl h-96 relative z-10 rounded-lg"
 	>
-		<p class="p-1 relative z-20 text-black bg-white">Desenvolvimento web</p>
+		<p class="p-4 relative z-20 text-black">Desenvolvimento de websites</p>
 		<img
 			src={web_dev_webp}
 			alt="Web Dev Photo"
-			class=" inset-0 w-full h-full object-cover z-0 rounded-lg"
+			class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg"
 		/>
 	</div>
 	<div class="card div2 opacity-95 hover:opacity-90 text-lg md:text-4xl h-96 relative rounded-lg">
-		<p class="p-1 relative z-20 text-black bg-white">Automação de processos</p>
+		<p class="p-4 relative z-20 text-black">Automação de processos</p>
 		<img
 			src={automation_webp}
 			alt="Automation Photo"
-			class=" inset-0 w-full h-full object-cover z-0 rounded-lg"
+			class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg"
 		/>
 	</div>
 	<div class="card div3 opacity-95 hover:opacity-90 text-lg md:text-4xl h-96 relative rounded-lg">
-		<p class="p-1 relative z-20 text-black bg-white">Implementação</p>
+		<p class="p-4 relative z-20 text-black">Implementação e integração</p>
 		<img
 			src={deploy_webp}
 			alt="Deployment Photo"
-			class=" inset-0 w-full h-full object-cover z-0 rounded-lg"
+			class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg"
 		/>
 	</div>
 </section>

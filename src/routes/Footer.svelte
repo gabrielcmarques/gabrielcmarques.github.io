@@ -9,19 +9,19 @@
 								<li>
 									<a
 										class="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
-										href="javascript:void(0)">Contato</a
+										href="/">Contato</a
 									>
 								</li>
 								<li class="mt-6">
 									<a
 										class="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
-										href="javascript:void(0)">Sobre</a
+										href="/">Sobre</a
 									>
 								</li>
 
 								<li class="mt-6">
 									<a
-										href="javascript:void(0)"
+										href="/"
 										class="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
 										>Blog</a
 									>
@@ -33,20 +33,20 @@
 								<li>
 									<a
 										class="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
-										href="javascript:void(0)"
+										href="/"
 										>Termos de privacidade
 									</a>
 								</li>
 								<li class="mt-6">
 									<a
 										class="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
-										href="javascript:void(0)">Termos de serviço</a
+										href="/">Termos de serviço</a
 									>
 								</li>
 								<li class="mt-6">
 									<a
 										class="text-xs lg:text-sm leading-none hover:text-brand dark:hover:text-brand text-gray-800 dark:text-gray-50"
-										href="javascript:void(0)">Changelog</a
+										href="/">Changelog</a
 									>
 								</li>
 							</ul>
@@ -55,7 +55,7 @@
 					<div class="w-full lg:w-1/2 flex">
 						<div class="w-full lg:w-1/2 px-6 flex flex-col justify-between">
 							<div class="flex items-center mb-6">
-								<a href="javascript:void(0)">
+								<a href="/">
 									<div
 										class="text-gray-800 dark:text-gray-50 cursor-pointer hover:text-brand dark:hover:text-brand"
 									>
@@ -76,7 +76,7 @@
 											/>
 										</svg>
 									</div>
-								</a><a href="javascript:void(0)">
+								</a><a href="/">
 									<div class="pl-4">
 										<svg
 											class="footer-icon feather feather-twitter text-gray-800 dark:text-gray-50 cursor-pointer hover:text-brand dark:hover:text-brand"

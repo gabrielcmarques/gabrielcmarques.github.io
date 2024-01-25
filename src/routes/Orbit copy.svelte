@@ -1,15 +1,13 @@
 <script lang="ts">
 	import { linkedin_svg } from '$lib';
-    const gallery = Object.values(
+	const gallery = Object.values(
 		import.meta.glob('$lib/assets/images/tools/*.svg', {
 			import: 'default',
 			eager: true
 		})
-	); 
+	);
 
-    console.log(gallery);
-
-
+	console.log(gallery);
 </script>
 
 <div class="orbit">
@@ -50,8 +48,7 @@
 			<ul class="ring-3">
 				<li><i class="orbit-icon fa fa-coffee" /></li>
 				<li><i class="orbit-icon fa fa-terminal" /></li>
-				<li><i class="orbit-icon linkedin_svg" /><img src="{linkedin_svg}" alt=""></li>
-                
+				<li><i class="orbit-icon linkedin_svg" /><img src={linkedin_svg} alt="" /></li>
 			</ul>
 		</li>
 	</ul>
@@ -256,7 +253,4 @@ icons
 	// 		color: nth($icon, 3);
 	// 	}
 	// }
-
-	
-	
 </style>

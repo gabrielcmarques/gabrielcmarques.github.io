@@ -11,17 +11,17 @@ export const theme = writable(userTheme ?? 'dark');
 
 // update the theme
 export function toggleTheme() {
-  theme.update((currentTheme) => {
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+	theme.update((currentTheme) => {
+		const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-    document.documentElement.setAttribute('color-scheme', newTheme);
-    localStorage.setItem('color-scheme', newTheme);
+		document.documentElement.setAttribute('color-scheme', newTheme);
+		localStorage.setItem('color-scheme', newTheme);
 
-    return newTheme;
-  });
+		return newTheme;
+	});
 }
 
 // set the theme
 export function setTheme(newTheme: Theme) {
-  theme.set(newTheme);
+	theme.set(newTheme);
 }
