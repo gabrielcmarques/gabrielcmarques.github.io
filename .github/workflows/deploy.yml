@@ -21,7 +21,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: 'https://gabrielcm.dev/'
+          BASE_PATH: 'https://gabrielcmarques.github.io/'
         run: |
           pnpm run build
       - name: Upload Artifacts
@@ -39,7 +39,7 @@ jobs:
 
     environment:
       name: github-pages
-      url: https://gabrielcm.dev/
+      url: https://gabrielcmarques.github.io/
 
     steps:
       - name: Deploy
