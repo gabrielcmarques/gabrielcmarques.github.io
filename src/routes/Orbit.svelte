@@ -28,7 +28,7 @@
 	const imageStyle = `width: 100%; height: 100%; object-fit: contain; `;
 </script>
 
-<h1 class="text-6xl text-center">Utilizando tecnologias <br /> e ferramentas modernas</h1>
+<h1 class="max-sm:text-4xl max-lg:text-5xl lg:text-6xl text-center">Utilizando tecnologias <br /> e ferramentas modernas</h1>
 <div class="orbit">
 	<ul class="orbit-wrap">
 		<!-- <li class="orbit-center">
@@ -87,6 +87,8 @@
 </div>
 
 <style lang="scss">
+	@use 'sass:math';
+
 	$orbitItemSize: 1.3em;
 	$map: (
 		ring-0: 0,
@@ -127,6 +129,16 @@
 		list-style: none;
 		font-size: 5em;
 
+		@media only screen and (max-width: 640px) {
+			/* Styles for phones */
+			font-size: 3em;
+		}
+
+		@media only screen and (min-width: 641px) and (max-width: 968px) {
+			/* Styles for tablets */
+			font-size: 4em;
+		}
+
 		> li {
 			position: absolute;
 			left: 50%;
@@ -160,7 +172,8 @@
 	@mixin orbit-item($numItems, $numRing) {
 		@for $s from 1 through $numItems {
 			// Spread items over the ring
-			$deg: 380deg / $numItems;
+			// $deg: 380deg / $numItems;
+			$deg: math.div(380deg, $numItems);
 
 			.ring-#{$numRing} > *:nth-of-type(#{$s}) {
 				transform: rotate($s * $deg) translate(12.5em - ($numRing * 2.5)) rotate(-$s * $deg);
@@ -200,7 +213,8 @@
 		left: 50%;
 		width: $orbitItemSize;
 		height: $orbitItemSize;
-		margin: -$orbitItemSize / 2;
+		// margin: -$orbitItemSize / 2;
+		margin: math.div(-$orbitItemSize, 2);
 	}
 
 	/*
@@ -208,17 +222,17 @@
 */
 	// .orbit-center {
 	// 	z-index: 1;
-		// font-size: 2em;
-		// width: 1.8em;
-		// height: 1.8em;
-		// line-height: 1.8em;
-		// text-align: center;
-		// background: hotpink;
-		// border-radius: 50%;
+	// font-size: 2em;
+	// width: 1.8em;
+	// height: 1.8em;
+	// line-height: 1.8em;
+	// text-align: center;
+	// background: hotpink;
+	// border-radius: 50%;
 
-		// &:hover .orbit-center__icon {
-		// 	transform: rotateZ(0deg);
-		// }
+	// &:hover .orbit-center__icon {
+	// 	transform: rotateZ(0deg);
+	// }
 	// }
 	// .orbit-center__icon {
 	// 	transform: rotateZ(-360deg);
