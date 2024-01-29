@@ -3,10 +3,7 @@
 		<!-- Heading -->
 		<h1 class="max-sm:text-4xl max-md:text-6xl text-7xl max-md:text-center text-gray-50 ">Gabriel Christo Marques</h1>
 		<h2 class="max-sm:text-2xl max-md:text-4xl text-5xl mt-3 text-gray-100 max-md:text-center ">Desenvolvedor Web Fullstack</h2>
-		<h3 class="max-sm:text-xl max-md:text-2xl text-4xl mb-8 text-gray-300 mt-2 max-md:text-center ">
-			Sou especializado em aplicações web de alta performance com SEO otimizado para amplificar o
-			seu negócio.
-		</h3>
+		
 
 		<!-- Contact Button -->
 		<div class="mt-8 lg:mt-24 text-center ">
