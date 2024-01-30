@@ -1,5 +1,5 @@
 <section class="flex flex-col gap-4 md:flex-row md:justify-center max-md:items-center m-3">
-	<article class="max-w-2xl card p-4 opacity-95 hover:opacity-90 ">
+	<article class="max-w-2xl card p-4 opacity-95 hover:opacity-90">
 		<p class="max-sm:text-xl max-md:text-2xl text-3xl">
 			Olá, tudo bem? Meu nome é Gabriel Christo Marques, e eu sou um entusiasta Desenvolvedor Web
 			Fullstack, apaixonado por transformar conceitos em experiências digitais memoráveis. Ao
@@ -7,7 +7,7 @@
 			proporcionar soluções completas e inovadoras para os desafios do mundo digital.
 		</p>
 	</article>
-	<article class="max-w-2xl card p-4 opacity-95 hover:opacity-90 ">
+	<article class="max-w-2xl card p-4 opacity-95 hover:opacity-90">
 		<p class="max-sm:text-xl max-md:text-2xl text-3xl">
 			Com expertise tanto no front-end quanto no back-end, desenvolvo websites e aplicações que não
 			apenas cativam visualmente, mas também oferecem desempenho robusto e uma experiência de

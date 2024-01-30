@@ -28,7 +28,9 @@
 	const imageStyle = `width: 100%; height: 100%; object-fit: contain; `;
 </script>
 
-<h1 class="max-sm:text-4xl max-lg:text-5xl lg:text-6xl text-center">Utilizando tecnologias <br /> e ferramentas modernas</h1>
+<h1 class="max-sm:text-4xl max-lg:text-5xl lg:text-6xl text-center">
+	Utilizando tecnologias <br /> e ferramentas modernas
+</h1>
 <div class="orbit">
 	<ul class="orbit-wrap">
 		<!-- <li class="orbit-center">

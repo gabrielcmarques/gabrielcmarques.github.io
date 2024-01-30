@@ -2,10 +2,13 @@
 	import { automation_webp, deploy_webp, web_dev_webp } from '$lib';
 </script>
 
-<h3 class="max-sm:text-xl max-md:text-2xl text-4xl mb-8 text-gray-300 mt-2 max-md:text-center max-w-">
-	Sou especializado em aplicações web de alta performance com SEO otimizado para amplificar o
-	seu negócio.
-</h3>
+<h1
+	class="max-w-screen-xl max-sm:text-xl max-md:text-2xl text-4xl text-gray-300 max-md:text-center mx-auto p-3"
+>
+	Sou especializado em aplicações web de alta performance com SEO otimizado para amplificar o seu
+	negócio.
+</h1>
+
 <section class="parent max-w-screen-xl text-center relative m-5 p-5 rounded-lg">
 	<div class="card div1 opacity-95 hover:opacity-90 h-96 relative z-10 rounded-lg">
 		<p class="whitespace-nowrap text-3xl p-3 relative z-20 text-black bg-white rounded-lg">

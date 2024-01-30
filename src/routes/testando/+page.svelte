@@ -1,4 +1,4 @@
-<section class="contact parent max-w-screen-xl text-center md:grid ">
+<section class="contact parent max-w-screen-xl text-center md:grid">
 	<a
 		class="card card1 opacity-95 hover:opacity-90 text-lg md:text-4xl z-10 rounded-lg w-64 h-52 max-md:h-40 mx-auto"
 		href="https://github.com/gabrielcmarques"

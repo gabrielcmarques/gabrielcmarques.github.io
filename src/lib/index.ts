@@ -9,3 +9,4 @@ export { default as hamburger_svg } from './assets/svgs/hamburger.svg';
 export { default as heart_svg } from './assets/svgs/heart.svg';
 export { default as linkedin_svg } from './assets/svgs/linkedin.svg';
 export { default as twitter_svg } from './assets/svgs/twitter.svg';
+export { default as whatsapp_svg } from './assets/svgs/whatsapp.svg';
