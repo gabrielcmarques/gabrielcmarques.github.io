@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^0.2.0
     version: 0.2.4(tailwindcss@3.4.1)
   '@sveltejs/adapter-static':
-    specifier: 1.0.0-next.50
-    version: 1.0.0-next.50(@sveltejs/kit@1.30.3)
+    specifier: ^3.0.1
+    version: 3.0.1(@sveltejs/kit@1.30.3)
   '@sveltejs/kit':
     specifier: ^1.20.4
     version: 1.30.3(svelte@4.2.9)(vite@4.5.2)
@@ -70,9 +70,6 @@ devDependencies:
   svelte:
     specifier: ^4.0.5
     version: 4.2.9
-  svelte-adapter-bun:
-    specifier: ^0.5.0
-    version: 0.5.1
   svelte-check:
     specifier: ^3.4.3
     version: 3.6.3(postcss-load-config@4.0.2)(postcss@8.4.33)(sass@1.70.0)(svelte@4.2.9)
@@ -499,10 +496,10 @@ packages:
       tailwindcss: 3.4.1
     dev: true
 
-  /@sveltejs/adapter-static@1.0.0-next.50(@sveltejs/kit@1.30.3):
-    resolution: {integrity: sha512-xZKBmiwFGW8nrH8+eysUAAo9XrtApI81q0m67y1bexVw8IY7/x741b6VEklNM7BZ7js0Mi2x+yCkHpOee8UZKQ==}
+  /@sveltejs/adapter-static@3.0.1(@sveltejs/kit@1.30.3):
+    resolution: {integrity: sha512-6lMvf7xYEJ+oGeR5L8DFJJrowkefTK6ZgA4JiMqoClMkKq0s6yvsd3FZfCFvX1fQ0tpCD7fkuRVHsnUVgsHyNg==}
     peerDependencies:
-      '@sveltejs/kit': ^1.0.0-next.587
+      '@sveltejs/kit': ^2.0.0
     dependencies:
       '@sveltejs/kit': 1.30.3(svelte@4.2.9)(vite@4.5.2)
     dev: true
@@ -2388,12 +2385,6 @@ packages:
   /supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
-    dev: true
-
-  /svelte-adapter-bun@0.5.1:
-    resolution: {integrity: sha512-eLbkKuoCaZPzVN20dg/oZOUybO16oEQCOQuzAI2jVLU90VbJ1P099bAlA+7H4KPGI2r2sdkfD1MppGAbk7PdMw==}
-    dependencies:
-      tiny-glob: 0.2.9
     dev: true
 
   /svelte-check@3.6.3(postcss-load-config@4.0.2)(postcss@8.4.33)(sass@1.70.0)(svelte@4.2.9):
