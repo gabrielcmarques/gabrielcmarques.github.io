@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 import { skeleton } from '@skeletonlabs/tw-plugin';
 import { join } from 'path';
 import type { Config } from 'tailwindcss';

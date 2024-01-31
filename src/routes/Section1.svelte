@@ -2,31 +2,45 @@
 	import { automation_webp, deploy_webp, web_dev_webp } from '$lib';
 </script>
 
-<section class="parent max-w-screen-xl text-center relative">
-	<div
-		class="card div1 opacity-95 hover:opacity-90 text-lg md:text-4xl h-96 relative z-10 rounded-lg"
-	>
-		<p class="p-1 relative z-20 text-black bg-white">Desenvolvimento web</p>
+<h1
+	class="max-w-screen-xl max-sm:text-xl max-md:text-2xl text-4xl text-gray-300 max-md:text-center mx-auto p-5"
+>
+	Sou especializado em aplicações web de alta performance com SEO otimizado para ampliar o alcance
+	do seu negócio.
+</h1>
+
+<section class="parent max-w-screen-xl text-center relative m-5 p-5 rounded-lg">
+	<div class="div1 opacity-95 hover:opacity-90 h-96 relative z-10 rounded-lg">
+		<p class=" glass-effect whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
+			Automação de processos
+		</p>
 		<img
 			src={web_dev_webp}
 			alt="Web Dev Photo"
-			class=" inset-0 w-full h-full object-cover z-0 rounded-lg"
+			aria-label="Desenvolvimento web"
+			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80"
 		/>
 	</div>
-	<div class="card div2 opacity-95 hover:opacity-90 text-lg md:text-4xl h-96 relative rounded-lg">
-		<p class="p-1 relative z-20 text-black bg-white">Automação de processos</p>
+	<div class=" div2 opacity-95 hover:opacity-90 h-96 relative rounded-lg">
+		<p class="glass-effect whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
+			Desenvolvimento web
+		</p>
 		<img
 			src={automation_webp}
-			alt="Automation Photo"
-			class=" inset-0 w-full h-full object-cover z-0 rounded-lg"
+			alt="Automação de processos"
+			aria-label="Desenvolvimento web"
+			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80"
 		/>
 	</div>
-	<div class="card div3 opacity-95 hover:opacity-90 text-lg md:text-4xl h-96 relative rounded-lg">
-		<p class="p-1 relative z-20 text-black bg-white">Implementação</p>
+	<div class=" div3 opacity-95 hover:opacity-90 h-96 relative rounded-lg">
+		<p class="glass-effect whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
+			Implementação
+		</p>
 		<img
 			src={deploy_webp}
 			alt="Deployment Photo"
-			class=" inset-0 w-full h-full object-cover z-0 rounded-lg"
+			aria-label="Implementação"
+			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80"
 		/>
 	</div>
 </section>
@@ -34,22 +48,17 @@
 <style lang="scss">
 	.parent {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-		grid-template-rows: 1fr; /* Single row */
-		grid-column-gap: 5px;
-		grid-row-gap: 5px;
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(380px, 1fr)
+		); /* Cards wrap to next line if space is not enough */
+		grid-auto-rows: 1fr; /* Automatically adjust row height */
+		grid-gap: 10px; /* Spacing between cards */
 		margin: auto; /* Center the section horizontally */
 	}
 
-	.div1 {
-		grid-area: 1 / 1 / 2 / 2;
-	}
-
-	.div2 {
-		grid-area: 1 / 2 / 2 / 3;
-	}
-
-	.div3 {
-		grid-area: 1 / 3 / 2 / 4;
-	}
+	.glass-effect {
+     
+        background: rgba(255, 255, 255, 0.025); /* Adjust the background opacity as needed */
+    }
 </style>
