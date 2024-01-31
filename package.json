@@ -1,5 +1,5 @@
 {
-  "homepage": "https://gabrielcmarques.github.io/gabrielcmarques.github.io",
+  "homepage": "https://gabrielcmarques.github.io/",
   "name": "portfolio-github-io",
   "version": "0.0.1",
   "private": true,
@@ -13,9 +13,7 @@
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
     "format": "prettier --plugin-search-dir . --write .",
     "test:integration": "playwright test",
-    "test:unit": "vitest",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "test:unit": "vitest" 
   },
   "devDependencies": {
     "@playwright/test": "^1.28.1",
