@@ -14,7 +14,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20.11.0'
+          node-version: '16'
 
       - name: Install Bun
         uses: oven-sh/setup-bun@v1
@@ -33,7 +33,7 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: build
+          name: site-files
           path: 'build/'
 
   deploy:
@@ -53,8 +53,8 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@v2
         with:
-          name: build
-          path: 'build'
+          name: site-files
+          path: 'build/'
 
       - name: Deploy
         id: deployment
