@@ -25,13 +25,13 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install --force
+        run: npm install --legacy-peer-deps
 
       - name: build
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
-          npm ci
+          npm ci --legacy-peer-deps
           npm run build
 
       - name: Upload Artifacts
