@@ -89,8 +89,4 @@
 	.c-3 {
 		background-image: linear-gradient(to bottom, #009966, #006633);
 	}
-
-	* {
-		border: red dashed;
-	}
 </style>
