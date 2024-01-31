@@ -11,22 +11,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          version: 8
+          bun-version: 'latest'
 
       - name: Install dependencies
-        run: pnpm install
+        run: bun install
 
       - name: build
         env:
           BASE_PATH: 'https://gabrielcmarques.github.io/'
         run: |
-          pnpm run build
+          bun run build
       - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
+          name: build
           path: 'build/'
 
   deploy:
@@ -34,6 +35,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
+      contents: read
       pages: write
       id-token: write
 
