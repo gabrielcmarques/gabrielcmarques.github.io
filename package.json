@@ -47,6 +47,7 @@
   "type": "module",
   "dependencies": {
     "@floating-ui/dom": "^1.5.3",
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
     "clipboard-copy": "^4.0.1",
     "gh-pages": "^6.1.1"
   },

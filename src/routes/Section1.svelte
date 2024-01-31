@@ -17,7 +17,7 @@
 		<img
 			src={web_dev_webp}
 			alt="Web Dev Photo"
-			aria-label="Desenvolvimento web"
+			
 			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80"
 		/>
 	</div>
@@ -28,7 +28,7 @@
 		<img
 			src={automation_webp}
 			alt="Automação de processos"
-			aria-label="Desenvolvimento web"
+			
 			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80"
 		/>
 	</div>
@@ -39,7 +39,7 @@
 		<img
 			src={deploy_webp}
 			alt="Deployment Photo"
-			aria-label="Implementação"
+			
 			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80"
 		/>
 	</div>
