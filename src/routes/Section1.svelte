@@ -58,7 +58,6 @@
 	}
 
 	.glass-effect {
-     
-        background: rgba(255, 255, 255, 0.025); /* Adjust the background opacity as needed */
-    }
+		background: rgba(255, 255, 255, 0.025); /* Adjust the background opacity as needed */
+	}
 </style>
