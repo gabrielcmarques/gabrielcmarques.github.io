@@ -49,5 +49,13 @@
     "@floating-ui/dom": "^1.5.3",
     "clipboard-copy": "^4.0.1",
     "gh-pages": "^6.1.1"
-  }
+  },
+  "description": "Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).",
+  "main": "svelte.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
