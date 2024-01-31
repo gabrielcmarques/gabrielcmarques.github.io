@@ -3,15 +3,15 @@
 </script>
 
 <h1
-	class="max-w-screen-xl max-sm:text-xl max-md:text-2xl text-4xl text-gray-300 max-md:text-center mx-auto p-3"
+	class="max-w-screen-xl max-sm:text-xl max-md:text-2xl text-4xl text-gray-300 max-md:text-center mx-auto p-5"
 >
-	Sou especializado em aplicações web de alta performance com SEO otimizado para amplificar o seu
-	negócio.
+	Sou especializado em aplicações web de alta performance com SEO otimizado para ampliar o alcance
+	do seu negócio.
 </h1>
 
 <section class="parent max-w-screen-xl text-center relative m-5 p-5 rounded-lg">
-	<div class="card div1 opacity-95 hover:opacity-90 h-96 relative z-10 rounded-lg">
-		<p class="whitespace-nowrap text-3xl p-3 relative z-20 text-black bg-white rounded-lg">
+	<div class="div1 opacity-95 hover:opacity-90 h-96 relative z-10 rounded-lg">
+		<p class=" glass-effect whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
 			Automação de processos
 		</p>
 		<img
@@ -21,8 +21,8 @@
 			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80"
 		/>
 	</div>
-	<div class="card div2 opacity-95 hover:opacity-90 h-96 relative rounded-lg">
-		<p class="whitespace-nowrap text-3xl p-3 relative z-20 text-black bg-white rounded-lg">
+	<div class=" div2 opacity-95 hover:opacity-90 h-96 relative rounded-lg">
+		<p class="glass-effect whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
 			Desenvolvimento web
 		</p>
 		<img
@@ -32,8 +32,8 @@
 			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80"
 		/>
 	</div>
-	<div class="card div3 opacity-95 hover:opacity-90 h-96 relative rounded-lg">
-		<p class="whitespace-nowrap text-3xl p-3 relative z-20 text-black bg-white rounded-lg">
+	<div class=" div3 opacity-95 hover:opacity-90 h-96 relative rounded-lg">
+		<p class="glass-effect whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
 			Implementação
 		</p>
 		<img
@@ -56,4 +56,9 @@
 		grid-gap: 10px; /* Spacing between cards */
 		margin: auto; /* Center the section horizontally */
 	}
+
+	.glass-effect {
+     
+        background: rgba(255, 255, 255, 0.025); /* Adjust the background opacity as needed */
+    }
 </style>
