@@ -2,12 +2,12 @@
 	import {
 		// DEFAULT_OG_IMAGE,
 		MY_TWITTER_HANDLE,
+		OG_IMAGE_HEIGHT,
+		OG_IMAGE_URL,
+		OG_IMAGE_WIDTH,
 		SITE_DESCRIPTION,
 		SITE_TITLE,
-		SITE_URL,
-		OG_IMAGE_URL,
-OG_IMAGE_WIDTH,
-OG_IMAGE_HEIGHT
+		SITE_URL
 	} from '$lib/siteConfig';
 	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
@@ -15,7 +15,8 @@ OG_IMAGE_HEIGHT
 	import Section1 from './Section1.svelte';
 	import Section2 from './Section2.svelte';
 	import Section3 from './Section3.svelte';
-	
+	import Section4 from './Section4.svelte';
+	import Section5 from './Section5.svelte';
 </script>
 
 <svelte:head>
@@ -36,11 +37,13 @@ OG_IMAGE_HEIGHT
 	<!-- <meta name="twitter:image" content={DEFAULT_OG_IMAGE} /> -->
 </svelte:head>
 
-
 <div>
 	<Header />
 	<Section1 />
 	<Section2 />
 	<Section3 />
+	<Section4 />
+	<Section5 />
+
 	<Footer />
 </div>

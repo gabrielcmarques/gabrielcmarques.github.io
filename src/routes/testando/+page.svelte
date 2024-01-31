@@ -1,55 +1,51 @@
-<script lang="ts">
-	import { automation_webp, deploy_webp, web_dev_webp } from '$lib';
-</script>
-
-<section class="parent max-w-screen-xl text-center relative">
-	<div
-		class="card div1 opacity-95 hover:opacity-90 text-lg md:text-4xl h-96 relative z-10 rounded-lg"
+<section class="contact parent max-w-screen-xl text-center md:grid">
+	<a
+		class="card card1 opacity-95 hover:opacity-90 text-lg md:text-4xl z-10 rounded-lg w-64 h-52 max-md:h-40 mx-auto"
+		href="https://github.com/gabrielcmarques"
+		target="_blank"
+		alt="Web Dev Photo"
 	>
-		<p class="p-4 relative z-20 text-black">Desenvolvimento de websites</p>
-		<img
-			src={web_dev_webp}
-			alt="Web Dev Photo"
-			class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg"
-		/>
-	</div>
-	<div class="card div2 opacity-95 hover:opacity-90 text-lg md:text-4xl h-96 relative rounded-lg">
-		<p class="p-4 relative z-20 text-black">Automação de processos</p>
-		<img
-			src={automation_webp}
-			alt="Automation Photo"
-			class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg"
-		/>
-	</div>
-	<div class="card div3 opacity-95 hover:opacity-90 text-lg md:text-4xl h-96 relative rounded-lg">
-		<p class="p-4 relative z-20 text-black">Implementação e integração</p>
-		<img
-			src={deploy_webp}
-			alt="Deployment Photo"
-			class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg"
-		/>
-	</div>
+		<p class="p-4">Github</p>
+	</a>
+	<a
+		href="https://twitter.com/gabrielchristom"
+		target="_blank"
+		alt="Automation Photo"
+		class="card card1 opacity-95 hover:opacity-90 text-lg md:text-4xl rounded-lg w-64 h-52 max-md:h-40 mx-auto"
+	>
+		<p class="p-4">Twitter</p>
+	</a>
+	<a
+		href="https://wa.me/5541998272752/?text=Hello,%20I%20am%20interested%20in%20your%20software%20developer%20service"
+		target="_blank"
+		alt="Deployment Photo"
+		class="card card1 opacity-95 hover:opacity-90 text-lg md:text-4xl rounded-lg w-64 h-52 max-md:h-40 mx-auto"
+	>
+		<p class="p-4">Whatsapp</p>
+		<p>[+55] (41) 99827-2752</p>
+	</a>
 </section>
+
+<!-- class="absolute inset-0 w-full h-full object-cover z-0 rounded-lg" -->
 
 <style lang="scss">
 	.parent {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-		grid-template-rows: 1fr; /* Single row */
-		grid-column-gap: 5px;
-		grid-row-gap: 5px;
-		margin: auto; /* Center the section horizontally */
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(200px, 1fr)
+		); /* Cards wrap to next line if space is not enough */
+		grid-auto-rows: 1fr; /* Automatically adjust row height */
+		grid-gap: 1px; /* Spacing between cards */
 	}
 
-	.div1 {
-		grid-area: 1 / 1 / 2 / 2;
+	.card1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.div2 {
-		grid-area: 1 / 2 / 2 / 3;
-	}
-
-	.div3 {
-		grid-area: 1 / 3 / 2 / 4;
+	* {
+		border: solid red;
 	}
 </style>

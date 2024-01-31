@@ -1,18 +1,19 @@
-<section class="flex flex-col gap-4 md:flex-row md:justify-center max-md:items-center m-3">
-	<article class="max-w-2xl card p-4 opacity-95 hover:opacity-90 ">
-		<p class="max-sm:text-xl max-md:text-2xl text-3xl">
-			Olá, tudo bem? Meu nome é Gabriel Christo Marques, e eu sou um entusiasta Desenvolvedor Web
-			Fullstack, apaixonado por transformar conceitos em experiências digitais memoráveis. Ao
-			combinar habilidades técnicas sólidas com uma abordagem criativa, estou comprometido em
-			proporcionar soluções completas e inovadoras para os desafios do mundo digital.
+<script lang="ts">
+	import { pagespeed_lighthouse_webm } from '$lib';
+</script>
+
+<section class="max-w-screen-xl flex max-lg:flex-col flex-row justify-center items-center p-3 m-3 mx-auto">
+	<div class="lg:w-[45%] flex align-middle justify-center items-center lg:h-[460px] ">
+		<p class="card max-sm:text-xl max-md:text-2xl text-3xl text-gray-300 max-md:text-center p-5 h-5/6 rounded-2xl">
+			Páginas cuidadosamente criadas com as melhores práticas em desenvolvimento web, resultando em alta Performance, Acessibilidade e <a href="https://www.youtube.com/watch?v=-B58GgsehKQ" class="text-blue-400" target="_blank">SEO</a> , aprimorando a descoberta por mecanismos de busca como Google. 
 		</p>
-	</article>
-	<article class="max-w-2xl card p-4 opacity-95 hover:opacity-90 ">
-		<p class="max-sm:text-xl max-md:text-2xl text-3xl">
-			Com expertise tanto no front-end quanto no back-end, desenvolvo websites e aplicações que não
-			apenas cativam visualmente, mas também oferecem desempenho robusto e uma experiência de
-			usuário excepcional. Cada linha de código é cuidadosamente elaborada para traduzir a visão do
-			cliente em uma presença online impactante.
-		</p>
-	</article>
+	</div>
+	<div class="lg:w-[55%] sm:p-3 mt-5 sm:mt-1">
+		<img
+			class="max-w-3xl w-full h-full opacity-95   object-contain rounded-2xl "
+			src={pagespeed_lighthouse_webm}
+			alt="PageSpeed Lighthouse"
+		/>
+	</div>
 </section>
+
