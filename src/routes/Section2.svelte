@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { reveal } from 'svelte-reveal';
+	
 	import ImageGrid from './ImageGrid.svelte';
 	import Orbit from './Orbit.svelte';
 

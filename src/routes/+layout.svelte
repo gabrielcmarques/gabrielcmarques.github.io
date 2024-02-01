@@ -7,7 +7,11 @@
 
 	import { page } from '$app/stores';
 	import { AppBar, AppShell, initializeStores } from '@skeletonlabs/skeleton';
+	import 'animate.css';
 	import '../app.postcss';
+	
+	
+	
 
 	// export let data;
 </script>
@@ -25,4 +29,21 @@
 		margin: 0 auto;
 		/* border: 2px solid red; */
 	}
+
+	/* .scrolled {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	@keyframes scroll-in {
+		0% {
+			opacity: 0;
+			transforma: translateY(20px);
+		}
+		100% {
+			opacity: 1;
+			transform: translate(0);
+			animation: scroll-in 3s forwards;
+		}
+	} */
 </style>

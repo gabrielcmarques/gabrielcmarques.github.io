@@ -1,14 +1,15 @@
 <script lang="ts">
 	import copy from 'clipboard-copy';
+	import { reveal } from 'svelte-reveal';
 
 	const phoneNumber = '+55 (41) 99827-2752';
 
 	const copyToClipboard = async () => {
 		try {
 			await copy(phoneNumber);
-			alert('Phone number copied to clipboard!');
+			alert('Número copiado para a área de transferência!\n +55 (41) 99827-2752');
 		} catch (error) {
-			console.error('Error copying to clipboard:', error);
+			console.error('Erro ao copiar número: \n', error);
 		}
 	};
 </script>
@@ -21,21 +22,24 @@
 </h1>
 <section class="contact parent max-w-screen-xl text-center md:grid mx-auto p-4">
 	<a
-		class="card1 c-1 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5"
+		use:reveal={{ transition: "fly", y: -100, delay: 100, duration: 350 }}
+		class="  card-contact c-1 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5"
 		href="https://github.com/gabrielcmarques"
 		target="_blank"
 	>
 		<p class="p-4">Github</p>
 	</a>
 	<a
+		use:reveal={{ transition: "fly", y: -100, delay: 300, duration: 350 }}
 		href="https://twitter.com/gabrielchristom"
 		target="_blank"
-		class="card1 c-2 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5"
+		class=" card-contact c-2 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5"
 	>
 		<p class="p-4">Twitter</p>
 	</a>
 	<div
-		class="card1 c-3 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5"
+		use:reveal={{ transition: "fly", y: -100, delay: 500, duration: 350 }}
+		class=" card-contact c-3 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5"
 	>
 		<a
 			href="https://wa.me/5541998272752/?text=Hello,%20I%20am%20interested%20in%20your%20software%20developer%20service"
@@ -58,20 +62,19 @@
 		grid-gap: 1px; /* Spacing between cards */
 	}
 
-	.card1 {
+	.card-contact {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		// transition: transform .2s ease-in-out;
-		transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+		// transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	}
 
-	.card1:hover {
-		transform: translateY(-5px) scale(1.02); /* Adjust the value as per your preference 
-		*/
-		box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.44); /* Brighter shadow on hover */
-	}
+	// .card-contact:hover {
+	// 	transform: translateY(-5px) scale(1.02);
+	// 	box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.44);
+	// }
 
 	// * {
 	// 	border: solid red;
@@ -79,13 +82,19 @@
 
 	.c-1 {
 		background-image: linear-gradient(to bottom, #786464, #332c2c);
+		// animation-delay: 1.2s;
+		// animation-duration: 0.5s;
 	}
 
 	.c-2 {
 		background-image: linear-gradient(to bottom, #336699, #003366);
+		// animation-delay: 1.7s;
+		// animation-duration: 0.5s;
 	}
 
 	.c-3 {
 		background-image: linear-gradient(to bottom, #009966, #006633);
+		// animation-delay: 2s;
+		// animation-duration: 0.5s;
 	}
 </style>

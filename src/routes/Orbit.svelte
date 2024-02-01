@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { reveal } from 'svelte-reveal';
+	
 	import { linkedin_svg } from '$lib';
 	import { Avatar } from '@skeletonlabs/skeleton';
 
@@ -28,7 +30,7 @@
 	const imageStyle = `width: 100%; height: 100%; object-fit: contain; `;
 </script>
 
-<h1 class="max-sm:text-3xl max-lg:text-5xl lg:text-6xl text-center">
+<h1 use:reveal={{ transition: "fly" }} class="max-sm:text-3xl max-lg:text-5xl lg:text-6xl text-center">
 	Utilizando tecnologias <br /> e ferramentas modernas
 </h1>
 <div class="orbit">

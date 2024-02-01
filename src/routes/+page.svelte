@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { og_image_html_webp } from '$lib';
+	import { reveal, setDefaultOptions } from 'svelte-reveal';
+
 	import og_image from '$lib/assets/images/og_image_html.webp';
 	import {
 		// DEFAULT_OG_IMAGE,
@@ -10,6 +11,8 @@
 		SITE_TITLE,
 		SITE_URL
 	} from '$lib/siteConfig';
+
+
 	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
 	import Orbit from './Orbit.svelte';
@@ -19,6 +22,12 @@
 	import Section4 from './Section4.svelte';
 	import Section5 from './Section5.svelte';
 	import Section6 from './Section6.svelte';
+
+	let node;
+	let node2;
+	let node3;
+
+	
 </script>
 
 <svelte:head>
@@ -41,6 +50,7 @@
 
 <div>
 	<Header />
+
 	<Section1 />
 	<Section2 />
 	<Section3 />

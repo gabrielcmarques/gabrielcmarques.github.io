@@ -1,12 +1,16 @@
-<h1
+<script lang="ts">
+	import { reveal } from 'svelte-reveal';
+</script>
+
+<h1 use:reveal={{ transition: "fly" }}
 	class="max-w-screen-xl max-sm:text-2xl max-md:text-3xl text-5xl text-gray-300 mt-10 mx-auto text-center"
 >
 	Sobre mim
 </h1>
-<section
+<section 
 	class=" max-w-screen-xl flex flex-col gap-4 md:flex-row md:justify-center max-md:items-center m-3 p-3 mx-auto"
 >
-	<article class=" card p-4 opacity-95 hover:opacity-90">
+	<article use:reveal={{ transition: "slide", delay: 200, x: -150, duration: 500 }} class=" card p-4 opacity-95 hover:opacity-90">
 		<p class="max-sm:text-xl max-md:text-2xl text-3xl">
 			Olá, tudo bem? Meu nome é Gabriel Christo Marques, e eu sou um entusiasta Desenvolvedor Web
 			Fullstack, apaixonado por transformar conceitos em experiências digitais memoráveis. Ao
@@ -14,7 +18,7 @@
 			proporcionar soluções completas e inovadoras para os desafios do mundo digital.
 		</p>
 	</article>
-	<article class=" card p-4 opacity-95 hover:opacity-90">
+	<article use:reveal={{ transition: "slide", delay: 200, x: 150, duration: 500 }} class=" card p-4 opacity-95 hover:opacity-90">
 		<p class="max-sm:text-xl max-md:text-2xl text-3xl">
 			Com expertise tanto no front-end quanto no back-end, desenvolvo websites e aplicações que não
 			apenas cativam visualmente, mas também oferecem desempenho robusto e uma experiência de
