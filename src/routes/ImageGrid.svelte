@@ -2,7 +2,7 @@
 	import { popup, type PopupSettings } from '@skeletonlabs/skeleton';
 
 	import { Avatar } from '@skeletonlabs/skeleton';
-	// import { blur, fade, fly } from 'svelte/transition';
+	import { blur, fade, fly } from 'svelte/transition';
 	export let images: any[] = [];
 	export let title = '';
 

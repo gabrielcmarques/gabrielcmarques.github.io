@@ -28,12 +28,12 @@
 	const imageStyle = `width: 100%; height: 100%; object-fit: contain; `;
 </script>
 
-<h1 class="max-sm:text-4xl max-lg:text-5xl lg:text-6xl text-center">
+<h1 class="max-sm:text-3xl max-lg:text-5xl lg:text-6xl text-center">
 	Utilizando tecnologias <br /> e ferramentas modernas
 </h1>
 <div class="orbit">
 	<ul class="orbit-wrap">
-		<!-- <li class="orbit-center">
+		<!-- <li class="orbit-center z-10">
 			<i class="orbit-center__icon fa fa-code" />
 		</li> -->
 
@@ -60,7 +60,7 @@
 								src={image}
 								title={key}
 								alt={key}
-								class="orbit-icon, {avatarClass}"
+								class=" {avatarClass}"
 								style={imageStyle}
 							/></i
 						>
@@ -77,7 +77,7 @@
 								src={image}
 								title={key}
 								alt={key}
-								class="orbit-icon, {avatarClass}"
+								class=" {avatarClass}"
 								style={imageStyle}
 							/></i
 						>
@@ -91,7 +91,7 @@
 <style lang="scss">
 	@use 'sass:math';
 
-	$orbitItemSize: 1.3em;
+	$orbitItemSize: 1.5em;
 	$map: (
 		ring-0: 0,
 		ring-1: 5,
@@ -133,12 +133,12 @@
 
 		@media only screen and (max-width: 640px) {
 			/* Styles for phones */
-			font-size: 3em;
+			font-size: 2.5em;
 		}
 
 		@media only screen and (min-width: 641px) and (max-width: 968px) {
 			/* Styles for tablets */
-			font-size: 4em;
+			font-size: 3.5em;
 		}
 
 		> li {
@@ -200,7 +200,7 @@
 	}
 
 	%ring {
-		border: solid 1px rgba(33, 150, 243, 0.8);
+		border: dashed 1.5px rgba(33, 150, 243, 0.8);
 		position: relative;
 		padding: 0;
 		border-radius: 50%;
@@ -223,7 +223,7 @@
   center;
 */
 	// .orbit-center {
-	// 	z-index: 1;
+	// z-index: 1;
 	// font-size: 2em;
 	// width: 1.8em;
 	// height: 1.8em;

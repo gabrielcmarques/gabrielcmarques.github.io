@@ -1,4 +1,8 @@
-<h1 class="max-w-screen-xl max-sm:text-2xl max-md:text-3xl text-4xl text-gray-300 mt-10 mx-auto text-center">Sobre mim</h1>
+<h1
+	class="max-w-screen-xl max-sm:text-2xl max-md:text-3xl text-5xl text-gray-300 mt-10 mx-auto text-center"
+>
+	Sobre mim
+</h1>
 <section
 	class=" max-w-screen-xl flex flex-col gap-4 md:flex-row md:justify-center max-md:items-center m-3 p-3 mx-auto"
 >

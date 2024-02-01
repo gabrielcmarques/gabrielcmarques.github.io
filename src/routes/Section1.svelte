@@ -17,7 +17,6 @@
 		<img
 			src={web_dev_webp}
 			alt="Web Dev Photo"
-			aria-label="Desenvolvimento web"
 			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80"
 		/>
 	</div>
@@ -28,7 +27,6 @@
 		<img
 			src={automation_webp}
 			alt="Automação de processos"
-			aria-label="Desenvolvimento web"
 			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80"
 		/>
 	</div>
@@ -39,7 +37,6 @@
 		<img
 			src={deploy_webp}
 			alt="Deployment Photo"
-			aria-label="Implementação"
 			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80"
 		/>
 	</div>
@@ -56,9 +53,4 @@
 		grid-gap: 10px; /* Spacing between cards */
 		margin: auto; /* Center the section horizontally */
 	}
-
-	.glass-effect {
-     
-        background: rgba(255, 255, 255, 0.025); /* Adjust the background opacity as needed */
-    }
 </style>
