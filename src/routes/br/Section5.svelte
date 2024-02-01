@@ -7,7 +7,7 @@
 	use:reveal={{ transition: 'slide', duration: 500 }}
 	class="max-w-screen-xl max-sm:text-xl max-md:text-2xl text-5xl text-gray-300 max-md:text-center mx-auto p-3 text-center mt-16 mb-5"
 >
-	Responsive design for all devices
+	Design responsivo para todos os dispositivos
 </h1>
 <img
 	use:reveal={{ transition: 'slide', duration: 500 }}

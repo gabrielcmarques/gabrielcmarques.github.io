@@ -34,7 +34,7 @@
 	use:reveal={{ transition: 'fly' }}
 	class="max-sm:text-3xl max-lg:text-5xl lg:text-6xl text-center"
 >
-	Using modern <br />technologies and tools
+	Utilizando tecnologias <br /> e ferramentas modernas
 </h1>
 <div class="orbit">
 	<ul class="orbit-wrap">

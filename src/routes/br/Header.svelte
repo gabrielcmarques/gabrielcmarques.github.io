@@ -11,7 +11,7 @@
 		<h2
 			class="animate__animated animate__fadeInDown h2-header max-sm:text-2xl max-md:text-4xl text-5xl mt-3 text-gray-100 max-md:text-center"
 		>
-			Freelance Web Developer
+			Desenvolvedor Web Freelancer
 		</h2>
 
 		<!-- Contact Button -->
@@ -19,7 +19,7 @@
 			<a
 				href="#contato"
 				class="contato-btn p-5 max-sm:p-3 variant-filled-primary hover:variant-ringed hover:text-white rounded-full shadow-md transition duration-300 ease-in-out text-2xl max-md:text-xl max-sm:text-base"
-				>Get in touch</a
+				>Entre em contato</a
 			>
 		</div>
 	</div>

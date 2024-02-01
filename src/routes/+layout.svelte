@@ -5,14 +5,11 @@
 	// import { crossfade, draw, fade, fly, scale, slide } from 'svelte/transition';
 	// import ViewTransition from '$lib/components/ViewTransition.svelte';
 
+	import LanguageSelector from '$lib/components/LanguageSelector.svelte';
 	import { page } from '$app/stores';
 	import { AppBar, AppShell, initializeStores } from '@skeletonlabs/skeleton';
 	import 'animate.css';
 	import '../app.postcss';
-	
-	
-	
-
 	// export let data;
 </script>
 
@@ -20,7 +17,8 @@
 	<title>{$page.data.post?.title}</title>
 </svelte:head>
 
-<main class="main-c min-w-0 overflow-x-hidden">
+<main class="main-c min-w-0 overflow-x-hidden relative">
+	<LanguageSelector />
 	<slot />
 </main>
 

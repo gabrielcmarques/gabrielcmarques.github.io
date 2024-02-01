@@ -11,12 +11,12 @@
 		class="lg:w-[45%] flex align-middle justify-center items-center lg:h-[380px] rounded-2xl card opacity-90"
 	>
 		<p class="max-sm:text-xl max-md:text-2xl text-3xl text-gray-300 max-md:text-center p-5 h-5/6">
-			Pages meticulously crafted with best practices in web development, resulting in high
-			performance, accessibility, and <a
+			Páginas cuidadosamente criadas com as melhores práticas em desenvolvimento web, resultando em
+			alta Performance, Acessibilidade e <a
 				href="https://www.youtube.com/watch?v=-B58GgsehKQ"
 				class="text-blue-400"
 				target="_blank">SEO</a
-			>, enhancing the website's discoverability by search engines such as Google.
+			>, aprimorando a do website descoberta por mecanismos de busca como Google.
 		</p>
 	</div>
 	<div

@@ -7,7 +7,7 @@
 	const copyToClipboard = async () => {
 		try {
 			await copy(phoneNumber);
-			alert('Number copied to the clipboard!\n Whatsapp +55 (41) 99827-2752');
+			alert('Número copiado para a área de transferência!\n +55 (41) 99827-2752');
 		} catch (error) {
 			console.error('Erro ao copiar número: \n', error);
 		}
@@ -18,7 +18,7 @@
 	class="max-w-screen-xl max-sm:text-xl max-md:text-2xl text-5xl text-gray-300 max-md:text-center mx-auto p-3 text-center mt-16 mb-5"
 	id="contato"
 >
-	Get in touch
+	Entre em contato
 </h1>
 <section class="contact parent max-w-screen-xl text-center md:grid mx-auto p-4">
 	<a
