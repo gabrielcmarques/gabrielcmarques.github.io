@@ -4,6 +4,7 @@ export { default as web_dev_webp } from './assets/images/cards/web_dev.webp';
 export { default as og_image_html_webp } from './assets/images/og_image_html.webp';
 export { default as website_portfolio_webm } from './assets/images/website_portfolio.webp';
 export { default as pagespeed_lighthouse_webm } from './assets/images/pagespeed_lighthouse.webp';
+export { default as design_responsivo_webm } from './assets/videos/design_responsivo.webm';
 export { default as codepen_svg } from './assets/svgs/codepen.svg';
 export { default as github_svg } from './assets/svgs/github.svg';
 export { default as hamburger_svg } from './assets/svgs/hamburger.svg';

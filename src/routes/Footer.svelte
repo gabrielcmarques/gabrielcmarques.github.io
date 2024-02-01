@@ -15,23 +15,16 @@
 				<a
 					href="https://www.linkedin.com/in/gabriel-christo-marques/"
 					target="_blank"
-					
 					aria-label="Linkedin"
 				>
 					<img src={linkedin_svg} class="w-10" alt="linkedin_logo" />
 				</a>
-				<a
-					href="https://twitter.com/gabrielchristom"
-					target="_blank"
-					
-					aria-label="Twitter"
-				>
+				<a href="https://twitter.com/gabrielchristom" target="_blank" aria-label="Twitter">
 					<img src={twitter_svg} class="w-10" alt="twitter_logo" />
 				</a>
 				<a
 					href="https://wa.me/5541998272752/?text=Hello,%20I%20am%20interested%20in%20your%20software%20developer%20service"
 					target="_blank"
-					
 					aria-label="Twitter"
 				>
 					<img src={whatsapp_svg} class="w-15" alt="twitter_logo" />

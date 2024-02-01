@@ -1,5 +1,5 @@
 <h1
-	class="max-w-screen-xl max-sm:text-2xl max-md:text-3xl text-4xl text-gray-300 mt-10 mx-auto text-center"
+	class="max-w-screen-xl max-sm:text-2xl max-md:text-3xl text-5xl text-gray-300 mt-10 mx-auto text-center"
 >
 	Sobre mim
 </h1>

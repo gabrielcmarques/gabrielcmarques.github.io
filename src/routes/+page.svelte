@@ -1,9 +1,10 @@
 <script lang="ts">
+	import { og_image_html_webp } from '$lib';
+	import og_image from '$lib/assets/images/og_image_html.webp';
 	import {
 		// DEFAULT_OG_IMAGE,
 		MY_TWITTER_HANDLE,
 		OG_IMAGE_HEIGHT,
-		OG_IMAGE_URL,
 		OG_IMAGE_WIDTH,
 		SITE_DESCRIPTION,
 		SITE_TITLE,
@@ -17,6 +18,7 @@
 	import Section3 from './Section3.svelte';
 	import Section4 from './Section4.svelte';
 	import Section5 from './Section5.svelte';
+	import Section6 from './Section6.svelte';
 </script>
 
 <svelte:head>
@@ -27,14 +29,14 @@
 	<meta property="og:title" content={SITE_TITLE} />
 	<meta name="Description" content={SITE_DESCRIPTION} />
 	<meta property="og:description" content={SITE_DESCRIPTION} />
-	<meta property="og:image" content={OG_IMAGE_URL} />
+	<meta property="og:image" content={og_image} />
 	<meta property="og:image:width" content={OG_IMAGE_WIDTH} />
 	<meta property="og:image:height" content={OG_IMAGE_HEIGHT} />
-	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content={og_image} />
+	<meta name="twitter:card" content="Gabriel Christo - Freelancer Developer" />
 	<meta name="twitter:creator" content={'@' + MY_TWITTER_HANDLE} />
 	<meta name="twitter:title" content={SITE_TITLE} />
 	<meta name="twitter:description" content={SITE_DESCRIPTION} />
-	<!-- <meta name="twitter:image" content={DEFAULT_OG_IMAGE} /> -->
 </svelte:head>
 
 <div>
@@ -44,6 +46,6 @@
 	<Section3 />
 	<Section4 />
 	<Section5 />
-
+	<Section6 />
 	<Footer />
 </div>

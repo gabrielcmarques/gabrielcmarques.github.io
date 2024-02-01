@@ -15,7 +15,7 @@
 			<a
 				href="#contato"
 				class="contato-btn p-5 max-sm:p-3 variant-filled-primary hover:variant-ringed hover:text-white rounded-full shadow-md transition duration-300 ease-in-out text-2xl max-md:text-xl max-sm:text-base"
-				>Entre em contato 📧</a
+				>Entre em contato</a
 			>
 		</div>
 	</div>
