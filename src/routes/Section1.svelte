@@ -5,8 +5,7 @@
 <h1
 	class="animate__animated animate__fadeIn animate__delay-1s max-w-screen-xl max-sm:text-xl max-md:text-2xl text-4xl text-gray-300 max-md:text-center mx-auto p-5"
 >
-	Sou especializado em aplicações web de alta performance com SEO otimizado para ampliar o alcance
-	do seu negócio.
+	I specialize in high-performance web applications with SEO optimized to expand the reach of your business.
 </h1>
 
 <section class=" parent max-w-screen-xl text-center relative m-5 p-5 rounded-lg">
