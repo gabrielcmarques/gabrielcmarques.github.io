@@ -13,7 +13,7 @@
 >
 	<article
 		use:reveal={{ transition: 'slide', delay: 200, x: -150, duration: 500 }}
-		class=" card p-4 opacity-95 hover:opacity-90"
+		class="card4 blurred-glass p-4 opacity-95 hover:opacity-90  rounded-2xl text-gray-100"
 	>
 		<p class="max-sm:text-xl max-md:text-2xl text-3xl">
 			Hello, how are you? My name is Gabriel Christo Marques, and I am a Fullstack Web Developer
@@ -24,7 +24,7 @@
 	</article>
 	<article
 		use:reveal={{ transition: 'slide', delay: 200, x: 150, duration: 500 }}
-		class=" card p-4 opacity-95 hover:opacity-90"
+		class="card4 blurred-glass p-4 opacity-95 hover:opacity-90  rounded-2xl text-gray-100"
 	>
 		<p class="max-sm:text-xl max-md:text-2xl text-3xl">
 			With expertise in both front-end and back-end, I develop websites and applications that not

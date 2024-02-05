@@ -49,6 +49,7 @@
 	"type": "module",
 	"dependencies": {
 		"@floating-ui/dom": "^1.5.3",
-		"clipboard-copy": "^4.0.1"
+		"clipboard-copy": "^4.0.1",
+		"graphql-request": "^6.1.0"
 	}
 }

@@ -67,14 +67,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		// transition: transform .2s ease-in-out;
-		// transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 	}
-
-	// .card-contact:hover {
-	// 	transform: translateY(-5px) scale(1.02);
-	// 	box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.44);
-	// }
 
 	// * {
 	// 	border: solid red;
@@ -82,19 +75,20 @@
 
 	.c-1 {
 		background-image: linear-gradient(to bottom, #786464, #332c2c);
-		// animation-delay: 1.2s;
-		// animation-duration: 0.5s;
 	}
 
 	.c-2 {
 		background-image: linear-gradient(to bottom, #336699, #003366);
-		// animation-delay: 1.7s;
-		// animation-duration: 0.5s;
 	}
 
 	.c-3 {
 		background-image: linear-gradient(to bottom, #009966, #006633);
-		// animation-delay: 2s;
-		// animation-duration: 0.5s;
+	}
+
+	.c-1:hover,
+	.c-2:hover,
+	.c-3:hover {
+		transform: translateY(-5px);
+		box-shadow: 1px 1px 1px rgba(130, 130, 130, 0.5);
 	}
 </style>
