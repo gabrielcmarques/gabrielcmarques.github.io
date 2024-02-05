@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	
 	import 'animate.css';
 	// export let data;
 </script>
@@ -10,7 +9,6 @@
 </svelte:head>
 
 <main class="main-c min-w-0 overflow-x-hidden relative">
-	
 	<slot />
 </main>
 

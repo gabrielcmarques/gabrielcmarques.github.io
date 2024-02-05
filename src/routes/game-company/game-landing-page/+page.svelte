@@ -1,16 +1,14 @@
 <script lang="ts">
-	import Header from './components/Header.svelte';
-	import Navbar from './components/Navbar.svelte';
-	import SocialCards from './components/Social-Cards.svelte';
-	// import type { PageData } from './$types';
+    // import type { PageData } from './$types';
 
-	import './components/game-company.postcss';
-
-	// export let data: PageData;
+	import Header from "./Header.svelte";
+	import '../components/game-company.postcss';
+    
+    // export let data: PageData;
 </script>
 
 <svelte:head>
-	<title>Game Company | Home</title>
+	<title>Game Company | Home</title>	
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="Gabriel's Game Company" />
 	<!-- <meta property="og:image" content= />
@@ -22,9 +20,4 @@
 	<meta name="twitter:description" content={SITE_DESCRIPTION} /> -->
 </svelte:head>
 
-<div>
-	<Navbar />
-	<Header />
-	<SocialCards />
-</div>
-
+<Header />
