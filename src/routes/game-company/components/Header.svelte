@@ -15,23 +15,3 @@
 		</h2>
 	</div>
 </header>
-
-<style>
-	.h2-header {
-		animation-delay: 0.6s;
-		animation-duration: 0.5s;
-	}
-
-	.hero-title {
-		text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.6);
-		/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);  */
-	}
-
-	.hero-title2 {
-		text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.6);
-	}
-
-	/* * {
-		border: 2px red solid;
-	} */
-</style>
