@@ -1,15 +1,15 @@
 <header
-	class="hero flex flex-col items-center justify-center mb-12 max-sm:mb-6 mt-[5vh] max-sm:mt-[2vh]"
+	class="hero flex flex-col items-center justify-center mb-6 max-sm:mb-3 mt-[3vh] max-sm:mt-[2vh]"
 >
-	<div class=" lg:ml-10">
+	<div class=" lg:ml-10 text-center">
 		<!-- Heading -->
 		<h1
-			class="animate__animated animate__fadeInDown max-sm:text-4xl max-md:text-6xl text-7xl max-md:text-center text-gray-50"
+			class="hero-title animate__animated animate__fadeInDown max-sm:text-4xl max-md:text-6xl text-7xl text-gray-50 font-bold mb-4"
 		>
 			Welcome to Gabriel's Game Company
 		</h1>
 		<h2
-			class="animate__animated animate__fadeInDown h2-header max-sm:text-2xl max-md:text-4xl text-4xl mt-3 text-gray-100 max-md:text-center"
+			class="hero-title2 animate__animated animate__fadeInDown h2-header max-sm:text-2xl max-md:text-4xl text-4xl mt-3 text-gray-100 max-md:text-center"
 		>
 			Check out our latest game & follow us around ᕕ (ᐛ) ᕗ
 		</h2>
@@ -22,7 +22,16 @@
 		animation-duration: 0.5s;
 	}
 
-	* {
-		border: 2px red solid;
+	.hero-title {
+		text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.6);
+		/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);  */
 	}
+
+	.hero-title2 {
+		text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.6);
+	}
+
+	/* * {
+		border: 2px red solid;
+	} */
 </style>

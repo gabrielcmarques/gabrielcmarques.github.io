@@ -16,6 +16,8 @@
 		"deploy": "pnpm build && pnpx gh-pages -d build -t true"
 	},
 	"devDependencies": {
+		"@iconify/json": "^2.2.180",
+		"@iconify/tailwind": "^0.1.4",
 		"@playwright/test": "^1.28.1",
 		"@skeletonlabs/skeleton": "^2.1.0",
 		"@skeletonlabs/tw-plugin": "^0.2.0",
