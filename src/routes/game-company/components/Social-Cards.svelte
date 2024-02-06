@@ -21,15 +21,16 @@
 	<div class="grid-wrapper">
 		<a
 			href="/game-company/game-landing-page"
-			class=" {animateFadeDown} card card-large relative block overflow-hidden border border-gray-300 rounded text-center hover:transform hover:translate-x-1 hover:translate-y-1 transition-transform bg-white"
+			class="{animateFadeDown} card card-large relative block overflow-hidden border border-gray-300 rounded text-center bg-white group transition-transform"
 		>
-			<p class="z-10 relative">Gabriel's Amazing Game Website</p>
+			<p class="z-10 relative w-modal-wide w-fit">Gabriel's Amazing Game Website</p>
 			<img
 				src={gameHeader}
 				alt="game header"
-				class="absolute top-0 left-0 w-full h-full object-cover opacity-50 hover:opacity-[.60]"
+				class="absolute top-0 left-0 w-full h-full object-cover transform scale-100 hover:scale-105 opacity-50 hover:opacity-60 transition-transform"
 			/>
 		</a>
+
 		<a href="#" class=" {animateFadeLeft} card c-1"
 			>Wishlist on Steam <span class="icon-[bi--steam]" role="img" aria-hidden="true" /></a
 		>
