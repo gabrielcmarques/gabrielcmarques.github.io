@@ -13,7 +13,7 @@
 >
 	<article
 		use:reveal={{ transition: 'slide', delay: 200, x: -150, duration: 500 }}
-		class=" card p-4 opacity-95 hover:opacity-90"
+		class=" card4 blurred-glass p-4 opacity-95 hover:opacity-90 rounded-2xl text-gray-100"
 	>
 		<p class="max-sm:text-xl max-md:text-2xl text-3xl">
 			Olá, tudo bem? Meu nome é Gabriel Christo Marques, e eu sou um entusiasta Desenvolvedor Web
@@ -24,7 +24,7 @@
 	</article>
 	<article
 		use:reveal={{ transition: 'slide', delay: 200, x: 150, duration: 500 }}
-		class=" card p-4 opacity-95 hover:opacity-90"
+		class=" card4 blurred-glass p-4 opacity-95 hover:opacity-90 rounded-2xl text-gray-100"
 	>
 		<p class="max-sm:text-xl max-md:text-2xl text-3xl">
 			Com expertise tanto no front-end quanto no back-end, desenvolvo websites e aplicações que não

@@ -11,7 +11,7 @@
 
 <section class=" parent max-w-screen-xl text-center relative m-5 p-5 rounded-lg">
 	<div
-		class="animate__animated animate__fadeInLeft div1 opacity-95 hover:opacity-90 h-96 relative z-10 rounded-lg"
+		class="blurred-glass animate__animated animate__fadeInLeft div1 opacity-95 hover:opacity-90 h-96 relative z-10 rounded-lg"
 	>
 		<p class="glass-effect whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
 			Automação de processos
@@ -23,7 +23,7 @@
 		/>
 	</div>
 	<div
-		class="animate__animated animate__fadeInLeft div2 opacity-95 hover:opacity-90 h-96 relative rounded-lg"
+		class="blurred-glass animate__animated animate__fadeInLeft div2 opacity-95 hover:opacity-90 h-96 relative rounded-lg"
 	>
 		<p class="glass-effect whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
 			Desenvolvimento web
@@ -35,7 +35,7 @@
 		/>
 	</div>
 	<div
-		class="animate__animated animate__fadeInLeft div3 opacity-95 hover:opacity-90 h-96 relative rounded-lg"
+		class="blurred-glass animate__animated animate__fadeInLeft div3 opacity-95 hover:opacity-90 h-96 relative rounded-lg"
 	>
 		<p class="glass-effect whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
 			Implementação

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Footer from '$lib/components/Footer.svelte';
 	import { reveal, setDefaultOptions } from 'svelte-reveal';
+	import '../app.postcss';
 
 	import og_image from '$lib/assets/images/og_image_html.webp';
 	import {
@@ -13,6 +14,7 @@
 		SITE_URL
 	} from '$lib/siteConfig';
 
+	import LanguageSelector from '$lib/components/LanguageSelector.svelte';
 	import Header from './Header.svelte';
 	import Orbit from './Orbit.svelte';
 	import Section1 from './Section1.svelte';
@@ -21,14 +23,10 @@
 	import Section4 from './Section4.svelte';
 	import Section5 from './Section5.svelte';
 	import Section6 from './Section6.svelte';
-
-	let node;
-	let node2;
-	let node3;
 </script>
 
 <svelte:head>
-	<title>Home - Gabriel Christo, Web Developer</title>
+	<title>Freelance Developer - Gabriel Christo | Home</title>
 	<link rel="canonical" href={SITE_URL} />
 	<meta property="og:url" content={SITE_URL} />
 	<meta property="og:type" content="article" />
@@ -46,6 +44,7 @@
 </svelte:head>
 
 <div>
+	<LanguageSelector />
 	<Header />
 	<Section1 />
 	<Section2 />

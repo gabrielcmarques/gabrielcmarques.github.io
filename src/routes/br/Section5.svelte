@@ -19,5 +19,5 @@
 	use:reveal={{ transition: 'slide', duration: 500 }}
 	class="contact parent max-w-screen-xl text-center md:grid mx-auto rounded-3xl border"
 >
-	<video src={design_responsivo_webm} controls autoplay muted style="max-width: 100%;" class="rounded-3xl" />
+	<video src={design_responsivo_webm} autoplay loop muted style="max-width: 100%;" class="rounded-3xl" />
 </section>
