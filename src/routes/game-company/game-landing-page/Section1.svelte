@@ -1,17 +1,25 @@
 <script lang="ts">
 	import game1webp from './components/images/game_1.webp';
+	import topWavePattern from './components/svgs/pattern-top.svg';
 </script>
 
-<section class="parent max-w-screen-xl text-center relative m-5 p-5 rounded-lg mx-auto">
-	<div class="grid grid-cols-2 gap-4 div1 opacity-95 relative rounded-lg border">
-		<div class="my-auto col-span-1">
-			<div class="">
+<img class="pattern-top max-sm:h-32 max-md:h-40 h-52 z-50 w-full" src={topWavePattern} alt="" />
+<section class="parent max-w-screen-xl text-center relative m-5 p-2 rounded-lg mx-auto border">
+	<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 div1 opacity-95 relative rounded-lg">
+		<div class="flex items-center justify-center">
+			<img
+				src={game1webp}
+				alt="Web Dev Photo"
+				class="w-full h-auto object-contain z-0 rounded-lg"
+			/>
+		</div>
+		<div class="flex flex-col justify-center">
+			<div class="text-container text-left">
 				<h1
-					class="hero-title max-sm:text-xl max-md:text-2xl text-6xl max-md:text-center text-lime-400"
+					class="max-sm:text-3xl max-md:text-4xl text-5xl max-md:text-center hero-title text-lime-400"
 				>
-					Join the Beginning of this Epic Journey
+					Join this amazing adventure
 				</h1>
-
 				<p class="text-xl p-3 relative text-white">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
 					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
@@ -23,12 +31,19 @@
 				</p>
 			</div>
 		</div>
-		<div class="col-span-1 p-2">
-			<img
-				src={game1webp}
-				alt="Web Dev Photo"
-				class="inset-0 w-full h-full object-contain z-0 rounded-lg"
-			/>
-		</div>
 	</div>
 </section>
+
+<style>
+	.pattern-top {
+		overflow: hidden;
+		position: relative;
+		/* height: 100%; */
+		transform: scale(1, -1);
+		width: 100%;
+		height: 155px;
+		top: 0px;
+		left: 0px;
+		fill: rgb(255, 213, 26);
+	}	
+</style>

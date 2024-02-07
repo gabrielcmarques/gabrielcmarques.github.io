@@ -3,11 +3,13 @@
 	import Section2 from './Section2.svelte';
 	import Section3 from './Section3.svelte';
 	// import type { PageData } from './$types';
+	// import topPattern from './components/svgs/top-layered-steps-haikei.svg';
 
-	import './components/game-lp.postcss';
 	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
 	import Navbar from './Navbar.svelte';
+	import './components/game-lp.postcss';
+	
 
 	// export let data: PageData;
 </script>
@@ -27,9 +29,22 @@
 
 <div>
 	<Navbar />
+	
 	<Header />
+	<div style="background: linear-gradient(#30006c, #3c0063); height: 100px; width: 100%;"></div>
+
 	<Section1 />
 	<Section2 />
 	<Section3 />
 	<Footer />
 </div>
+
+<style style="scss">
+	/* top: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0; */
+
+	
+</style>

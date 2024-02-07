@@ -1,16 +1,24 @@
 <script lang="ts">
 	import game3webp from './components/images/game_3.webp';
+	
 </script>
 
-<section class="parent max-w-screen-xl text-center relative m-5 p-5 rounded-lg mx-auto">
-	<div class="grid grid-cols-2 gap-4 div1 opacity-95 relative rounded-lg border">
-		<div class="my-auto col-span-1">
-			<div class="text-container">
-				<h1 class="max-sm:text-xl max-md:text-2xl text-6xl hero-title 
-				text-lime-400 max-md:text-center">
-					Fight epics bosses
+<section class="parent max-w-screen-xl text-center relative m-5 p-2 rounded-lg mx-auto border">
+	<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 div1 opacity-95 relative rounded-lg">
+		<div class="flex items-center justify-center">
+			<img
+				src={game3webp}
+				alt="Web Dev Photo"
+				class="w-full h-auto object-contain z-0 rounded-lg"
+			/>
+		</div>
+		<div class="flex flex-col justify-center">
+			<div class="text-container text-left">
+				<h1
+					class="max-sm:text-3xl max-md:text-4xl text-5xl max-md:text-center hero-title text-lime-400"
+				>
+					Fight epic bosses
 				</h1>
-
 				<p class="text-xl p-3 relative text-white">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
 					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
@@ -21,13 +29,6 @@
 					PageMaker including versions of Lorem Ipsum
 				</p>
 			</div>
-		</div>
-		<div class="col-span-1 p-2">
-			<img
-				src={game3webp}
-				alt="Web Dev Photo"
-				class="inset-0 w-full h-full object-contain z-0 rounded-lg"
-			/>
 		</div>
 	</div>
 </section>

@@ -62,24 +62,14 @@
 				<hr class="opacity-30" />
 				<a
 					class="text-white hover:text-slate-300 text-xl transition-transform transform hover:translate-x-1 hover:translate-y-1"
-					href="/game-company">Contact US</a
+					href="/game-company">Contact</a
 				>
 				<hr class="opacity-30" />
 				<a
 					class="text-white hover:text-slate-300 text-xl transition-transform transform hover:translate-x-1 hover:translate-y-1"
-					href="/game-company">About Us</a
+					href="/game-company">About</a
 				>
 			</div>
 		</nav>
 	</div>
 </div>
-
-<style>
-	/* * {
-		border: 2px red solid;
-	} */
-
-	a {
-		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-	}
-</style>

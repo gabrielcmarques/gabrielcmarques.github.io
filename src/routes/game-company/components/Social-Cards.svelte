@@ -3,8 +3,8 @@
 
 	import gameHeader from '../components/game-images/game1.webp';
 	const animateFadeDown = 'animate__animated animate__fadeInDown ';
-	const animateFadeLeft = 'animate__animated animate__fadeInLeft ';
-	const animateFadeRight = 'animate__animated animate__fadeInRight ';
+	const animateFadeLeft = 'animate__animated animate__fadeInLeft bubble-btn';
+	const animateFadeRight = 'animate__animated animate__fadeInRight bubble-btn';
 
 	onMount(() => {
 		// Function to remove "animate__animated" class after a delay
@@ -17,20 +17,21 @@
 	});
 </script>
 
-<div class="max-w-screen-xl mx-auto">
-	<div class="grid-wrapper">
+<div class="max-w-screen-xl mx-auto md:px-1 lg:px-28">
+	<div class="card-game lg:px-6 px-3 rounded-md">
 		<a
 			href="/game-company/game-landing-page"
-			class="{animateFadeDown} card card-large relative block overflow-hidden border border-gray-300 rounded text-center bg-white group transition-transform"
+			class="{animateFadeDown} shine-btn card card-large relative block overflow-hidden border border-gray-300 rounded text-center bg-white group transition-transform"
 		>
-			<p class="z-10 relative w-modal-wide w-fit">Gabriel's Amazing Game Website</p>
+			<p class="z-10 relative lg:w-modal-wide w-fit">Gabriel's Amazing Game Website</p>
 			<img
 				src={gameHeader}
 				alt="game header"
 				class="absolute top-0 left-0 w-full h-full object-cover transform scale-100 hover:scale-105 opacity-50 hover:opacity-60 transition-transform"
 			/>
 		</a>
-
+	</div>
+	<div class="grid-wrapper">
 		<a href="#" class=" {animateFadeLeft} card c-1"
 			>Wishlist on Steam <span class="icon-[bi--steam]" role="img" aria-hidden="true" /></a
 		>
@@ -84,8 +85,9 @@
 
 	$background: #ffffff;
 
-	a {
-		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+	
+	a:hover {
+		text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1);
 	}
 
 	// Cards
@@ -108,7 +110,7 @@
 	}
 
 	.card:hover {
-		transform: translate(0.5rem, 0.5rem);
+		transform: translate(0.2rem, 0.2rem);
 		box-shadow: 0rem 0rem 0 -0.25rem darken(#ffffff, 40), 0rem 0rem 0 black,
 			0 0 0 0.25rem inset rgb(9, 9, 9);
 		z-index: 1;
@@ -158,8 +160,7 @@
 		}
 
 		.card {
-			padding: 1rem;
-			font-size: 1rem;
+			padding: 1.3rem;
 		}
 
 		.card-large {
@@ -167,6 +168,54 @@
 			font-size: 1.2rem;
 		}
 	}
+
+	.shine-btn::after {
+		content: '';
+		z-index: -1;
+		background-color: hsla(0, 0%, 100%, 0.2);
+		position: absolute;
+		top: -50%;
+		bottom: -50%;
+		width: 3em;
+		transform: translate3d(-600%, 0, 0) rotate(35deg);
+	}
+
+	.shine-btn:hover::after {
+		transition: transform 0.45s ease-in-out;
+		transform: translate3d(600%, 0, 0) rotate(35deg);
+	}
+
+	.bubble-btn {
+		position: relative;
+		color: white;
+		overflow: hidden;
+		transition: color 0.4s ease-in-out;
+	}
+
+	.bubble-btn::before {
+		content: '';
+		z-index: -1;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 3em;
+		height: 3em;
+		border-radius: 50%;
+		background-color: #62f2ff;
+		transform-origin: center;
+		transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+		transition: transform 0.7s ease-in-out;
+	}
+
+	.bubble-btn:hover {
+		cursor: pointer;
+		color: #202020;
+	}
+
+	.bubble-btn:hover::before {
+		transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+	}
+
 	// END Media Queries
 	@for $i from 1 through 13 {
 		.c-#{$i} {

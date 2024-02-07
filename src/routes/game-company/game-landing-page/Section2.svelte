@@ -3,19 +3,18 @@
 </script>
 
 <section class="parent max-w-screen-xl text-center relative m-5 p-2 rounded-lg mx-auto border">
-	<div class="grid grid-cols-2 gap-4 div1 opacity-95 relative rounded-lg">
-		<div class="flex items-center justify-center col-span-1">
+	<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 div1 opacity-95 relative rounded-lg">
+		<div class="img-item items-center justify-center sm:order-2 md:order-2">
 			<img
 				src={game2webp}
 				alt="Web Dev Photo"
 				class="w-full h-auto object-contain z-0 rounded-lg"
 			/>
 		</div>
-		<div class="col-span-1 flex items-center justify-center">
+		<div class="flex flex-col justify-center sm:order-1 md:order-1">
 			<div class="text-container text-left">
 				<h1
-					class="max-sm:text-xl max-md:text-2xl text-6xl max-md:text-center hero-title
-				text-lime-400"
+					class="max-sm:text-3xl max-md:text-4xl text-5xl max-md:text-center hero-title text-lime-400"
 				>
 					Make friends along the way
 				</h1>
