@@ -13,11 +13,11 @@
 <style>
 	.br-translation,
 	.us-translation {
-	  transition: transform 0.2s ease-in-out;
+		transition: transform 0.2s ease-in-out;
 	}
-  
+
 	.br-translation:hover,
 	.us-translation:hover {
-	  transform: translateY(-5px); /* Adjust the value to control the jump height */
+		transform: translateY(-5px); /* Adjust the value to control the jump height */
 	}
-  </style>
+</style>

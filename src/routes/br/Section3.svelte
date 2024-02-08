@@ -8,7 +8,7 @@
 >
 	<div
 		use:reveal={{ transition: 'slide', delay: 100, x: -150, duration: 600 }}
-		class="card4 w-[50%] h-[390px] flex align-middle justify-center items-center  rounded-2xl opacity-90 blurred-glass dark mr-3"
+		class="card4 w-[50%] h-[390px] flex align-middle justify-center items-center rounded-2xl opacity-90 blurred-glass dark mr-3"
 	>
 		<p class="max-sm:text-xl max-md:text-2xl text-3xl text-gray-300 max-md:text-center p-5 h-5/6">
 			Páginas cuidadosamente criadas com as melhores práticas em desenvolvimento web, resultando em

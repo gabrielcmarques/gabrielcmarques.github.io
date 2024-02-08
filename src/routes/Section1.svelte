@@ -19,7 +19,7 @@
 		<img
 			src={web_dev_webp}
 			alt="Web Dev Photo"
-			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80 hover:opacity-80 "
+			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80 hover:opacity-80"
 		/>
 	</div>
 	<div
@@ -31,7 +31,7 @@
 		<img
 			src={automation_webp}
 			alt="Automação de processos"
-			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80 hover:opacity-80 "
+			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80 hover:opacity-80"
 		/>
 	</div>
 	<div
@@ -43,7 +43,7 @@
 		<img
 			src={deploy_webp}
 			alt="Deployment Photo"
-			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80 hover:opacity-80 "
+			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80 hover:opacity-80"
 		/>
 	</div>
 </section>

@@ -4,7 +4,7 @@
 
 	// import bottomWavePattern from './components/svgs/wave-bottom.svg';
 
-	onMount(() => {		
+	onMount(() => {
 		// Function to remove "animate__animated" class after a delay
 		setTimeout(() => {
 			const elements = document.querySelectorAll('.animate__animated');
@@ -40,4 +40,3 @@
 		<img src={bottomWavePattern} alt="" />
 	</div> -->
 </header>
-

@@ -85,7 +85,6 @@
 
 	$background: #ffffff;
 
-	
 	a:hover {
 		text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1);
 	}

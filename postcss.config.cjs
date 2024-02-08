@@ -8,7 +8,7 @@ const config = {
 		require('postcss-font-magician')({
 			variants: {
 				'Adventure Request': {
-					'400': []
+					400: []
 				}
 			},
 			foundries: ['cdn'],
