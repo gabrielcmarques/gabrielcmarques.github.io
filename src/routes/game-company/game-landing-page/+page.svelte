@@ -18,6 +18,14 @@
 	<title>Legend of the Heroes | Home</title>
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="The Legend of Heroes Game" />
+	<meta
+		name="Description"
+		content="A template made for my portfolio, to showcase my Web Development Skills"
+	/>
+	<meta
+		property="og:description"
+		content="A template made for my portfolio, to showcase my Web Development Skills"
+	/>
 	<meta property="og:image" content={metaImg} />
 	<meta property="og:image:width" content="1280" />
 	<meta property="og:image:height" content="720" />

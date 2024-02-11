@@ -15,6 +15,14 @@
 	<title>Game Company | Home</title>
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Gabriel's Game Company" />
+	<meta
+		name="Description"
+		content="A template made for my portfolio, to showcase my Web Development Skills"
+	/>
+	<meta
+		property="og:description"
+		content="A template made for my portfolio, to showcase my Web Development Skills"
+	/>
 	<meta property="og:image" content={metaGameCompany} />
 	<meta property="og:image:width" content="1280" />
 	<meta property="og:image:height" content="720" />

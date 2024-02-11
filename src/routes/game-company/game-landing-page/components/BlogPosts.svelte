@@ -18,7 +18,12 @@ animate__animated animate__fadeInLeft"
 		<!-- card1 -->
 		<div class="max-w-sm mx-auto">
 			<div class="bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden">
-				<a href="#" alt="Blog Post: Issue #9" class="block group">
+				<a
+					href="#"
+					alt="Blog Post: Issue #9"
+					aria-label="Read Blog Post: Issue #9"
+					class="block group"
+				>
 					<img
 						class="rounded-t-lg object-cover w-full h-56 transition-transform duration-300 ease-in-out transform hover:scale-105"
 						src={blogImg1}
@@ -26,7 +31,7 @@ animate__animated animate__fadeInLeft"
 					/>
 				</a>
 				<div class="p-5">
-					<a href="#" alt="Blog Post: Issue #9">
+					<a href="#" alt="Blog Post: Issue #9" aria-label="Read Blog Post: Issue #9">
 						<h2 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 hover:text-blue-900">
 							Blog Post: Issue #9
 						</h2>
@@ -42,7 +47,12 @@ animate__animated animate__fadeInLeft"
 		<!-- card 2 -->
 		<div class="max-w-sm mx-auto">
 			<div class="bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden">
-				<a href="#" alt="New gameplay trailer" class="block group">
+				<a
+					href="#"
+					alt="New gameplay trailer"
+					aria-label="Read Blog Post: Issue #9"
+					class="block group"
+				>
 					<img
 						class="rounded-t-lg object-cover w-full h-56 transition-transform duration-300 ease-in-out transform hover:scale-105"
 						src={blogImg2}
@@ -50,7 +60,7 @@ animate__animated animate__fadeInLeft"
 					/>
 				</a>
 				<div class="p-5">
-					<a href="#" alt="New gameplay trailer">
+					<a href="#" alt="New gameplay trailer" aria-label="Read Blog Post: Issue #9">
 						<h2 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 hover:text-blue-900">
 							New gameplay trailer
 						</h2>
@@ -66,7 +76,12 @@ animate__animated animate__fadeInLeft"
 		<!-- card3 -->
 		<div class="max-w-sm mx-auto">
 			<div class="bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden">
-				<a href="#" alt="New Kickstarter Goal Reached" class="block group">
+				<a
+					href="#"
+					alt="New Kickstarter Goal Reached"
+					aria-label="Read Blog Post: Issue #9"
+					class="block group"
+				>
 					<img
 						class="rounded-t-lg object-cover w-full h-56 transition-transform duration-300 ease-in-out transform hover:scale-105"
 						src={blogImg3}
@@ -74,7 +89,7 @@ animate__animated animate__fadeInLeft"
 					/>
 				</a>
 				<div class="p-5">
-					<a href="#" alt="New Kickstarter Goal Reached">
+					<a href="#" alt="New Kickstarter Goal Reached" aria-label="Read Blog Post: Issue #9">
 						<h2 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 hover:text-blue-900">
 							New Kickstarter Goal Reached
 						</h2>

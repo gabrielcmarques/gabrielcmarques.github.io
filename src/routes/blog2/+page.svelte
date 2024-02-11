@@ -2,7 +2,7 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-	console.log('DATA: ... \n', data.props.posts);
+	// console.log('DATA: ... \n', data.props.posts);
 </script>
 
 <h1>BLOG:</h1>
