@@ -23,6 +23,7 @@
 					<button
 						on:click={toggleNavbar}
 						type="button"
+						aria-label="Toggle Navigation"
 						class="text-white hover:text-slate-300 focus:outline-none focus:text-slate-100"
 					>
 						<svg

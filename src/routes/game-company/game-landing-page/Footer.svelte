@@ -22,28 +22,28 @@
 			<div class="footer-column">
 				<ul class="footer-list">
 					<li class="footer-header">Product</li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Community</a></li>
-					<li><a href="#">Register</a></li>
+					<li><a href="#" alt="Wishlist on Steam Button">FAQ</a></li>
+					<li><a href="#" alt="Wishlist on Steam Button">News</a></li>
+					<li><a href="#" alt="Wishlist on Steam Button">Community</a></li>
+					<li><a href="#" alt="Wishlist on Steam Button">Register</a></li>
 				</ul>
 			</div>
 			<div class="footer-column">
 				<ul class="footer-list">
 					<li class="footer-header">Help</li>
-					<li><a href="#">Guides</a></li>
-					<li><a href="#">Legal Notices</a></li>
-					<li><a href="#">Terms of Use</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Terms of Service</a></li>
+					<li><a href="#" alt="Guides Button">Guides</a></li>
+					<li><a href="#" alt="Legal Notices Button">Legal Notices</a></li>
+					<li><a href="#" alt="Terms of Use Button">Terms of Use</a></li>
+					<li><a href="#" alt="Privacy Policy Button">Privacy Policy</a></li>
+					<li><a href="#" alt="Terms of Service Button">Terms of Service</a></li>
 				</ul>
 			</div>
 			<div class="footer-column">
 				<ul class="footer-list">
 					<li class="footer-header">Company</li>
-					<li><a href="#">Technology Blog</a></li>
-					<li><a href="#">Press</a></li>
-					<li><a href="#">Work With Us</a></li>
+					<li><a href="#" alt="Technology Blog Button">Technology Blog</a></li>
+					<li><a href="#" alt="Press Kit Button">Press Kit</a></li>
+					<li><a href="#" alt="Work With Us Button">Work With Us</a></li>
 				</ul>
 			</div>
 		</div>

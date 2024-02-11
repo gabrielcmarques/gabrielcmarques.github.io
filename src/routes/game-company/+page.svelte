@@ -2,6 +2,7 @@
 	import Header from './components/Header.svelte';
 	import Navbar from './components/Navbar.svelte';
 	import SocialCards from './components/Social-Cards.svelte';
+	import metaGameCompany from './components/game-images/meta-game-company.webp';
 	import pattern from './components/svgs/pattern.svg';
 	// import type { PageData } from './$types';
 
@@ -12,20 +13,23 @@
 
 <svelte:head>
 	<title>Game Company | Home</title>
-	<meta property="og:type" content="article" />
+	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Gabriel's Game Company" />
-	<!-- <meta property="og:image" content= />
-		<meta property="og:image:width" content= />
-		<meta property="og:image:height" content= />
-		<meta name="twitter:image" content={og_image} />
-		<meta name="twitter:card" content="Gabriel's Game Company" />
-		<meta name="twitter:title" content={SITE_TITLE} />
-		<meta name="twitter:description" content={SITE_DESCRIPTION} /> -->
+	<meta property="og:image" content={metaGameCompany} />
+	<meta property="og:image:width" content="1280" />
+	<meta property="og:image:height" content="720" />
+	<meta name="twitter:image" content={metaGameCompany} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Gabriel's Game Company" />
+	<meta
+		name="twitter:description"
+		content="A template made for my portfolio, to showcase my Web Development Skills"
+	/>
 </svelte:head>
 
 <div
 	class="background-container"
-	style="background: url('./components/svgs/pattern.svg'); 
+	style="background: url('{pattern}'); 
 	background-size: cover; 
 	background-position: center;"
 >

@@ -26,53 +26,53 @@
 			<p class="z-10 relative lg:w-modal-wide w-fit">Gabriel's Amazing Game Website</p>
 			<img
 				src={gameHeader}
-				alt="game header"
+				alt="Game Header Button"
 				class="absolute top-0 left-0 w-full h-full object-cover transform scale-100 hover:scale-105 opacity-50 hover:opacity-60 transition-transform"
 			/>
 		</a>
 	</div>
 	<div class="grid-wrapper">
-		<a href="#" class=" {animateFadeLeft} card c-1"
+		<a href="#" alt="Wishlist on Steam Button" class=" {animateFadeLeft} card c-1"
 			>Wishlist on Steam <span class="icon-[bi--steam]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeRight} card c-2"
+		<a href="#" alt="Kickstarter Button" class=" {animateFadeRight} card c-2"
 			>Kickstarter <span class="icon-[bxl--kickstarter]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeLeft} card c-3"
+		<a href="#" alt="Read More" class=" {animateFadeLeft} card c-3"
 			>Discord <span class="icon-[bi--discord]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeRight} card c-4"
+		<a href="#" alt="Twitter Button" class=" {animateFadeRight} card c-4"
 			>Twitter <span class="icon-[bi--twitter]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeLeft} card c-5"
+		<a href="#" alt="TikTok Button" class=" {animateFadeLeft} card c-5"
 			>TikTok <span class="icon-[mingcute--tiktok-fill]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeRight} card c-6"
+		<a href="#" alt="Instagram Button" class=" {animateFadeRight} card c-6"
 			>Instagram <span class="icon-[ri--instagram-fill]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeLeft} card c-7"
+		<a href="#" alt="Youtube Button" class=" {animateFadeLeft} card c-7"
 			>Youtube <span class="icon-[mdi--youtube]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeRight} card c-8"
+		<a href="#" alt="Itchio Button" class=" {animateFadeRight} card c-8"
 			>Itchio <span class="icon-[simple-icons--itchdotio]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeLeft} card c-9"
+		<a href="#" alt="Reddit Button" class=" {animateFadeLeft} card c-9"
 			>Reddit <span class="icon-[ph--reddit-logo-fill]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeRight} card c-10"
+		<a href="#" alt="Twitch Button" class=" {animateFadeRight} card c-10"
 			>Twitch <span class="icon-[fa6-brands--twitch]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeLeft} card c-11"
+		<a href="#" alt="Press Kit Button" class=" {animateFadeLeft} card c-11"
 			>Press Kit <span
 				class="icon-[material-symbols--newspaper-rounded]"
 				role="img"
 				aria-hidden="true"
 			/></a
 		>
-		<a href="#" class=" {animateFadeRight} card c-12"
+		<a href="#" alt="Ko-fi Button" class=" {animateFadeRight} card c-12"
 			>Ko-fi <span class="icon-[simple-icons--kofi]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeLeft} card c-13"
+		<a href="#" alt="Linkedin Button" class=" {animateFadeLeft} card c-13"
 			>Linkedin <span class="icon-[mdi--linkedin]" role="img" aria-hidden="true" /></a
 		>
 	</div>
