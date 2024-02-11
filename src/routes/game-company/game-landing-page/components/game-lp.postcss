@@ -33,10 +33,10 @@ html {
 }
 
 body {
-	background: linear-gradient(#12447d, rgb(45, 118, 200));
+	background: linear-gradient( rgb(45, 118, 200), #104178);
 	background-size: cover;
-	/* background-position: center; */
-	/* background-attachment: fixed; */
+	background-position: center;
+	background-attachment: unset;
 }
 
 /* p {
@@ -75,4 +75,27 @@ body {
 .div3 {
 	animation-delay: 2s;
 	animation-duration: 0.5s;
+}
+
+.mask {
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+}
+
+.mask1 {
+	/* height: 100vh; */
+	mask-image: url('./svgs/pattern1-mask.svg');
+}
+.mask2 {
+	/* height: 100vh; */
+	mask-image: url('./svgs/pattern2-mask.svg');
+}
+.mask3 {
+	/* height: 100vh; */
+	mask-image: url('./svgs/pattern3-mask.svg');
+}
+.mask4 {
+	/* height: 100vh; */
+	mask-image: url('./svgs/pattern4-mask.svg');
 }

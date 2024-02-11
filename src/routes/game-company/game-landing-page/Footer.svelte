@@ -22,23 +22,29 @@
 			<div class="footer-column">
 				<ul class="footer-list">
 					<li class="footer-header">Product</li>
-					<li><a href="#">Features</a></li>
-					<li><a href="#">Integrations</a></li>
 					<li><a href="#">FAQ</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="#">Register</a></li>					
+				</ul>
+			</div>
+			<div class="footer-column">
+				<ul class="footer-list">
+					<li class="footer-header">Help</li>
+					<li><a href="#">Guides</a></li>
+					<li><a href="#">Legal Notices</a></li>
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms of Service</a></li>
+					
 				</ul>
 			</div>
 			<div class="footer-column">
 				<ul class="footer-list">
 					<li class="footer-header">Company</li>
-					<li><a href="#">Privacy</a></li>
-					<li><a href="#">Terms of Service</a></li>
-				</ul>
-			</div>
-			<div class="footer-column">
-				<ul class="footer-list">
-					<li class="footer-header">Developers</li>
-					<li><a href="#">Documentation</a></li>
-					<li><a href="#">Guides</a></li>
+					<li><a href="#">Technology Blog</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Work With Us</a></li>
 				</ul>
 			</div>
 		</div>

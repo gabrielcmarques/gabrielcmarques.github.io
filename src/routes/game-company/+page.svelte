@@ -25,7 +25,9 @@
 
 <div
 	class="background-container"
-	style="background-image: url('{pattern}'); background-size: cover; background-position: center;"
+	style="background: url('./components/svgs/pattern.svg'); 
+	background-size: cover; 
+	background-position: center;"
 >
 	<Navbar />
 	<Header />
