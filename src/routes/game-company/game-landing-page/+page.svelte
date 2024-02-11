@@ -1,5 +1,5 @@
 <script lang="ts">
-	import metaImg from '/game-landing-page/components/images/splash_header2.webp';
+	import metaImg from './components/images/splash_header2.webp';
 
 	// import type { PageData } from './$types';
 	// export let data: PageData;
