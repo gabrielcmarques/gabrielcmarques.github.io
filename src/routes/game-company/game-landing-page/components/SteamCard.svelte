@@ -23,8 +23,6 @@
 	@media not all and (min-width: 640px) {
 		.steam-card {
 			top: 50vh;
-			
-			
 		}
 	}
 

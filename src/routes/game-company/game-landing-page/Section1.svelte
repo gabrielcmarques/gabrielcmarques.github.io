@@ -1,6 +1,6 @@
 <script lang="ts">
 	import game1webp from './components/images/game_1.webp';
-	import pattern1mask from './components/svgs/pattern1-mask.svg';	
+	import pattern1mask from './components/svgs/pattern1-mask.svg';
 </script>
 
 <section class="max-w-screen-xl text-center relative rounded-lg mx-auto">
@@ -8,7 +8,7 @@
 		<div class="flex items-center justify-center">
 			<img src={game1webp} alt="Web Dev Photo" class="mask mask1 w-full h-auto" />
 		</div>
-		<div class="flex flex-col justify-center relative ">
+		<div class="flex flex-col justify-center relative">
 			<div class="text-container text-left">
 				<h1
 					class=" ml-3 max-sm:text-3xl max-md:text-4xl text-5xl max-md:text-center hero-title text-slate-100"
@@ -26,4 +26,3 @@
 		</div>
 	</div>
 </section>
-

@@ -25,7 +25,7 @@
 					<li><a href="#">FAQ</a></li>
 					<li><a href="#">News</a></li>
 					<li><a href="#">Community</a></li>
-					<li><a href="#">Register</a></li>					
+					<li><a href="#">Register</a></li>
 				</ul>
 			</div>
 			<div class="footer-column">
@@ -36,7 +36,6 @@
 					<li><a href="#">Terms of Use</a></li>
 					<li><a href="#">Privacy Policy</a></li>
 					<li><a href="#">Terms of Service</a></li>
-					
 				</ul>
 			</div>
 			<div class="footer-column">

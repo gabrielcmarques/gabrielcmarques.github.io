@@ -10,6 +10,7 @@
 	const navbarClasses =
 		'text-white py-2 hover:text-slate-300 text-xl hover:underline transition-transform transform hover:-translate-y-1';
 </script>
+
 <!-- max-sm:h-[60vh] -->
 <div>
 	<div>
@@ -47,7 +48,6 @@
 				</div>
 			</div>
 
-			
 			<div
 				class="flex-col whitespace-nowrap mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 text-center md:mt-0 {showMenu
 					? 'flex'

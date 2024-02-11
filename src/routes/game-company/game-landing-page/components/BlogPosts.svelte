@@ -4,8 +4,10 @@
 	import blogImg3 from './images/blog3.webp';
 </script>
 
-<section class="max-w-screen-xl relative m-5 p-5 rounded-lg mx-auto animate__delay-1s
-animate__animated animate__fadeInLeft">
+<section
+	class="max-w-screen-xl relative m-5 p-5 rounded-lg mx-auto animate__delay-1s
+animate__animated animate__fadeInLeft"
+>
 	<h2
 		class="news-title max-sm:text-2xl max-md:text-4xl text-5xl text-gray-100 max-md:text-center ml-5 mb-6"
 	>

@@ -7,7 +7,7 @@
 		<div class="flex items-center justify-center">
 			<img src={game3webp} alt="Web Dev Photo" class="mask mask1 w-full h-auto" />
 		</div>
-		<div class="flex flex-col justify-center relative ">
+		<div class="flex flex-col justify-center relative">
 			<div class="text-container text-left">
 				<h1
 					class="ml-3 max-sm:text-3xl max-md:text-4xl text-5xl max-md:text-center hero-title text-slate-100"
