@@ -62,7 +62,7 @@
 
 			<a
 				class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -left-5 m-3 font-bold"
-				href="/game-company/"
+				href="https://gabrielcm.dev/game-company"
 				target="_blank">Visit Website</a
 			>
 		</div>

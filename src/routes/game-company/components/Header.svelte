@@ -2,7 +2,6 @@
 	import pattern from './svgs/pattern.svg';
 </script>
 
-<!-- <img src="{pattern}" alt=""> -->
 <header
 	class="hero flex flex-col items-center justify-center mb-6 max-sm:mb-3 mt-[3vh] max-sm:mt-[2vh]"
 >
@@ -20,14 +19,3 @@
 		</h2>
 	</div>
 </header>
-
-<!-- <style>
-	.hero-title {
-		text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.6);
-		/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);  */
-	}
-
-	.hero-title2 {
-		text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.6);
-	}
-</style> -->
