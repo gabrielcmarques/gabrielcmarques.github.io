@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -14,4 +14,4 @@
 			<li>{@html post.content}</li>
 		{/each}
 	</ul>
-{/if}
+{/if} -->

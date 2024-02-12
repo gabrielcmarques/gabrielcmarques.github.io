@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -15,4 +15,4 @@
 			<!-- <li>{post.description}</li> -->
 		{/each}
 	</ul>
-{/if}
+{/if} -->
