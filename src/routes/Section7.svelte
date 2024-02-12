@@ -33,7 +33,8 @@
 			</p>
 			<a
 				class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 font-bold"
-				href="/game-company/game-landing-page">Visit Website</a
+				href="/game-company/game-landing-page"
+				target="_blank">Visit Website</a
 			>
 		</div>
 	</article>
@@ -61,7 +62,8 @@
 
 			<a
 				class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -left-5 m-3 font-bold"
-				href="/game-company/">Visit Website</a
+				href="/game-company/"
+				target="_blank">Visit Website</a
 			>
 		</div>
 	</article>
@@ -87,7 +89,8 @@
 			</p>
 			<a
 				class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 font-bold"
-				href="https://arabescocartonagem.store/">Visit Website</a
+				href="https://arabescocartonagem.store/ "
+				target="_blank">Visit Website</a
 			>
 		</div>
 	</article>

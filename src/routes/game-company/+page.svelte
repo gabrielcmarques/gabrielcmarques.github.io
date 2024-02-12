@@ -38,8 +38,9 @@
 <div
 	class="background-container"
 	style="background: url('{pattern}'); 
-	background-size: cover; 
-	background-position: center;"
+
+background-size: cover; 
+background-position: center;"
 >
 	<Navbar />
 	<Header />
