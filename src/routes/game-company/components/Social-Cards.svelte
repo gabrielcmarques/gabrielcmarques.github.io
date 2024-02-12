@@ -78,7 +78,7 @@
 	</div>
 </div>
 
-<div class="box bg-3">
+<!-- <div class="box bg-3">
 	<button
 		class="button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted"
 		>Remove</button
@@ -91,7 +91,7 @@
 		class="button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted"
 		>Buy Now</button
 	>
-</div>
+</div> -->
 
 <style lang="scss">
 	:root {
