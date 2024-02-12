@@ -2,9 +2,9 @@
 	import { onMount } from 'svelte';
 
 	import gameHeader from '../components/game-images/game1.webp';
-	const animateFadeDown = 'animate__animated animate__fadeInDown ';
-	const animateFadeLeft = 'button--wayra animate__animated animate__fadeInLeft  ';
-	const animateFadeRight = 'button--wayra animate__animated animate__fadeInRight  ';
+	const animateFadeDown = 'animate__animated animate__fadeInDown';
+	const animateFadeLeft = 'animate__animated animate__fadeInLeft button--wayra';
+	const animateFadeRight = 'animate__animated animate__fadeInRight button--wayra';
 
 	onMount(() => {
 		// Function to remove "animate__animated" class after a delay
@@ -17,7 +17,7 @@
 	});
 </script>
 
-<div class="max-w-screen-xl mx-auto md:px-1 lg:px-28">
+<div id="divSocial" class="max-w-screen-xl mx-auto md:px-1 lg:px-28">
 	<div class="card-game lg:px-6 px-3 rounded-md">
 		<a
 			href="/game-company/game-landing-page"
@@ -32,73 +32,56 @@
 		</a>
 	</div>
 	<div class="grid-wrapper">
-		<a href="#" alt="Wishlist on Steam Button" class=" {animateFadeLeft}  card c-1"
+		<a href="#divSocial" class="{animateFadeLeft} card c-1"
 			>Wishlist on Steam <span class="icon-[bi--steam]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" alt="Kickstarter Button" class=" {animateFadeRight}  card c-2"
+		<a href="#divSocial" class="{animateFadeRight} card c-2"
 			>Kickstarter <span class="icon-[bxl--kickstarter]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" alt="Read More" class=" {animateFadeLeft}  card c-3"
+		<a href="#divSocial" class="{animateFadeLeft} card c-3"
 			>Discord <span class="icon-[bi--discord]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" alt="Twitter Button" class=" {animateFadeRight}  card c-4"
+		<a href="#divSocial" class="{animateFadeRight} card c-4"
 			>Twitter <span class="icon-[bi--twitter]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" alt="TikTok Button" class=" {animateFadeLeft}  card c-5"
+		<a href="#divSocial" class="{animateFadeLeft} card c-5"
 			>TikTok <span class="icon-[mingcute--tiktok-fill]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" alt="Instagram Button" class=" {animateFadeRight}  card c-6"
+		<a href="#divSocial" class="{animateFadeRight} card c-6"
 			>Instagram <span class="icon-[ri--instagram-fill]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" alt="Youtube Button" class=" {animateFadeLeft}  card c-7"
+		<a href="#divSocial" class="{animateFadeLeft} card c-7"
 			>Youtube <span class="icon-[mdi--youtube]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" alt="Itchio Button" class=" {animateFadeRight}  card c-8"
+		<a href="#divSocial" class=" {animateFadeRight}  card c-8"
 			>Itchio <span class="icon-[simple-icons--itchdotio]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" alt="Reddit Button" class=" {animateFadeLeft}  card c-9"
+		<a href="#divSocial" class=" {animateFadeLeft}  card c-9"
 			>Reddit <span class="icon-[ph--reddit-logo-fill]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" alt="Twitch Button" class=" {animateFadeRight}  card c-10"
+		<a href="#divSocial" class=" {animateFadeRight}  card c-10"
 			>Twitch <span class="icon-[fa6-brands--twitch]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" alt="Press Kit Button" class=" {animateFadeLeft}  card c-11"
+		<a href="#divSocial" class=" {animateFadeLeft}  card c-11"
 			>Press Kit <span
 				class="icon-[material-symbols--newspaper-rounded]"
 				role="img"
 				aria-hidden="true"
 			/></a
 		>
-		<a href="#" alt="Ko-fi Button" class=" {animateFadeRight}  card c-12"
+		<a href="#divSocial" class=" {animateFadeRight}  card c-12"
 			>Ko-fi <span class="icon-[simple-icons--kofi]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" alt="Linkedin Button" class=" {animateFadeLeft}  card c-13"
+		<a href="#divSocial" class=" {animateFadeLeft}  card c-13"
 			>Linkedin <span class="icon-[mdi--linkedin]" role="img" aria-hidden="true" /></a
 		>
 	</div>
 </div>
 
-<!-- <div class="box bg-3">
-	<button
-		class="button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted"
-		>Remove</button
-	>
-	<button
-		class="button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted"
-		>Open Project</button
-	>
-	<button
-		class="button button--wayra button--border-medium button--text-upper button--size-s button--text-thick button--inverted"
-		>Buy Now</button
-	>
-</div> -->
-
 <style lang="scss">
 	:root {
 		--animation-class: animate__animated;
 	}
-
-	// $background: #ffffff;
 
 	a:hover {
 		text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1);
@@ -182,6 +165,7 @@
 			font-size: 1.2rem;
 		}
 	}
+	//END MEDIA QUERIES
 
 	.shine-btn::after {
 		content: '';
@@ -199,38 +183,6 @@
 		transform: translate3d(600%, 0, 0) rotate(35deg);
 	}
 
-	// .bubble-btn {
-	// 	position: relative;
-	// 	color: white;
-	// 	overflow: hidden;
-	// 	transition: color 0.4s ease-in-out;
-	// }
-
-	// .bubble-btn::before {
-	// 	content: '';
-	// 	z-index: -1;
-	// 	position: absolute;
-	// 	top: 50%;
-	// 	left: 50%;
-	// 	width: 3em;
-	// 	height: 3em;
-	// 	border-radius: 50%;
-	// 	background-color: #62f2ff;
-	// 	transform-origin: center;
-	// 	transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
-	// 	transition: transform 0.7s ease-in-out;
-	// }
-
-	// .bubble-btn:hover {
-	// 	cursor: pointer;
-	// 	color: #202020;
-	// }
-
-	// .bubble-btn:hover::before {
-	// 	transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
-	// }
-
-	// END Media Queries
 	@for $i from 1 through 13 {
 		.c-#{$i} {
 			animation-delay: #{1.3s + 0.1s * $i};
@@ -238,7 +190,7 @@
 		}
 	}
 
-	/* Wayra */
+	/* Wayra BTN */
 	.button--wayra {
 		overflow: hidden;
 		// width: 245px;
@@ -282,28 +234,4 @@
 	.button--wayra.button--inverted:hover::before {
 		background-color: #fff;
 	}
-
-	/* Common button styles */
-	// .button {
-	// 	float: left;
-	// 	min-width: 150px;
-	// 	max-width: 250px;
-	// 	display: block;
-	// 	margin: 1em;
-	// 	padding: 1em 2em;
-	// 	border: none;
-	// 	background: none;
-	// 	color: inherit;
-	// 	vertical-align: middle;
-	// 	position: relative;
-	// 	z-index: 1;
-	// 	-webkit-backface-visibility: hidden;
-	// 	-moz-osx-font-smoothing: grayscale;
-	// }
-	// .button:focus {
-	// 	outline: none;
-	// }
-	// .button > span {
-	// 	vertical-align: middle;
-	// }
 </style>

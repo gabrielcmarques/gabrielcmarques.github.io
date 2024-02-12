@@ -2,7 +2,7 @@
 	import endPattern from './components/svgs/end-pattern.svg';
 </script>
 
-<div class="pt-12 text-center">
+<div id="footer_lp" class="pt-12 text-center">
 	<img class="z-50 w-full h-10 md:h-24" src={endPattern} alt="" />
 	<footer id="footer" class="relative z-50 dark:bg-gray-900">
 		<div class="border-t border-b border-gray-200 dark:border-gray-700 py-3 border">
@@ -22,28 +22,28 @@
 			<div class="footer-column">
 				<ul class="footer-list">
 					<li class="footer-header">Product</li>
-					<li><a href="#" alt="Wishlist on Steam Button">FAQ</a></li>
-					<li><a href="#" alt="Wishlist on Steam Button">News</a></li>
-					<li><a href="#" alt="Wishlist on Steam Button">Community</a></li>
-					<li><a href="#" alt="Wishlist on Steam Button">Register</a></li>
+					<li><a href="#footer_lp">FAQ</a></li>
+					<li><a href="#footer_lp">News</a></li>
+					<li><a href="#footer_lp">Community</a></li>
+					<li><a href="#footer_lp">Register</a></li>
 				</ul>
 			</div>
 			<div class="footer-column">
 				<ul class="footer-list">
 					<li class="footer-header">Help</li>
-					<li><a href="#" alt="Guides Button">Guides</a></li>
-					<li><a href="#" alt="Legal Notices Button">Legal Notices</a></li>
-					<li><a href="#" alt="Terms of Use Button">Terms of Use</a></li>
-					<li><a href="#" alt="Privacy Policy Button">Privacy Policy</a></li>
-					<li><a href="#" alt="Terms of Service Button">Terms of Service</a></li>
+					<li><a href="#footer_lp">Guides</a></li>
+					<li><a href="#footer_lp">Legal Notices</a></li>
+					<li><a href="#footer_lp">Terms of Use</a></li>
+					<li><a href="#footer_lp">Privacy Policy</a></li>
+					<li><a href="#footer_lp">Terms of Service</a></li>
 				</ul>
 			</div>
 			<div class="footer-column">
 				<ul class="footer-list">
 					<li class="footer-header">Company</li>
-					<li><a href="#" alt="Technology Blog Button">Technology Blog</a></li>
-					<li><a href="#" alt="Press Kit Button">Press Kit</a></li>
-					<li><a href="#" alt="Work With Us Button">Work With Us</a></li>
+					<li><a href="#footer_lp">Technology Blog</a></li>
+					<li><a href="#footer_lp">Press Kit</a></li>
+					<li><a href="#footer_lp">Work With Us</a></li>
 				</ul>
 			</div>
 		</div>

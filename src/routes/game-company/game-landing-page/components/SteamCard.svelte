@@ -2,12 +2,12 @@
 	import wishlistBtn from './images/wishlistButton.webp';
 </script>
 
-<div class="">
-	<a href="" class="steam-card">
+<div id="steamCard">
+	<a href="#steamCard" class="steam-card">
 		<img
 			src={wishlistBtn}
 			class="max-sm:w-6/12 max-md:w-2/4 w-8/12 mx-auto animate__animated animate__fadeInRight animate__delay-1s z-50"
-			alt="Wishlist Button"
+			alt="Steam Wishlist Button"
 		/>
 	</a>
 </div>
