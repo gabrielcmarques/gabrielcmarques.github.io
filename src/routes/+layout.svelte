@@ -8,7 +8,7 @@
 	<title>{$page.data.post?.title}</title>
 </svelte:head>
 
-<main class="main-c min-w-0 overflow-x-hidden relative">
+<main class="main-c min-w-0 overflow-x-hidden relative m-3 p-3 pl-8">
 	<slot />
 </main>
 

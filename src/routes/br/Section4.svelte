@@ -4,16 +4,16 @@
 
 <h1
 	use:reveal={{ transition: 'fly' }}
-	class="max-w-screen-xl max-sm:text-2xl max-md:text-3xl text-5xl text-gray-300 mt-10 mx-auto text-center"
+	class="max-w-screen-md lg:max-w-screen-xl text-5xl text-gray-300 mt-10 mx-auto text-center font-medium"
 >
-	Sobre mim
+	About me
 </h1>
 <section
-	class=" max-w-screen-xl flex flex-col gap-4 md:flex-row md:justify-center max-md:items-center m-3 p-3 mx-auto"
+	class="max-w-screen-md lg:max-w-screen-xl flex flex-col gap-4 lg:flex-row md:justify-center max-md:items-center m-3 p-3 mx-auto font-normal"
 >
 	<article
 		use:reveal={{ transition: 'slide', delay: 200, x: -150, duration: 500 }}
-		class=" card4 blurred-glass p-4 opacity-95 hover:opacity-90 rounded-2xl text-gray-100"
+		class="card4 blurred-glass p-4 opacity-95 hover:opacity-90 rounded-2xl text-gray-100"
 	>
 		<p class="max-sm:text-xl max-md:text-2xl text-3xl">
 			Olá, tudo bem? Meu nome é Gabriel Christo Marques, e eu sou um entusiasta Desenvolvedor Web
@@ -24,7 +24,7 @@
 	</article>
 	<article
 		use:reveal={{ transition: 'slide', delay: 200, x: 150, duration: 500 }}
-		class=" card4 blurred-glass p-4 opacity-95 hover:opacity-90 rounded-2xl text-gray-100"
+		class="card4 blurred-glass p-4 opacity-95 hover:opacity-90 rounded-2xl text-gray-100"
 	>
 		<p class="max-sm:text-xl max-md:text-2xl text-3xl">
 			Com expertise tanto no front-end quanto no back-end, desenvolvo websites e aplicações que não

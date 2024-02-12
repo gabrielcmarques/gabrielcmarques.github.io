@@ -3,13 +3,13 @@
 </script>
 
 <h1
-	class="animate__animated animate__fadeIn animate__delay-1s max-w-screen-xl max-sm:text-xl max-md:text-2xl text-4xl text-gray-300 max-md:text-center mx-auto p-5"
+	class="animate__animated animate__fadeIn animate__delay-1s max-w-screen-xl max-sm:text-xl max-md:text-2xl text-4xl text-gray-300 max-md:text-center mx-auto p-5 font-medium"
 >
 	I specialize in creating optimized, high-performance web applications that elevate and broaden the
 	impact of your business.
 </h1>
 
-<section class=" parent max-w-screen-xl text-center relative m-5 p-5 rounded-lg">
+<section class=" parent max-w-screen-xl text-center relative m-5 p-5 rounded-lg font-normal">
 	<div
 		class="blurred-glass animate__animated animate__fadeInLeft div1 opacity-95 hover:opacity-90 h-96 relative z-10 rounded-lg"
 	>

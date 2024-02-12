@@ -32,7 +32,7 @@
 
 <h1
 	use:reveal={{ transition: 'fly' }}
-	class="max-sm:text-3xl max-lg:text-5xl lg:text-6xl text-center"
+	class="max-sm:text-3xl max-lg:text-5xl lg:text-6xl text-center font-normal"
 >
 	Using modern <br />technologies and tools
 </h1>

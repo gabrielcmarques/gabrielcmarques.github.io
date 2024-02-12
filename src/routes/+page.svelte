@@ -23,6 +23,7 @@
 	import Section4 from './Section4.svelte';
 	import Section5 from './Section5.svelte';
 	import Section6 from './Section6.svelte';
+	import Section7 from './Section7.svelte';
 </script>
 
 <svelte:head>
@@ -48,6 +49,7 @@
 	<Header />
 	<Section1 />
 	<Section2 />
+	<Section7 />
 	<Section3 />
 	<Section4 />
 	<Section5 />
