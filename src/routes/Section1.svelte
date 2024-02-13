@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { automation_webp, deploy_webp, web_dev_webp } from '$lib';
+	import { automation_webp, blog_vector_webp, web_dev_webp } from '$lib';
 </script>
 
 <h1
@@ -14,22 +14,20 @@
 		class="blurred-glass animate__animated animate__fadeInLeft div1 opacity-95 hover:opacity-90 h-96 relative z-10 rounded-lg"
 	>
 		<p class=" whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
-			Process automation
+			Web Development
 		</p>
 		<img
 			src={web_dev_webp}
-			alt="Web Dev Photo"
+			alt="Web Dev"
 			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80 hover:opacity-80"
 		/>
 	</div>
 	<div
 		class="blurred-glass animate__animated animate__fadeInLeft div2 opacity-95 hover:opacity-90 h-96 relative rounded-lg"
 	>
-		<p class=" whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
-			Web development
-		</p>
+		<p class=" whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">Blog</p>
 		<img
-			src={automation_webp}
+			src={blog_vector_webp}
 			alt="Automação de processos"
 			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80 hover:opacity-80"
 		/>
@@ -37,12 +35,10 @@
 	<div
 		class="blurred-glass animate__animated animate__fadeInLeft div3 opacity-95 hover:opacity-90 h-96 relative rounded-lg"
 	>
-		<p class=" whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
-			Implementation
-		</p>
+		<p class=" whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">Automation</p>
 		<img
-			src={deploy_webp}
-			alt="Deployment Photo"
+			src={automation_webp}
+			alt="Deployment"
 			class="inset-0 w-full h-full object-cover z-0 rounded-lg max-h-80 hover:opacity-80"
 		/>
 	</div>

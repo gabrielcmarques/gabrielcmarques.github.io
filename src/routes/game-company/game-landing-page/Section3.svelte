@@ -5,7 +5,7 @@
 <section class="max-w-screen-xl text-center relative rounded-lg mx-auto">
 	<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 div1 opacity-95 relative rounded-lg m-2 p-2">
 		<div class="flex items-center justify-center">
-			<img src={game3webp} alt="Web Dev Photo" class="mask mask1 w-full h-auto" />
+			<img src={game3webp} alt="Web Dev" class="mask mask1 w-full h-auto" />
 		</div>
 		<div class="flex flex-col justify-center relative">
 			<div class="text-container text-left">

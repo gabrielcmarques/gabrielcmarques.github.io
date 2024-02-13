@@ -6,7 +6,7 @@
 	use:reveal={{ transition: 'fly' }}
 	class="max-w-screen-md lg:max-w-screen-xl text-5xl text-gray-300 mt-10 mx-auto text-center font-medium"
 >
-	About me
+	Sobre Mim
 </h1>
 <section
 	class="max-w-screen-md lg:max-w-screen-xl flex flex-col gap-4 lg:flex-row md:justify-center max-md:items-center m-3 p-3 mx-auto font-normal"

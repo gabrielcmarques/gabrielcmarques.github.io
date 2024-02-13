@@ -1,5 +1,5 @@
 export { default as automation_webp } from './assets/images/cards/automation.webp';
-export { default as deploy_webp } from './assets/images/cards/deploy.webp';
+export { default as blog_vector_webp } from './assets/images/cards/blog_vector.webp';
 export { default as web_dev_webp } from './assets/images/cards/web_dev.webp';
 export { default as design_responsivo_webp } from './assets/images/design_responsivo.webp';
 export { default as og_image_html_webp } from './assets/images/og_image_html.webp';

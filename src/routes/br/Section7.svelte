@@ -9,17 +9,17 @@
 	use:reveal={{ transition: 'fly' }}
 	class="max-w-screen-xl text-5xl text-gray-100 mt-10 mx-auto text-center font-medium"
 >
-	My projects
+	Meus Projetos
 </h1>
 <section class="max-w-screen-md lg:max-w-screen-xl gap-3 m-3 p-3 mx-auto font-normal">
 	<article
-		use:reveal={{ transition: 'slide', delay: 200, x: -150, duration: 500 }}
+		use:reveal={{ transition: 'slide', delay: 50, x: -250, duration: 500 }}
 		class="project_1 flex max-lg:flex-col card4 blurred-glass p-4 m-4 opacity-95 hover:opacity-90 rounded-2xl border relative max-md:text-center"
 	>
 		<img
 			class="project__image m-3 h-full lg:w-[30%] rounded-xl self-center"
 			src={legend_of_heroes_tiny_webp}
-			alt="Image of Project Gaming Website by Gabriel C"
+			alt="Project Gaming Website by Gabriel C"
 		/>
 
 		<div class="lg:w-[70%]">
@@ -27,9 +27,10 @@
 				Gaming Website
 			</h2>
 			<p class="max-sm:text-xl max-md:text-1xl text-2xl text-gray-200">
-				I like video-games, their website are always very well made. As a exercise, I made a website
-				of a fictional game website with AI generated Images, just for demonstration purposes. It's
-				Fully responsive for all devices and optimized to load very fast.
+				Adoro videogames e decidi criar um site bem sobre o tema. Este projeto envolveu a criação de
+				um site de um jogo fictício com imagens geradas por IA para fins ilustrativos. O site é
+				totalmente responsivo em todos os dispositivos e otimizado meticulosamente para carregamento
+				rápido.
 			</p>
 			<a
 				class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 font-bold"
@@ -39,25 +40,26 @@
 		</div>
 	</article>
 	<article
-		use:reveal={{ transition: 'slide', delay: 200, x: -150, duration: 500 }}
+		use:reveal={{ transition: 'slide', delay: 100, x: 275, duration: 500 }}
 		class="project_2 flex flex-row-reverse max-lg:flex-col card4 blurred-glass p-4 m-4 opacity-95 hover:opacity-90 rounded-2xl border relative max-md:text-center"
 	>
 		<img
 			class="project__image m-3 h-full lg:w-[30%] rounded-xl self-center"
 			src={game_company_tiny_webp}
-			alt="Image of the project linktree clone"
+			alt="Project linktree clone"
 		/>
 
 		<div class="lg:w-[70%]">
 			<h2
 				class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-200 py-2 font-medium max-lg:text-center"
 			>
-				LinkTree Clone
+				Clone de LinkTree
 			</h2>
 			<p class="max-sm:text-xl max-md:text-1xl text-2xl text-gray-100">
-				<a href="https://linktr.ee/s/templates/">LinkTree</a> is a platform to create a list of social
-				midia links, used by content creators, artist, and companies, to help show their audience where
-				to talk to them. I decided to make a template, specific for the fictional game website i made.
+				O app <a href="https://linktr.ee/s/templates/">LinkTree</a> centraliza links de redes sociais
+				de criadores de conteúdo, artistas e empresas, fiz um modelo similar para o site fictício de
+				jogos que criei. Este modelo permite uma apresentação harmoniosa de diversos canais de mídias
+				sociais, aprimorando a experiência geral do usuário sobre um produto, empresa ou criador de conteúdo.
 			</p>
 
 			<a
@@ -74,18 +76,20 @@
 		<img
 			class="project__image m-3 h-full lg:w-[30%] rounded-xl self-center"
 			src={arabesco_tiny_webp}
-			alt="Image of Project Gaming Website by Gabriel C"
+			alt="Project Gaming Website by Gabriel C"
 		/>
 
 		<div class="lg:w-[70%]">
 			<h2
 				class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-100 py-2 font-medium max-lg:text-center"
 			>
-				Arabesco Artisan Creations
+				Arabesco Artesanato e Cartonagem
 			</h2>
 			<p class="max-sm:text-xl max-md:text-1xl text-2xl text-gray-200">
-				This is a freelance project I made for my sister, it's to showcase her work with Cardboard
-				Designs, Jewelry, and Handmade Crafts. Fully responsive for all devices and loading fast.
+				Como exercicio, desenvolvi um site de showcase para os trabalhos criativos de minha irmã,
+				abrangendo designs em cartonagem, bijuteria e artesanato. O site foi projetado para ser
+				totalmente responsivo em todos os dispositivos e prioriza o carregamento rápido, assegurando
+				uma experiência suave e envolvente para os visitantes.
 			</p>
 			<a
 				class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 font-bold"

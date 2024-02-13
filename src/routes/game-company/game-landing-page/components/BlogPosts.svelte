@@ -23,7 +23,7 @@ animate__animated animate__fadeInLeft"
 					<img
 						class="rounded-t-lg object-cover w-full h-56 transition-transform duration-300 ease-in-out transform hover:scale-105"
 						src={blogImg1}
-						alt="blog image"
+						alt="blog"
 					/>
 				</a>
 				<div class="p-5">
@@ -47,7 +47,7 @@ animate__animated animate__fadeInLeft"
 					<img
 						class="rounded-t-lg object-cover w-full h-56 transition-transform duration-300 ease-in-out transform hover:scale-105"
 						src={blogImg2}
-						alt="blog image 2"
+						alt="blog 2"
 					/>
 				</a>
 				<div class="p-5">
@@ -71,7 +71,7 @@ animate__animated animate__fadeInLeft"
 					<img
 						class="rounded-t-lg object-cover w-full h-56 transition-transform duration-300 ease-in-out transform hover:scale-105"
 						src={blogImg3}
-						alt="blog image 3"
+						alt="blog 3"
 					/>
 				</a>
 				<div class="p-5">
