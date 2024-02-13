@@ -27,7 +27,8 @@ const query = gql`
 `;
 
 export const load: PageLoad = async ({ setHeaders }) => {
-	const endpoint = `${import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL}`;
+	// const endpoint = `${import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL}`;
+	const endpoint = `https://arabesco.space/wp/graphql`;
 	// console.log('endpoint: ', endpoint);
 
 	const client = new GraphQLClient(endpoint);
