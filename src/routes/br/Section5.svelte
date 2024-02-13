@@ -5,7 +5,7 @@
 
 <h1
 	use:reveal={{ transition: 'slide', duration: 500 }}
-	class="max-w-screen-md lg:max-w-screen-xl max-sm:text-xl text-5xl text-gray-300 max-md:text-center mx-auto p-3 text-center mt-16 mb-5 font-medium"
+	class="max-w-screen-md lg:max-w-screen-xl text-5xl text-gray-300 max-md:text-center mx-auto p-3 text-center mt-16 mb-5 font-medium"
 >
 	Design responsivo para todos os dispositivos
 </h1>
