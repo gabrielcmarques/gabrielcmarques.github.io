@@ -13,7 +13,7 @@
 </h1>
 <section class="max-w-screen-md lg:max-w-screen-xl gap-3 m-3 p-3 mx-auto font-normal">
 	<article
-		use:reveal={{ transition: 'slide', delay: 50, x: -250, duration: 500 }}
+		use:reveal={{ transition: 'slide', delay: 50, x: -100, duration: 500 }}
 		class="project_1 flex max-lg:flex-col card4 blurred-glass p-4 m-4 opacity-95 hover:opacity-90 rounded-2xl border relative max-md:text-center"
 	>
 		<img
@@ -40,7 +40,7 @@
 		</div>
 	</article>
 	<article
-		use:reveal={{ transition: 'slide', delay: 100, x: 275, duration: 500 }}
+		use:reveal={{ transition: 'slide', delay: 100, x: 100, duration: 500 }}
 		class="project_2 flex flex-row-reverse max-lg:flex-col card4 blurred-glass p-4 m-4 opacity-95 hover:opacity-90 rounded-2xl border relative max-md:text-center"
 	>
 		<img
@@ -70,7 +70,7 @@
 		</div>
 	</article>
 	<article
-		use:reveal={{ transition: 'slide', delay: 200, x: -150, duration: 500 }}
+		use:reveal={{ transition: 'slide', delay: 200, x: -100, duration: 500 }}
 		class="project_3 flex max-lg:flex-col card4 blurred-glass p-4 m-4 opacity-95 hover:opacity-90 rounded-2xl border relative max-md:text-center"
 	>
 		<img

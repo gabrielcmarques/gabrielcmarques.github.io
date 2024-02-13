@@ -44,7 +44,7 @@
 	<meta name="twitter:description" content={SITE_DESCRIPTION} />
 </svelte:head>
 
-<div class="pl-4">
+<div>
 	<LanguageSelector />
 	<Header />
 	<Section1 />

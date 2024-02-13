@@ -25,8 +25,8 @@ const query = gql`
 		}
 	}
 `;
-
-export const load: PageLoad = async ({ setHeaders }) => {
+// { setHeaders }
+export const load: PageLoad = async () => {
 	// const endpoint = `${import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL}`;
 	const endpoint = `https://arabesco.space/wp/graphql`;
 	// console.log('endpoint: ', endpoint);
@@ -37,9 +37,9 @@ export const load: PageLoad = async ({ setHeaders }) => {
 		const data = await client.request(query);
 
 		// Optionally, you can set headers here if needed
-		setHeaders({
-			'cache-control': 'public, max-age=60' // Adjust caching headers as needed
-		});
+		// setHeaders({
+		// 	'cache-control': 'public, max-age=60' // Adjust caching headers as needed
+		// });
 
 		return {
 			props: {

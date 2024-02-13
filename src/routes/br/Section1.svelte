@@ -9,7 +9,7 @@
 	ampliam o impacto do seu negócio.
 </h1>
 
-<section class=" parent max-w-screen-xl text-center relative m-5 p-5 rounded-lg font-normal">
+<section class=" parent max-w-screen-xl text-center relative m-5 p-5 rounded-lg font-normal max-sm:w-[362px]">
 	<div
 		class="blurred-glass animate__animated animate__fadeInLeft div1 opacity-95 hover:opacity-90 h-96 relative z-10 rounded-lg"
 	>
