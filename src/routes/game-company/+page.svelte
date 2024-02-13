@@ -13,7 +13,7 @@
 
 <svelte:head>
 	<title>Game Company | Home</title>
-	<link rel="icon" href="./components/game-images/favicon_game.webp" />
+	<!-- <link rel="icon" href="./components/game-images/favicon_game.webp" /> -->
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Gabriel's Game Company" />
 	<meta
