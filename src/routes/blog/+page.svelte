@@ -5,14 +5,15 @@
 	// console.log('DATA: ... \n', data.props.posts);
 </script>
 
-<h1>BLOG:</h1>
+<h1 class="text-white">Blog test</h1>
 {#if data.props.posts}
+	<h1>BLOG:</h1>
 	<ul>
 		{#each data.props.posts as post}
-			<li>{post.node.id}</li>
-			<li>{post.node.title}</li>
-			<li>{post.node.content}</li>
-			<!-- <li>{post.description}</li> -->
+			<li>{@html post.id}</li>
+			<li>{@html post.title}</li>
+			<li>{@html post.content}</li>
 		{/each}
 	</ul>
 {/if}
+
