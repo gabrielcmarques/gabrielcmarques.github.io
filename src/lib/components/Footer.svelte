@@ -2,7 +2,7 @@
 	import { github_svg, linkedin_svg, twitter_svg, whatsapp_svg } from '$lib';
 </script>
 
-<div class="pt-12 text-center">
+<div class=" text-center">
 	<footer id="footer" class="relative z-50 dark:bg-gray-900">
 		<div class="border-t border-b border-gray-200 dark:border-gray-700 py-3">
 			<div class="my-10 flex items-center justify-around max-sm:mt-1 gap-5">

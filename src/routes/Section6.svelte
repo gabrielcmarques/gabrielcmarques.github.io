@@ -15,38 +15,42 @@
 </script>
 
 <h1
-	class="max-w-screen-xl max-sm:text-xl max-md:text-2xl text-5xl text-gray-300 max-md:text-center mx-auto p-3 text-center mt-16 mb-5"
+	class="max-w-screen-xl text-5xl text-gray-300 max-md:text-center mx-auto p-3 text-center mt-16 mb-5 font-medium"
 	id="contato"
 >
 	Get in touch
 </h1>
-<section class="contact parent max-w-screen-xl text-center md:grid mx-auto p-4">
+<section
+	class="contact parent max-w-screen-xl max-sm:w-[362px] text-center md:grid mx-auto py-4 font-normal"
+>
 	<a
 		use:reveal={{ transition: 'fly', y: -100, delay: 100, duration: 350 }}
-		class="card-contact c-1 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5"
+		class="card-contact c-1 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5 border border-gray-400"
 		href="https://github.com/gabrielcmarques"
 		target="_blank"
 	>
-		<p class="p-4">Github</p>
+		<p class="p-4 text-2xl font-normal">Github</p>
 	</a>
 	<a
 		use:reveal={{ transition: 'fly', y: -100, delay: 200, duration: 350 }}
 		href="https://twitter.com/gabrielchristom"
 		target="_blank"
-		class="card-contact c-2 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5"
+		class="card-contact c-2 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5 border border-gray-400"
 	>
-		<p class="p-4">Twitter</p>
+		<p class="p-4 text-2xl font-normal">Twitter</p>
 	</a>
 	<div
 		use:reveal={{ transition: 'fly', y: -100, delay: 300, duration: 350 }}
-		class="card-contact c-3 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5"
+		class="card-contact c-3 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5 border border-gray-400"
 	>
 		<a
 			href="https://wa.me/5541998272752/?text=Hello,%20I%20am%20interested%20in%20your%20software%20developer%20service"
 			target="_blank"
-			class="hover:text-blue-200">Whatsapp</a
+			class="hover:text-blue-200 text-2xl font-normal">Whatsapp</a
 		>
-		<button class="hover:text-blue-200" on:click={copyToClipboard}>+55 (41) 99827-2752</button>
+		<button class="hover:text-blue-200 text-xl" on:click={copyToClipboard}
+			>+55 (41) 99827-2752</button
+		>
 	</div>
 </section>
 

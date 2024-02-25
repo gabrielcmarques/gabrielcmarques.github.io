@@ -7,4 +7,3 @@
 <main class="main-c min-w-0 overflow-x-hidden relative">
 	<slot />
 </main>
-

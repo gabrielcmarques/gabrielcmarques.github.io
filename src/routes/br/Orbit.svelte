@@ -38,9 +38,9 @@
 </h1>
 <div class="orbit">
 	<ul class="orbit-wrap">
-		<!-- <li class="orbit-center z-10">
+		<li class="orbit-center z-10">
 			<i class="orbit-center__icon fa fa-code" />
-		</li> -->
+		</li>
 
 		<!-- Iterate over the imported SVGs and create corresponding HTML elements -->
 

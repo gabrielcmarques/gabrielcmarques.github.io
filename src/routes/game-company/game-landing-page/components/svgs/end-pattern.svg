@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1000 40">
+    <!-- Define the linear gradient from top to bottom -->
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="20%" style="stop-color:#3c0063" />
+        <stop offset="100%" style="stop-color:#111827" />
+    </linearGradient>
+    <!-- Use the linear gradient as the fill for the path -->
+    <path d="M1000 0H549.991a24.123 24.123 0 00-17.056 7.065L522.04 17.96c-12.172 12.172-31.908 12.172-44.08 0L467.065 7.065A24.123 24.123 0 00450.009 0H0v40h1000V0z" fill="url(#gradient)" />
+</svg>

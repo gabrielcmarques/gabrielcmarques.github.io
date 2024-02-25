@@ -5,7 +5,7 @@
 
 <h1
 	use:reveal={{ transition: 'slide', duration: 500 }}
-	class="max-w-screen-xl max-sm:text-xl max-md:text-2xl text-5xl text-gray-300 max-md:text-center mx-auto p-3 text-center mt-16 mb-5"
+	class="max-w-screen-md lg:max-w-screen-xl text-5xl text-gray-300 max-md:text-center mx-auto p-3 text-center mt-16 mb-5 font-medium"
 >
 	Responsive design for all devices
 </h1>
@@ -17,7 +17,15 @@
 />
 <section
 	use:reveal={{ transition: 'slide', duration: 500 }}
-	class="contact parent max-w-screen-xl text-center md:grid mx-auto rounded-3xl border"
+	class="contact parent max-w-screen-xl text-center md:grid mx-auto rounded-3xl relative border border-gray-500"
 >
-	<video src={design_responsivo_webm} autoplay loop muted style="max-width: 100%;" class="rounded-3xl" />
+	<video
+		src={design_responsivo_webm}
+		autoplay
+		loop
+		muted
+		style="max-width: 100%;"
+		class="rounded-3xl"
+	/>
 </section>
+<div class="pb-20" />

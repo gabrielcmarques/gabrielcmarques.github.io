@@ -19,8 +19,8 @@
 	);
 </script>
 
-<section class="flex flex-col items-center justify-center my-[5vh]">
-	<div class="mt-80 -z-10">
+<section class="flex flex-col items-center justify-center z-0 h-full w-full relative">
+	<div class="mt-80 z-10">
 		<div class="relative">
 			<Orbit />
 		</div>

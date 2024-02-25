@@ -32,15 +32,15 @@
 
 <h1
 	use:reveal={{ transition: 'fly' }}
-	class="max-sm:text-3xl max-lg:text-5xl lg:text-6xl text-center"
+	class="max-sm:text-3xl max-lg:text-5xl lg:text-6xl text-center font-normal"
 >
 	Using modern <br />technologies and tools
 </h1>
 <div class="orbit">
 	<ul class="orbit-wrap">
-		<!-- <li class="orbit-center z-10">
+		<li class="orbit-center z-10">
 			<i class="orbit-center__icon fa fa-code" />
-		</li> -->
+		</li>
 
 		<!-- Iterate over the imported SVGs and create corresponding HTML elements -->
 

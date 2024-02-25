@@ -1,34 +1,29 @@
 <script lang="ts">
 	import game1webp from './components/images/game_1.webp';
+	import pattern1mask from './components/svgs/pattern1-mask.svg';
 </script>
 
-<section class="parent max-w-screen-xl text-center relative m-5 p-5 rounded-lg mx-auto">
-	<div class="grid grid-cols-2 gap-4 div1 opacity-95 relative rounded-lg border">
-		<div class="my-auto col-span-1">
-			<div class="">
+<section class="max-w-screen-xl text-center relative rounded-lg mx-auto">
+	<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 div1 opacity-95 relative rounded-lg m-2 p-2">
+		<div class="flex items-center justify-center">
+			<img src={game1webp} alt="Web Dev" class="mask mask1 w-full h-auto" />
+		</div>
+		<div class="flex flex-col justify-center relative">
+			<div class="text-container text-left">
 				<h1
-					class="hero-title max-sm:text-xl max-md:text-2xl text-6xl max-md:text-center text-lime-400"
+					class=" ml-3 max-sm:text-3xl max-md:text-4xl text-5xl max-md:text-center hero-title text-slate-100"
 				>
-					Join the Beginning of this Epic Journey
+					Join this amazing adventure
 				</h1>
-
-				<p class="text-xl p-3 relative text-white">
+				<p class=" text-xl lg:text-2xl p-3 relative text-gray-200">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
 					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
 					a galley of type and scrambled it to make a type specimen book. It has survived not only
 					five centuries, but also the leap into electronic typesetting, remaining essentially
-					unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-					Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-					PageMaker including versions of Lorem Ipsum
+					unchanged.
 				</p>
 			</div>
 		</div>
-		<div class="col-span-1 p-2">
-			<img
-				src={game1webp}
-				alt="Web Dev Photo"
-				class="inset-0 w-full h-full object-contain z-0 rounded-lg"
-			/>
-		</div>
 	</div>
+	<hr style="border-color: gray;" />
 </section>

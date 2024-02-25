@@ -1,5 +1,5 @@
 export { default as automation_webp } from './assets/images/cards/automation.webp';
-export { default as deploy_webp } from './assets/images/cards/deploy.webp';
+export { default as blog_vector_webp } from './assets/images/cards/blog_vector.webp';
 export { default as web_dev_webp } from './assets/images/cards/web_dev.webp';
 export { default as design_responsivo_webp } from './assets/images/design_responsivo.webp';
 export { default as og_image_html_webp } from './assets/images/og_image_html.webp';
@@ -13,3 +13,7 @@ export { default as linkedin_svg } from './assets/svgs/linkedin.svg';
 export { default as twitter_svg } from './assets/svgs/twitter.svg';
 export { default as whatsapp_svg } from './assets/svgs/whatsapp.svg';
 export { default as design_responsivo_webm } from './assets/videos/design_responsivo.webm';
+
+export { default as arabesco_tiny_webp } from './assets/images/project_cards/arabesco_tiny.webp';
+export { default as game_company_tiny_webp } from './assets/images/project_cards/game_company_tiny.webp';
+export { default as legend_of_heroes_tiny_webp } from './assets/images/project_cards/legend_of_heroes_tiny.webp';

@@ -1,50 +1,53 @@
-// import { GraphQLClient, gql } from 'graphql-request';
-// import type { PageLoad } from './$types';
+import { GraphQLClient, gql } from 'graphql-request';
+import type { PageLoad } from './$types';
 
 // Import the environment variable
-// import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL;
+import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL;
 
-// console.log('API> ', import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL);
-
-const query = `
-query NewQuery {
-	posts {
-	  edges{
-		node{
-		  id
-		  title
-		  content
+const query = gql`
+	query getPosts {
+		posts {
+			edges {
+				node {
+					author {
+						node {
+							id
+						}
+					}
+					title
+					content
+					date
+					uri
+					id
+					slug
+				}
+			}
 		}
-	  }
 	}
-  }`;
+`;
+// { setHeaders }
+export const load: PageLoad = async () => {
+	// const endpoint = `${import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL}`;
+	const endpoint = `https://arabesco.space/wp/graphql`;
+	// console.log('endpoint: ', endpoint);
 
-export async function load({ fetch }) {
-	const response = await fetch(
-		import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL,
+	const client = new GraphQLClient(endpoint);
 
-		{
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({ query })
-		}
-	);
+	try {
+		const data = await client.request(query);
 
-	if (response.ok) {
-		const responseObj = await response.json();
-		const posts = responseObj.data.posts.edges;
+		// Optionally, you can set headers here if needed
+		// setHeaders({
+		// 	'cache-control': 'public, max-age=60' // Adjust caching headers as needed
+		// });
 
 		return {
 			props: {
-				posts
+				posts: data.posts.edges.map((edge) => edge.node)
 			}
 		};
+	} catch (error) {
+		console.error('Error fetching data:', error);
+		throw new Error('Failed to fetch data');
 	}
-
-	return {
-		status: response.status,
-		error: new Error(`Could not load url`)
-	};
-}
+};

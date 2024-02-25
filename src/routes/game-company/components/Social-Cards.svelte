@@ -2,9 +2,9 @@
 	import { onMount } from 'svelte';
 
 	import gameHeader from '../components/game-images/game1.webp';
-	const animateFadeDown = 'animate__animated animate__fadeInDown ';
-	const animateFadeLeft = 'animate__animated animate__fadeInLeft ';
-	const animateFadeRight = 'animate__animated animate__fadeInRight ';
+	const animateFadeDown = 'animate__animated animate__fadeInDown';
+	const animateFadeLeft = 'animate__animated animate__fadeInLeft button--wayra';
+	const animateFadeRight = 'animate__animated animate__fadeInRight button--wayra';
 
 	onMount(() => {
 		// Function to remove "animate__animated" class after a delay
@@ -17,61 +17,62 @@
 	});
 </script>
 
-<div class="max-w-screen-xl mx-auto">
-	<div class="grid-wrapper">
+<div id="divSocial" class="max-w-screen-xl mx-auto md:px-1 lg:px-28">
+	<div class="card-game lg:px-6 px-3 rounded-md">
 		<a
 			href="/game-company/game-landing-page"
-			class="{animateFadeDown} card card-large relative block overflow-hidden border border-gray-300 rounded text-center bg-white group transition-transform"
+			class="{animateFadeDown} shine-btn card card-large relative block overflow-hidden border border-gray-300 rounded text-center bg-white group transition-transform"
 		>
-			<p class="z-10 relative w-modal-wide w-fit">Gabriel's Amazing Game Website</p>
+			<p class="z-10 relative lg:w-modal-wide w-fit">Gabriel's Amazing Game Website</p>
 			<img
 				src={gameHeader}
-				alt="game header"
+				alt="Game Header Button"
 				class="absolute top-0 left-0 w-full h-full object-cover transform scale-100 hover:scale-105 opacity-50 hover:opacity-60 transition-transform"
 			/>
 		</a>
-
-		<a href="#" class=" {animateFadeLeft} card c-1"
+	</div>
+	<div class="grid-wrapper">
+		<a href="#divSocial" class="{animateFadeLeft} card c-1"
 			>Wishlist on Steam <span class="icon-[bi--steam]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeRight} card c-2"
+		<a href="#divSocial" class="{animateFadeRight} card c-2"
 			>Kickstarter <span class="icon-[bxl--kickstarter]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeLeft} card c-3"
+		<a href="#divSocial" class="{animateFadeLeft} card c-3"
 			>Discord <span class="icon-[bi--discord]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeRight} card c-4"
+		<a href="#divSocial" class="{animateFadeRight} card c-4"
 			>Twitter <span class="icon-[bi--twitter]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeLeft} card c-5"
+		<a href="#divSocial" class="{animateFadeLeft} card c-5"
 			>TikTok <span class="icon-[mingcute--tiktok-fill]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeRight} card c-6"
+		<a href="#divSocial" class="{animateFadeRight} card c-6"
 			>Instagram <span class="icon-[ri--instagram-fill]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeLeft} card c-7"
+		<a href="#divSocial" class="{animateFadeLeft} card c-7"
 			>Youtube <span class="icon-[mdi--youtube]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeRight} card c-8"
+		<a href="#divSocial" class=" {animateFadeRight}  card c-8"
 			>Itchio <span class="icon-[simple-icons--itchdotio]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeLeft} card c-9"
+		<a href="#divSocial" class=" {animateFadeLeft}  card c-9"
 			>Reddit <span class="icon-[ph--reddit-logo-fill]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeRight} card c-10"
+		<a href="#divSocial" class=" {animateFadeRight}  card c-10"
 			>Twitch <span class="icon-[fa6-brands--twitch]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeLeft} card c-11"
+		<a href="#divSocial" class=" {animateFadeLeft}  card c-11"
 			>Press Kit <span
 				class="icon-[material-symbols--newspaper-rounded]"
 				role="img"
 				aria-hidden="true"
 			/></a
 		>
-		<a href="#" class=" {animateFadeRight} card c-12"
+		<a href="#divSocial" class=" {animateFadeRight}  card c-12"
 			>Ko-fi <span class="icon-[simple-icons--kofi]" role="img" aria-hidden="true" /></a
 		>
-		<a href="#" class=" {animateFadeLeft} card c-13"
+		<a href="#divSocial" class=" {animateFadeLeft}  card c-13"
 			>Linkedin <span class="icon-[mdi--linkedin]" role="img" aria-hidden="true" /></a
 		>
 	</div>
@@ -82,10 +83,8 @@
 		--animation-class: animate__animated;
 	}
 
-	$background: #ffffff;
-
-	a {
-		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+	a:hover {
+		text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1);
 	}
 
 	// Cards
@@ -108,7 +107,7 @@
 	}
 
 	.card:hover {
-		transform: translate(0.5rem, 0.5rem);
+		transform: translate(0.2rem, 0.2rem);
 		box-shadow: 0rem 0rem 0 -0.25rem darken(#ffffff, 40), 0rem 0rem 0 black,
 			0 0 0 0.25rem inset rgb(9, 9, 9);
 		z-index: 1;
@@ -158,8 +157,7 @@
 		}
 
 		.card {
-			padding: 1rem;
-			font-size: 1rem;
+			padding: 1.3rem;
 		}
 
 		.card-large {
@@ -167,11 +165,73 @@
 			font-size: 1.2rem;
 		}
 	}
-	// END Media Queries
+	//END MEDIA QUERIES
+
+	.shine-btn::after {
+		content: '';
+		z-index: -1;
+		background-color: hsla(0, 0%, 100%, 0.2);
+		position: absolute;
+		top: -50%;
+		bottom: -50%;
+		width: 3em;
+		transform: translate3d(-600%, 0, 0) rotate(35deg);
+	}
+
+	.shine-btn:hover::after {
+		transition: transform 0.45s ease-in-out;
+		transform: translate3d(600%, 0, 0) rotate(35deg);
+	}
+
 	@for $i from 1 through 13 {
 		.c-#{$i} {
 			animation-delay: #{1.3s + 0.1s * $i};
 			animation-duration: #{0.2s + 0.1s * $i};
 		}
+	}
+
+	/* Wayra BTN */
+	.button--wayra {
+		overflow: hidden;
+		// width: 245px;
+		-webkit-transition: border-color 0.3s, color 0.3s;
+		transition: border-color 0.3s, color 0.3s;
+		-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+		transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	}
+	.button--wayra::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 150%;
+		height: 100%;
+		color: #37474f;
+		z-index: -1;
+		-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+		transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+		-webkit-transform-origin: 0% 100%;
+		transform-origin: 0% 100%;
+		-webkit-transition: -webkit-transform 0.3s, opacity 0.3s, color 0.3s;
+		transition: transform 0.3s, opacity 0.3s, color 0.3s;
+	}
+	.button--wayra:hover {
+		color: #000000;
+		border-color: #fff;
+	}
+	.button--wayra.button--inverted:hover {
+		color: #3f51b5;
+		border-color: #000000;
+	}
+	.button--wayra:hover::before {
+		opacity: 1;
+		background-color: #ffffff9f;
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+		-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+		transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	}
+	.button--wayra.button--inverted:hover::before {
+		background-color: #fff;
 	}
 </style>

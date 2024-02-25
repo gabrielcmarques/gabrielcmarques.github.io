@@ -29,11 +29,10 @@
 	{#if title}
 		<h2>{title}</h2>
 	{/if}
-	<div
-		class="flex flex-wrap gap-3 p-4 justify-center max-sm:gap-[2px]"
-		transition
-		in:blur={{ delay: 50, duration: 225 }}
-	>
+	<!-- testar depois: Botar depois do class abaixo -->
+	<!-- transition
+	in:blur={{ delay: 50, duration: 225 }} -->
+	<div class="flex flex-wrap gap-3 p-4 justify-center max-sm:gap-[2px]">
 		<!-- <div class="flex flex-wrap gap-3 max-sm:gap-[2px] " transition in:fade={{ delay: 100, duration: 200 }}> -->
 		{#each Object.entries(images) as [key, image]}
 			<div use:popup={popupHover} class={containerClass}>
