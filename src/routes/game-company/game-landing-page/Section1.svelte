@@ -25,4 +25,5 @@
 			</div>
 		</div>
 	</div>
+	<hr style="border-color: gray;" />
 </section>

@@ -37,3 +37,4 @@
 		>
 	</div>
 </section>
+<hr style="border-color: gray;" />

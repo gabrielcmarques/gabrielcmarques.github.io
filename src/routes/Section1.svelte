@@ -2,16 +2,11 @@
 	import { automation_webp, blog_vector_webp, web_dev_webp } from '$lib';
 </script>
 
-<h1
-	class="animate__animated animate__fadeIn animate__delay-1s max-w-screen-xl max-sm:text-xl max-md:text-2xl text-4xl text-gray-300 max-md:text-center mx-auto p-5 font-medium"
+<section
+	class="parent max-w-screen-xl text-center relative mx-auto rounded-lg font-normal max-sm:w-[362px] z-10"
 >
-	I specialize in creating optimized, high-performance web applications that elevate and broaden the
-	impact of your business.
-</h1>
-
-<section class="parent max-w-screen-xl text-center relative mx-auto rounded-lg font-normal max-sm:w-[362px]">
 	<div
-		class="blurred-glass animate__animated animate__fadeInLeft div1 opacity-95 hover:opacity-90 h-96 relative z-10 rounded-lg "
+		class="blurred-glass animate__animated animate__fadeInLeft div1 opacity-95 hover:opacity-90 h-96 relative z-10 rounded-lg"
 	>
 		<p class=" whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">
 			Web Development
@@ -35,7 +30,7 @@
 	<div
 		class="blurred-glass animate__animated animate__fadeInLeft div3 opacity-95 hover:opacity-90 h-96 relative rounded-lg"
 	>
-		<p class=" whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">Automation</p>
+		<p class=" whitespace-nowrap text-2xl p-3 relative z-20 text-white rounded-lg">E-commerce</p>
 		<img
 			src={automation_webp}
 			alt="Deployment"

@@ -36,11 +36,11 @@
 	/>
 </svelte:head>
 
-<div
+<!-- <div
 	style="background: url('{pattern}'); background-size: cover;
 background-position: center;"
 >
-	<Navbar />
-	<Header />
-	<SocialCards />
-</div>
+</div> -->
+<Navbar />
+<Header />
+<SocialCards />

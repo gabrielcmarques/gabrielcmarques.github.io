@@ -14,12 +14,12 @@
 </script>
 
 <header
-	class="hero max-sm:h-[60vh] h-[80vh] flex flex-col items-center justify-center relative overflow-hidden border-b"
+	class="hero max-sm:h-[60vh] h-[80vh] flex flex-col justify-center relative overflow-hidden border-b"
 >
-	<div class="relative z-10 text-center">
+	<div class="relative z-10 ml-10">
 		<!-- Heading -->
 		<h1
-			class="hero-title animate__animated animate__fadeInDown max-sm:text-5xl max-md:text-6xl text-7xl max-md:text-center text-white tracking-tight"
+			class="hero-title animate__animated animate__fadeInDown max-sm:text-5xl max-md:text-6xl text-7xl text-white tracking-tight"
 		>
 			The Legend of the Heroes
 		</h1>
@@ -32,9 +32,23 @@
 	<img
 		src={heroHeader}
 		alt="Hero Header"
-		class="absolute inset-0 w-full h-full object-cover opacity-70"
+		class="absolute inset-0 w-full h-full object-cover opacity-80"
 	/>
 	<!-- <div class="bottom-wave z-50 absolute bottom-0 left-0">
 		<img src={bottomWavePattern} alt="" />
 	</div> -->
 </header>
+
+<style>
+	header.hero::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(0, 0, 0, 0.905) 10%, rgba(0, 0, 0, 0) 70%);
+		z-index: 5; /* Adjust the z-index as needed */
+		pointer-events: none; /* Allow clicks to pass through the pseudo-element */
+	}
+</style>

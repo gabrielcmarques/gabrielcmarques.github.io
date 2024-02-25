@@ -42,9 +42,27 @@
 	<Navbar />
 	<Header />
 	<BlogPosts />
-	<Section1 />
-	<Section2 />
-	<Section3 />
-	<Footer />
+	<div class="s3">
+		<Section1 />
+		<Section2 />
+		<Section3 />
+		<Footer />
+	</div>
 	<SteamCard />
 </div>
+
+<style lang="scss">
+	.s3 {
+		background: rgb(0, 117, 105);
+		background: -moz-linear-gradient(0deg, rgba(0, 117, 105, 1) 0%, rgba(12, 26, 58, 1) 100%);
+		background: -webkit-linear-gradient(0deg, rgba(0, 117, 105, 1) 0%, rgba(12, 26, 58, 1) 100%);
+		background: linear-gradient(0deg, rgba(1, 52, 75, 1) 0%, rgba(18, 13, 40, 0.982) 7%);
+		/* rgb(12,26,58) */
+		background-size: contain;
+		background-position: center;
+		/* background-attachment: fixed; */
+
+		border-top-left-radius: 50% 50px;
+		border-top-right-radius: 50% 50px;
+	}
+</style>

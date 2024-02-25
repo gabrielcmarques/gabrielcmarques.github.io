@@ -10,7 +10,7 @@
 animate__animated animate__fadeInLeft"
 >
 	<h2
-		class="news-title max-sm:text-2xl max-md:text-4xl text-5xl text-gray-100 max-md:text-center ml-5 mb-6"
+		class="news-title max-sm:text-2xl max-md:text-4xl text-5xl text-gray-900 max-md:text-center ml-5 mb-6"
 	>
 		News:
 	</h2>
@@ -18,7 +18,7 @@ animate__animated animate__fadeInLeft"
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 		<!-- card1 -->
 		<div class="max-w-sm mx-auto">
-			<div class="bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden">
+			<div class="bg-white shadow-md border border-gray-700 rounded-lg overflow-hidden">
 				<a href="#blog_p" aria-label="Read Blog Post: Issue #9" class="block group">
 					<img
 						class="rounded-t-lg object-cover w-full h-56 transition-transform duration-300 ease-in-out transform hover:scale-105"

@@ -4,12 +4,12 @@
 
 <h1
 	use:reveal={{ transition: 'fly' }}
-	class="max-w-screen-md lg:max-w-screen-xl text-5xl text-gray-300 mt-10 mx-auto text-center font-medium"
+	class="max-w-screen-md lg:max-w-screen-xl text-5xl text-gray-300 mt-5 mx-auto text-center font-medium pt-10 pb-2"
 >
 	About me
 </h1>
 <section
-	class="max-w-screen-md lg:max-w-screen-xl flex flex-col gap-4 lg:flex-row md:justify-center max-md:items-center m-3 p-3 mx-auto font-normal"
+	class="max-w-screen-md lg:max-w-screen-xl flex flex-col gap-4 lg:flex-row md:justify-center max-md:items-center m-3 p-3 mx-auto font-normal relative"
 >
 	<article
 		use:reveal={{ transition: 'slide', delay: 200, x: -100, duration: 500 }}
@@ -34,3 +34,4 @@
 		</p>
 	</article>
 </section>
+<hr style="border-color: gray;" />

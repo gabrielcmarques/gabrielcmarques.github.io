@@ -7,14 +7,14 @@
 <h1
 	id="projects"
 	use:reveal={{ transition: 'fly' }}
-	class="max-w-screen-xl text-5xl text-gray-100 mt-10 mx-auto text-center font-medium"
+	class="max-w-fit mx-auto text-5xl text-gray-100 text-center font-medium z-[30] relative p-5"
 >
 	Meus Projetos
 </h1>
-<section class="max-w-screen-md lg:max-w-screen-xl gap-3 m-3 p-3 mx-auto font-normal">
+<section class="max-w-screen-md lg:max-w-screen-xl gap-3 px-3 mx-auto font-normal">
 	<article
 		use:reveal={{ transition: 'slide', delay: 50, x: -100, duration: 500 }}
-		class="project_1 flex max-lg:flex-col card4 blurred-glass p-4 m-4 opacity-95 hover:opacity-90 rounded-2xl border relative max-md:text-center"
+		class="project_1 flex max-lg:flex-col card4 blurred-glass p-4 mx-4 opacity-95 hover:opacity-90 rounded-2xl border border-gray-400 relative max-md:text-center z-30"
 	>
 		<img
 			class="project__image m-3 h-full lg:w-[30%] rounded-xl self-center"
@@ -41,7 +41,7 @@
 	</article>
 	<article
 		use:reveal={{ transition: 'slide', delay: 100, x: 100, duration: 500 }}
-		class="project_2 flex flex-row-reverse max-lg:flex-col card4 blurred-glass p-4 m-4 opacity-95 hover:opacity-90 rounded-2xl border relative max-md:text-center"
+		class="project_2 flex flex-row-reverse max-lg:flex-col card4 blurred-glass p-4 m-4 opacity-95 hover:opacity-90 rounded-2xl border border-gray-400 relative max-md:text-center z-30"
 	>
 		<img
 			class="project__image m-3 h-full lg:w-[30%] rounded-xl self-center"
@@ -71,7 +71,7 @@
 	</article>
 	<article
 		use:reveal={{ transition: 'slide', delay: 200, x: -100, duration: 500 }}
-		class="project_3 flex max-lg:flex-col card4 blurred-glass p-4 m-4 opacity-95 hover:opacity-90 rounded-2xl border relative max-md:text-center"
+		class="project_3 flex max-lg:flex-col card4 blurred-glass p-4 m-4 opacity-95 hover:opacity-90 rounded-2xl border relative max-md:text-center z-30"
 	>
 		<img
 			class="project__image m-3 h-full lg:w-[30%] rounded-xl self-center"
@@ -133,5 +133,10 @@
 		/* display: inline-block; */
 		padding: 5px 14px;
 		transition: 25ms;
+	}
+	#projects {
+		/* background: rgba(255, 255, 255, 0.5); */
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
 	}
 </style>

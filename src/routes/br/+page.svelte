@@ -46,13 +46,73 @@
 
 <div>
 	<LanguageSelector />
-	<Header />
-	<Section1 />
-	<Section2 />
-	<Section7 />
-	<Section3 />
-	<Section4 />
-	<Section5 />
-	<Section6 />
+	<div class="s1">
+		<Header />
+	</div>
+	<div class="s2">
+		<Section1 />
+		<Section2 />
+	</div>
+	<div class="s3">
+		<Section7 />
+		<Section3 />
+		<Section5 />
+	</div>
+	<div class="s4">
+		<Section4 />
+		<Section6 />
+	</div>
+
 	<Footer />
 </div>
+
+<style>
+	.s1 {
+		background-image: linear-gradient(rgba(7, 0, 18, 0.2), rgb(0, 0, 0, 1)),
+			url('$lib/assets/images/bg_website_magicpattern.svg');
+
+		/* url('$lib/assets/images/bg_website.webp'); */
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+
+		border-bottom-left-radius: 50% 50px;
+		border-bottom-right-radius: 50% 50px;
+	}
+	/* .s2 {
+		background: linear-gradient(to bottom, #09203f 0%, #537895 100%);
+
+		border-bottom-left-radius: 50% 10px;
+		border-bottom-right-radius: 50% 10px;
+	} */
+	.s3 {
+		background: rgb(0, 117, 105);
+		background: -moz-linear-gradient(0deg, rgba(0, 117, 105, 1) 0%, rgba(12, 26, 58, 1) 100%);
+		background: -webkit-linear-gradient(0deg, rgba(0, 117, 105, 1) 0%, rgba(12, 26, 58, 1) 100%);
+		background: linear-gradient(0deg, rgba(1, 52, 75, 1) 0%, rgba(18, 13, 40, 0.982) 7%);
+		/* rgb(12,26,58) */
+		background-size: contain;
+		background-position: center;
+		/* background-attachment: fixed; */
+
+		border-top-left-radius: 50% 50px;
+		border-top-right-radius: 50% 50px;
+
+		/* border-bottom-left-radius: 50% 50px;
+		border-bottom-right-radius: 50% 50px;	 */
+	}
+
+	.s4 {
+		background: rgb(0, 117, 105);
+		background: -moz-linear-gradient(0deg, rgba(0, 117, 105, 1) 0%, rgba(12, 26, 58, 1) 100%);
+		background: -webkit-linear-gradient(0deg, rgba(0, 117, 105, 1) 0%, rgba(12, 26, 58, 1) 100%);
+		background: linear-gradient(0deg, rgba(0, 117, 105, 1) 0%, rgb(14, 33, 77) 100%);
+		/* rgb(12,26,58) */
+		background-size: contain;
+		background-position: center;
+		/* background-attachment: fixed; */
+
+		border-top-left-radius: 50% 50px;
+		border-top-right-radius: 50% 50px;
+	}
+</style>

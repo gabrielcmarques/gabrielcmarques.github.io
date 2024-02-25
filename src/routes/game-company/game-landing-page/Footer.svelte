@@ -3,7 +3,7 @@
 </script>
 
 <div id="footer_lp" class="pt-12 text-center">
-	<img class="z-50 w-full h-10 md:h-24" src={endPattern} alt="" />
+	<!-- <img class="z-50 w-full h-10 md:h-24" src={endPattern} alt="" /> -->
 	<footer id="footer" class="relative z-50 dark:bg-gray-900">
 		<div class="border-t border-b border-gray-200 dark:border-gray-700 py-3 border">
 			<div

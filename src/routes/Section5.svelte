@@ -17,7 +17,7 @@
 />
 <section
 	use:reveal={{ transition: 'slide', duration: 500 }}
-	class="contact parent max-w-screen-xl text-center md:grid mx-auto rounded-3xl border"
+	class="contact parent max-w-screen-xl text-center md:grid mx-auto rounded-3xl relative border border-gray-500"
 >
 	<video
 		src={design_responsivo_webm}
@@ -28,3 +28,4 @@
 		class="rounded-3xl"
 	/>
 </section>
+<div class="pb-20" />
