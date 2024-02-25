@@ -20,6 +20,9 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
+		files: {
+			serviceWorker: 'src/service-worker.js'
+		},
 		paths: {
 			// base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 			base: dev ? '' : process.env.BASE_PATH
