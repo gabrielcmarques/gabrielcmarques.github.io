@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { reveal } from 'svelte-reveal';
-
 	import { linkedin_svg } from '$lib';
 	import { Avatar } from '@skeletonlabs/skeleton';
+	import { onDestroy } from 'svelte';
+	import { reveal } from 'svelte-reveal';
 
 	const ring1: any[] = Object.values(
 		import.meta.glob('$lib/assets/images/orbit/ring1/*.svg', {
@@ -28,6 +28,24 @@
 		'w-full h-auto p-3 hover:border transition-transform transform hover:scale-110'; // Ensure the image doesn't stretch
 
 	const imageStyle = `width: 100%; height: 100%; object-fit: contain; `;
+
+	let rotationAngle = 0;
+
+	const rotateImages = () => {
+		console.log('HERE 1');
+		rotationAngle += 1; // adjust the rotation speed as needed
+		if (rotationAngle >= 360) {
+			rotationAngle = 0;
+		}
+	};
+
+	// Call the rotateImages function periodically
+	const rotationInterval = setInterval(rotateImages, 5000); // adjust the interval as needed
+
+	onDestroy(() => {
+		console.log('HERE 2');
+		clearInterval(rotationInterval); // Clear the interval when the component is destroyed
+	});
 </script>
 
 <h1
@@ -256,24 +274,25 @@
 	/* 
 animations 
 */
+	$rotationAngle: 360; // Define the rotation angle variable
+
 	@keyframes clockwiseRotate {
 		from {
-			transform: rotate(360deg);
+			transform: rotate(0deg);
 		}
 		to {
-			transform: rotate(0deg);
+			transform: rotate(#{$rotationAngle}deg);
 		}
 	}
 
 	@keyframes counterClockwiseRotate {
 		0% {
-			transform: rotate(0deg);
+			transform: rotate(#{$rotationAngle}deg);
 		}
 		100% {
-			transform: rotate(360deg);
+			transform: rotate(0deg);
 		}
 	}
-
 	/* 
 icons 
 */
