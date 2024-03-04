@@ -56,8 +56,9 @@
 					LinkTree Clone
 				</h2>
 				<p class="max-sm:text-xl max-md:text-1xl text-2xl text-gray-100">
-					Recognizing the utility of platforms like <a href="https://linktr.ee/s/templates/" target="_blank"
-						>LinkTree</a
+					Recognizing the utility of platforms like <a
+						href="https://linktr.ee/s/templates/"
+						target="_blank">LinkTree</a
 					> for content creators, artists, and companies to streamline social media links, I undertook
 					the development of a template tailored specifically for the fictional game website I created.
 					This template allows for a seamless presentation of various social media channels, enhancing

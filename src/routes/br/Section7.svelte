@@ -60,10 +60,11 @@
 					Clone de LinkTree
 				</h2>
 				<p class="max-sm:text-xl max-md:text-1xl text-2xl text-gray-100">
-					O app <a class="text-blue-500" href="https://linktr.ee/s/templates/" target="_blank">LinkTree</a> centraliza
-					links de redes sociais de criadores de conteúdo, artistas e empresas, fiz um modelo similar
-					para o site fictício de jogos que criei. Este modelo permite uma apresentação harmoniosa de
-					diversos canais de mídias sociais, aprimorando a experiência geral do usuário sobre um produto,
+					O app <a class="text-blue-500" href="https://linktr.ee/s/templates/" target="_blank"
+						>LinkTree</a
+					> centraliza links de redes sociais de criadores de conteúdo, artistas e empresas, fiz um modelo
+					similar para o site fictício de jogos que criei. Este modelo permite uma apresentação harmoniosa
+					de diversos canais de mídias sociais, aprimorando a experiência geral do usuário sobre um produto,
 					empresa ou criador de conteúdo.
 				</p>
 

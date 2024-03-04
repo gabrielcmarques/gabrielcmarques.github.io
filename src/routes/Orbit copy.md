@@ -60,55 +60,56 @@
 			<i class="orbit-center__icon fa fa-code" />
 		</li>
 
-		<!-- Iterate over the imported SVGs and create corresponding HTML elements -->
+    	<!-- Iterate over the imported SVGs and create corresponding HTML elements -->
 
-		<li>
-			<ul class="ring-1" style="will-change: transform, opacity;">
-				{#each Object.entries(ring3) as [key, image]}
-					<li class={containerClass}>
-						<i class="orbit-icon fa"
-							><Avatar src={image} title={key} alt={key} class={avatarClass} style={imageStyle} /><i
-							/></i
-						>
-					</li>
-				{/each}
-			</ul>
-		</li>
-		<li>
-			<ul class="ring-2" style="will-change: transform, opacity;">
-				{#each Object.entries(ring2) as [key, image]}
-					<li class={containerClass}>
-						<i class="orbit-icon fa"
-							><Avatar
-								src={image}
-								title={key}
-								alt={key}
-								class=" {avatarClass}"
-								style={imageStyle}
-							/></i
-						>
-					</li>
-				{/each}
-			</ul>
-		</li>
-		<li>
-			<ul class="ring-3" style="will-change: transform, opacity;">
-				{#each Object.entries(ring1) as [key, image]}
-					<li class="{containerClass}}">
-						<i class="orbit-icon fa"
-							><Avatar
-								src={image}
-								title={key}
-								alt={key}
-								class=" {avatarClass}"
-								style={imageStyle}
-							/></i
-						>
-					</li>
-				{/each}
-			</ul>
-		</li>
-	</ul>
+    	<li>
+    		<ul class="ring-1" style="will-change: transform, opacity;">
+    			{#each Object.entries(ring3) as [key, image]}
+    				<li class={containerClass}>
+    					<i class="orbit-icon fa"
+    						><Avatar src={image} title={key} alt={key} class={avatarClass} style={imageStyle} /><i
+    						/></i
+    					>
+    				</li>
+    			{/each}
+    		</ul>
+    	</li>
+    	<li>
+    		<ul class="ring-2" style="will-change: transform, opacity;">
+    			{#each Object.entries(ring2) as [key, image]}
+    				<li class={containerClass}>
+    					<i class="orbit-icon fa"
+    						><Avatar
+    							src={image}
+    							title={key}
+    							alt={key}
+    							class=" {avatarClass}"
+    							style={imageStyle}
+    						/></i
+    					>
+    				</li>
+    			{/each}
+    		</ul>
+    	</li>
+    	<li>
+    		<ul class="ring-3" style="will-change: transform, opacity;">
+    			{#each Object.entries(ring1) as [key, image]}
+    				<li class="{containerClass}}">
+    					<i class="orbit-icon fa"
+    						><Avatar
+    							src={image}
+    							title={key}
+    							alt={key}
+    							class=" {avatarClass}"
+    							style={imageStyle}
+    						/></i
+    					>
+    				</li>
+    			{/each}
+    		</ul>
+    	</li>
+    </ul>
+
 </div>
 
 <style lang="scss">

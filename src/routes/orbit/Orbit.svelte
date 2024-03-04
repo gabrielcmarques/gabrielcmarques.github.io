@@ -49,9 +49,7 @@
 </script>
 
 <!-- use:reveal={{ transition: 'fly' }} -->
-<h1
-	class="max-sm:text-3xl max-lg:text-5xl lg:text-6xl text-center font-normal"
->
+<h1 class="max-sm:text-3xl max-lg:text-5xl lg:text-6xl text-center font-normal">
 	Using modern <br />technologies and tools
 </h1>
 <div class="orbit">

@@ -28,7 +28,7 @@
 			class="max-sm:p-3 mt-5 sm:mt-1 rounded-2xl opacity-90 p-3"
 		>
 			<a
-				href="https://pagespeed.web.dev/analysis/https-gabrielcm-dev/90n4shnjug?form_factor=mobile"
+				href="https://pagespeed.web.dev/analysis/https-gabrielcm-dev/lxdvq5b35z?form_factor=desktop"
 				target="_blank"
 			>
 				<img
