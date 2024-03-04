@@ -1,7 +1,7 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import Footer from '$lib/components/Footer.svelte';
 	import { reveal, setDefaultOptions } from 'svelte-reveal';
-	import '../app.postcss';
+	import '/src/app.postcss';
 
 	import og_image from '$lib/assets/images/og_image_html.webp';
 	import {
@@ -15,15 +15,15 @@
 	} from '$lib/siteConfig';
 
 	import LanguageSelector from '$lib/components/LanguageSelector.svelte';
-	import Header from './Header.svelte';
+	import Header from '../Header.svelte';
+	import Section1 from '../Section1.svelte';
+	import Section3 from '../Section3.svelte';
+	import Section4 from '../Section4.svelte';
+	import Section5 from '../Section5.svelte';
+	import Section6 from '../Section6.svelte';
+	import Section7 from '../Section7.svelte';
 	import Orbit from './Orbit.svelte';
-	import Section1 from './Section1.svelte';
 	import Section2 from './Section2.svelte';
-	import Section3 from './Section3.svelte';
-	import Section4 from './Section4.svelte';
-	import Section5 from './Section5.svelte';
-	import Section6 from './Section6.svelte';
-	import Section7 from './Section7.svelte';
 </script>
 
 <svelte:head>
@@ -51,16 +51,17 @@
 	</div>
 	<div class="s2">
 		<Section1 />
-		<Section3 />
 		<Section2 />
 	</div>
 	<div class="s3">
 		<Section7 />
+		<Section3 />
 		<Section5 />
+	</div>
+	<div class="s4">
 		<Section4 />
 		<Section6 />
 	</div>
-	<div class="s4" />
 
 	<Footer />
 </div>
@@ -114,4 +115,77 @@
 		border-top-left-radius: 50% 50px;
 		border-top-right-radius: 50% 50px;
 	}
-</style>
+</style> -->
+
+<script>
+	const boxes = [];
+	const button = document.getElementById('toggle-button');
+	const boxContainer = document.getElementById('box-container');
+	const animationType = document.getElementById('type');
+
+	// create boxes
+	for (let i = 0; i < 1000; i++) {
+		const div = document.createElement('div');
+		div.classList.add('css-animation');
+		div.classList.add('box');
+		boxContainer.appendChild(div);
+		boxes.push(div.style);
+	}
+
+	let toggleStatus = true;
+	let rafId;
+	button.addEventListener('click', () => {
+		if (toggleStatus) {
+			animationType.textContent = ' requestAnimationFrame';
+			for (const child of boxContainer.children) {
+				child.classList.remove('css-animation');
+			}
+			rafId = window.requestAnimationFrame(animate);
+		} else {
+			window.cancelAnimationFrame(rafId);
+			animationType.textContent = ' CSS animation';
+			for (const child of boxContainer.children) {
+				child.classList.add('css-animation');
+			}
+		}
+		toggleStatus = !toggleStatus;
+	});
+
+	const duration = 6000;
+	const translateX = 500;
+	const rotate = 360;
+	const scale = 1.4 - 0.6;
+	let start;
+	function animate(time) {
+		if (!start) {
+			start = time;
+			rafId = window.requestAnimationFrame(animate);
+			return;
+		}
+
+		const progress = (time - start) / duration;
+		if (progress < 2) {
+			let x = progress * translateX;
+			let transform;
+			if (progress >= 1) {
+				x = (2 - progress) * translateX;
+				transform = `translateX(${x}px) rotate(${(2 - progress) * rotate}deg) scale(${
+					0.6 + (2 - progress) * scale
+				})`;
+			} else {
+				transform = `translateX(${x}px) rotate(${progress * rotate}deg) scale(${
+					0.6 + progress * scale
+				})`;
+			}
+
+			for (const box of boxes) {
+				box.transform = transform;
+			}
+		} else {
+			start = null;
+		}
+		rafId = window.requestAnimationFrame(animate);
+	}
+</script>
+
+<h1>hi</h1>

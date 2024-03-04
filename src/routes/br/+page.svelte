@@ -51,17 +51,16 @@
 	</div>
 	<div class="s2">
 		<Section1 />
+		<Section3 />
 		<Section2 />
 	</div>
 	<div class="s3">
 		<Section7 />
-		<Section3 />
 		<Section5 />
-	</div>
-	<div class="s4">
 		<Section4 />
 		<Section6 />
 	</div>
+	<div class="s4" />
 
 	<Footer />
 </div>

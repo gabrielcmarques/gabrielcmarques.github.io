@@ -32,7 +32,7 @@
 	let rotationAngle = 0;
 
 	const rotateImages = () => {
-		// console.log('HERE 1');
+		console.log('HERE 1');
 		rotationAngle += 1; // adjust the rotation speed as needed
 		if (rotationAngle >= 360) {
 			rotationAngle = 0;
@@ -43,7 +43,7 @@
 	const rotationInterval = setInterval(rotateImages, 5000); // adjust the interval as needed
 
 	onDestroy(() => {
-		// console.log('HERE 2');
+		console.log('HERE 2');
 		clearInterval(rotationInterval); // Clear the interval when the component is destroyed
 	});
 </script>
@@ -63,7 +63,7 @@
 		<!-- Iterate over the imported SVGs and create corresponding HTML elements -->
 
 		<li>
-			<ul class="ring-1">
+			<ul class="ring-1" style="will-change: transform, opacity;">
 				{#each Object.entries(ring3) as [key, image]}
 					<li class={containerClass}>
 						<i class="orbit-icon fa"
@@ -75,7 +75,7 @@
 			</ul>
 		</li>
 		<li>
-			<ul class="ring-2">
+			<ul class="ring-2" style="will-change: transform, opacity;">
 				{#each Object.entries(ring2) as [key, image]}
 					<li class={containerClass}>
 						<i class="orbit-icon fa"
@@ -92,7 +92,7 @@
 			</ul>
 		</li>
 		<li>
-			<ul class="ring-3">
+			<ul class="ring-3" style="will-change: transform, opacity;">
 				{#each Object.entries(ring1) as [key, image]}
 					<li class="{containerClass}}">
 						<i class="orbit-icon fa"
@@ -240,6 +240,7 @@
 		height: $orbitItemSize;
 		// margin: -$orbitItemSize / 2;
 		margin: math.div(-$orbitItemSize, 2);
+		transition: transform 300ms ease-in-out, opacity 300ms ease-in-out; // Only animate transform and opacity
 	}
 
 	/*

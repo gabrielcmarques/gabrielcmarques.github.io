@@ -1,27 +1,27 @@
 <script lang="ts">
-	import { linkedin_svg } from '$lib';
-	import { Avatar } from '@skeletonlabs/skeleton';
-	import { onDestroy } from 'svelte';
-	import { reveal } from 'svelte-reveal';
+	// import { linkedin_svg } from '$lib';
+	// import { Avatar } from '@skeletonlabs/skeleton';
+	// import { onDestroy } from 'svelte';
+	// import { reveal } from 'svelte-reveal';
 
-	const ring1: any[] = Object.values(
-		import.meta.glob('$lib/assets/images/orbit/ring1/*.svg', {
-			import: 'default',
-			eager: true
-		})
-	);
-	const ring2: any[] = Object.values(
-		import.meta.glob('$lib/assets/images/orbit/ring2/*.svg', {
-			import: 'default',
-			eager: true
-		})
-	);
-	const ring3: any[] = Object.values(
-		import.meta.glob('$lib/assets/images/orbit/ring3/*.svg', {
-			import: 'default',
-			eager: true
-		})
-	);
+	// const ring1: any[] = Object.values(
+	// 	import.meta.glob('$lib/assets/images/orbit/ring1/*.svg', {
+	// 		import: 'default',
+	// 		eager: true
+	// 	})
+	// );
+	// const ring2: any[] = Object.values(
+	// 	import.meta.glob('$lib/assets/images/orbit/ring2/*.svg', {
+	// 		import: 'default',
+	// 		eager: true
+	// 	})
+	// );
+	// const ring3: any[] = Object.values(
+	// 	import.meta.glob('$lib/assets/images/orbit/ring3/*.svg', {
+	// 		import: 'default',
+	// 		eager: true
+	// 	})
+	// );
 
 	const containerClass = 'w-28 max-sm:w-20'; // Use the flex-grow class to make the containers grow to fill the available space
 	const avatarClass =
@@ -42,70 +42,57 @@
 	// Call the rotateImages function periodically
 	const rotationInterval = setInterval(rotateImages, 5000); // adjust the interval as needed
 
-	onDestroy(() => {
-		// console.log('HERE 2');
-		clearInterval(rotationInterval); // Clear the interval when the component is destroyed
-	});
+	// onDestroy(() => {
+	// 	console.log('HERE 2');
+	// 	clearInterval(rotationInterval); // Clear the interval when the component is destroyed
+	// });
 </script>
 
+<!-- use:reveal={{ transition: 'fly' }} -->
 <h1
-	use:reveal={{ transition: 'fly' }}
 	class="max-sm:text-3xl max-lg:text-5xl lg:text-6xl text-center font-normal"
 >
 	Using modern <br />technologies and tools
 </h1>
 <div class="orbit">
 	<ul class="orbit-wrap">
-		<li class="orbit-center z-10">
+		<li class="orbit-center">
 			<i class="orbit-center__icon fa fa-code" />
 		</li>
 
-		<!-- Iterate over the imported SVGs and create corresponding HTML elements -->
+		<li>
+			<ul class="ring-0">
+				<li><i class="orbit-icon fa fa-git" /></li>
+				<li><i class="orbit-icon fa fa-free-code-camp" /></li>
+				<li><i class="orbit-icon fa fa-meetup" /></li>
+				<li><i class="orbit-icon fa fa-codepen" /></li>
+			</ul>
+		</li>
 
 		<li>
 			<ul class="ring-1">
-				{#each Object.entries(ring3) as [key, image]}
-					<li class={containerClass}>
-						<i class="orbit-icon fa"
-							><Avatar src={image} title={key} alt={key} class={avatarClass} style={imageStyle} /><i
-							/></i
-						>
-					</li>
-				{/each}
+				<li><i class="orbit-icon fa fa-podcast" /></li>
+				<li><i class="orbit-icon fa fa-css3" /></li>
+				<li><i class="orbit-icon fa fa-html5" /></li>
 			</ul>
 		</li>
 		<li>
 			<ul class="ring-2">
-				{#each Object.entries(ring2) as [key, image]}
-					<li class={containerClass}>
-						<i class="orbit-icon fa"
-							><Avatar
-								src={image}
-								title={key}
-								alt={key}
-								class=" {avatarClass}"
-								style={imageStyle}
-							/></i
-						>
-					</li>
-				{/each}
+				<li><i class="orbit-icon fa fa-windows" /></li>
+				<li><i class="orbit-icon fa fa-safari" /></li>
+				<li><i class="orbit-icon fa fa-edge" /></li>
+				<li><i class="orbit-icon fa fa-linux" /></li>
+				<li><i class="orbit-icon fa fa-apple" /></li>
+				<li><i class="orbit-icon fa fa-chrome" /></li>
+				<li><i class="orbit-icon fa fa-android" /></li>
+				<li><i class="orbit-icon fa fa-firefox" /></li>
 			</ul>
 		</li>
 		<li>
 			<ul class="ring-3">
-				{#each Object.entries(ring1) as [key, image]}
-					<li class="{containerClass}}">
-						<i class="orbit-icon fa"
-							><Avatar
-								src={image}
-								title={key}
-								alt={key}
-								class=" {avatarClass}"
-								style={imageStyle}
-							/></i
-						>
-					</li>
-				{/each}
+				<li><i class="orbit-icon fa fa-coffee" /></li>
+				<li><i class="orbit-icon fa fa-terminal" /></li>
+				<li><i class="orbit-icon fa fa-heart-o" /></li>
 			</ul>
 		</li>
 	</ul>
@@ -113,13 +100,12 @@
 
 <style lang="scss">
 	@use 'sass:math';
-
-	$orbitItemSize: 1.5em;
+	$orbitItemSize: 1.6em;
 	$map: (
-		ring-0: 0,
-		ring-1: 5,
-		ring-2: 5,
-		ring-3: 5
+		ring-0: 4,
+		ring-1: 3,
+		ring-2: 8,
+		ring-3: 3
 	);
 	$lastRing: 3;
 
@@ -134,6 +120,9 @@
 	.orbit {
 		background: darken(#1a237e, 20%);
 		float: left;
+		width: 100%;
+		min-width: 100vw;
+		min-height: 100vh;
 	}
 
 	.orbit-icon {
@@ -149,20 +138,9 @@
 	}
 
 	.orbit-wrap {
-		// position: relative;
-		height: 5em;
+		height: 40em;
 		list-style: none;
-		font-size: 5em;
-
-		@media only screen and (max-width: 640px) {
-			/* Styles for phones */
-			font-size: 2.5em;
-		}
-
-		@media only screen and (min-width: 641px) and (max-width: 968px) {
-			/* Styles for tablets */
-			font-size: 3.5em;
-		}
+		font-size: 1.3em;
 
 		> li {
 			position: absolute;
@@ -212,10 +190,10 @@
 			// decrease each ring in size
 			width: 25em - ($i * 5);
 			height: 25em - ($i * 5);
-			animation: clockwiseRotate 60s - ($i * 5) linear infinite;
+			animation: clockwiseRotate 35s - ($i * 5) linear infinite;
 
 			i {
-				animation: counterClockwiseRotate 60s - ($i * 5) linear infinite;
+				animation: counterClockwiseRotate 35s - ($i * 5) linear infinite;
 			}
 		}
 
@@ -223,7 +201,7 @@
 	}
 
 	%ring {
-		border: dashed 1.5px rgba(33, 150, 243, 0.8);
+		border: solid 1px rgba(33, 150, 243, 0.8);
 		position: relative;
 		padding: 0;
 		border-radius: 50%;
@@ -245,59 +223,58 @@
 	/*
   center;
 */
-	// .orbit-center {
-	// z-index: 1;
-	// font-size: 2em;
-	// width: 1.8em;
-	// height: 1.8em;
-	// line-height: 1.8em;
-	// text-align: center;
-	// background: hotpink;
-	// border-radius: 50%;
+	.orbit-center {
+		z-index: 5;
+		font-size: 2em;
+		width: 1.8em;
+		height: 1.8em;
+		line-height: 1.8em;
+		text-align: center;
+		background: hotpink;
+		border-radius: 50%;
 
-	// &:hover .orbit-center__icon {
-	// 	transform: rotateZ(0deg);
-	// }
-	// }
-	// .orbit-center__icon {
-	// 	transform: rotateZ(-360deg);
-	// 	transition: all 300ms ease-in-out;
-	// }
-	// .orbit-wrap > li.orbit-center:hover ~ li > ul {
-	// 	width: 0;
-	// 	height: 0;
-	// 	* {
-	// 		transform: translate(0, 0);
-	// 	}
-	// }
+		&:hover .orbit-center__icon {
+			transform: rotateZ(0deg);
+		}
+	}
+	.orbit-center__icon {
+		transform: rotateZ(-360deg);
+		transition: all 300ms ease-in-out;
+	}
+	.orbit-wrap > li.orbit-center:hover ~ li > ul {
+		width: 0;
+		height: 0;
+		* {
+			transform: translate(0, 0);
+		}
+	}
 
 	/* 
 animations 
 */
-	$rotationAngle: 360; // Define the rotation angle variable
-
 	@keyframes clockwiseRotate {
 		from {
 			transform: rotate(0deg);
 		}
 		to {
-			transform: rotate(#{$rotationAngle}deg);
+			transform: rotate(360deg);
 		}
 	}
 
 	@keyframes counterClockwiseRotate {
 		0% {
-			transform: rotate(#{$rotationAngle}deg);
-		}
-		100% {
 			transform: rotate(0deg);
 		}
+		100% {
+			transform: rotate(-360deg);
+		}
 	}
+
 	/* 
 icons 
 */
 	$icons: (
-		('linkedin_svg', #b71c1c, white),
+		('heart-o', #b71c1c, white),
 		('coffee', #4caf50, #cddc39),
 		('safari', white, darkslateblue),
 		('firefox', #1565c0, #ff8f00),
