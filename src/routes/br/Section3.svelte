@@ -9,7 +9,7 @@
 	>
 		<div
 			use:reveal={{ transition: 'slide', delay: 100, x: -100, duration: 600 }}
-			class="p-3 my-3 h-full flex justify-center items-center rounded-2xl opacity-85"
+			class="p-3 my-3 h-full flex justify-center items-center rounded-2xl opacity-95"
 		>
 			<p class=" w-full max-sm:text-xl max-md:text-2xl text-3xl text-gray-100 max-md:text-center">
 				Páginas cuidadosamente criadas com as melhores práticas em desenvolvimento (<a
@@ -32,7 +32,7 @@
 				target="_blank"
 			>
 				<img
-					class=" w-full h-full opacity-90 object-contain rounded-2xl hover:opacity-85"
+					class=" w-full h-full opacity-90 object-contain rounded-2xl hover:opacity-95"
 					src={pagespeed_lighthouse_webm}
 					alt="PageSpeed Lighthouse Test"
 				/></a

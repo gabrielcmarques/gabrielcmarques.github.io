@@ -2,51 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Disable View Transitions */
-/* :root {  view-transition-name: none} */
-
-header {
-	view-transition-name: 'header';
-}
-
-@keyframes fade-in {
-	from {
-		opacity: 0;
-	}
-}
-
-@keyframes fade-out {
-	to {
-		opacity: 0;
-	}
-}
-
-@keyframes slide-from-right {
-	from {
-		transform: translateX(30px);
-	}
-}
-
-@keyframes slide-to-left {
-	to {
-		transform: translateX(-30px);
-	}
-}
-
-:root::view-transition-old(root) {
-	animation: 190ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
-		400ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
-}
-
-:root::view-transition-new(root) {
-	animation: 510ms cubic-bezier(0, 0, 0.2, 1) 20ms both fade-in,
-		500ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
-}
-
-.full-embed {
-	view-transition-name: 'full-embed';
-}
-
 @font-face {
 	font-family: 'HKGrotesk-Regular';
 	font-style: regular;
@@ -59,16 +14,62 @@ header {
 	font-family: 'HKGrotesk-Regular', Arial, sans-serif;
 }
 
-html,
-body {
-	/* @apply overflow-hidden */
+/* Disable View Transitions */
+/* :root {  view-transition-name: none} */
+
+/* header {
+	view-transition-name: 'header';
+} */
+
+/* @keyframes fade-in {
+	from {
+		opacity: 0;
+	}
 }
+
+@keyframes fade-out {
+	to {
+		opacity: 0;
+	}
+} */
+
+/* @keyframes slide-from-right {
+	from {
+		transform: translateX(30px);
+	}
+}
+
+@keyframes slide-to-left {
+	to {
+		transform: translateX(-30px);
+	}
+} */
+
+/* :root::view-transition-old(root) {
+	animation: 190ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+		400ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+}
+
+:root::view-transition-new(root) {
+	animation: 510ms cubic-bezier(0, 0, 0.2, 1) 20ms both fade-in,
+		500ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+} */
+
+/* .full-embed {
+	view-transition-name: 'full-embed';
+} */
+
+/* html,
+body {
+	@apply overflow-hidden
+} */
 
 body {
 	/* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
 		url('$lib/assets/images/bg_website_magicpattern.svg'); */
 
 	/* background: linear-gradient(to bottom, #0b002c 0%, rgba(0, 56, 120, 0.489) 100%); */
+
 	background: linear-gradient(to bottom, #030033 0%, rgb(0, 56, 100) 50%, #030033 100%);
 
 	background-size: cover;
@@ -86,8 +87,8 @@ html {
 
 .blurred-glass {
 	/* background: rgba(255, 255, 255, 0.5); */
-	-webkit-backdrop-filter: blur(5px);
-	backdrop-filter: blur(25px);
+	/* -webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(25px); */
 	border: 1px solid rgba(140, 140, 140, 0.509);
 }
 
