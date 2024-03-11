@@ -67,7 +67,7 @@
 
 <style>
 	.s1 {
-		background-image: linear-gradient(rgba(7, 0, 18, 0.2), rgb(0, 0, 0, 1)),
+		background-image: linear-gradient(rgba(7, 0, 18, 0.1), rgb(0, 0, 0, 2)),
 			url('$lib/assets/images/bg_website_magicpattern.svg');
 
 		/* url('$lib/assets/images/bg_website.webp'); */

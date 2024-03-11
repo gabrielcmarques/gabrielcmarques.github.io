@@ -50,7 +50,7 @@
 
 <h1
 	use:reveal={{ transition: 'fly' }}
-	class="max-sm:text-3xl max-lg:text-5xl lg:text-6xl text-center font-normal"
+	class="max-sm:text-2xl max-lg:text-5xl lg:text-6xl text-center font-normal"
 >
 	Using modern <br />technologies and tools
 </h1>
@@ -150,13 +150,14 @@
 
 	.orbit-wrap {
 		// position: relative;
-		height: 5em;
+		height: 7em;
 		list-style: none;
-		font-size: 5em;
+		font-size: 4em;
 
 		@media only screen and (max-width: 640px) {
 			/* Styles for phones */
-			font-size: 2.5em;
+			font-size: 1.8em;
+			height: 11em;
 		}
 
 		@media only screen and (min-width: 641px) and (max-width: 968px) {
@@ -170,18 +171,18 @@
 			top: 50%;
 			transform: translate(-50%, -50%);
 
-			&:hover {
-				ul {
-					border-width: 2px;
-					border-color: #fff;
-				}
-				~ li ul {
-					border-color: rgba(255, 255, 255, 0.2);
-					li {
-						opacity: 0.4;
-					}
-				}
-			}
+			// &:hover {
+			// 	ul {
+			// 		border-width: 2px;
+			// 		border-color: #fff;
+			// 	}
+			// 	~ li ul {
+			// 		border-color: rgba(255, 255, 255, 0.2);
+			// 		li {
+			// 			opacity: 0.4;
+			// 		}
+			// 	}
+			// }
 		}
 	}
 
@@ -198,7 +199,7 @@
 		@for $s from 1 through $numItems {
 			// Spread items over the ring
 			// $deg: 380deg / $numItems;
-			$deg: math.div(380deg, $numItems);
+			$deg: math.div(360deg, $numItems);
 
 			.ring-#{$numRing} > *:nth-of-type(#{$s}) {
 				transform: rotate($s * $deg) translate(12.5em - ($numRing * 2.5)) rotate(-$s * $deg);
@@ -223,12 +224,12 @@
 	}
 
 	%ring {
-		border: dashed 1.5px rgba(33, 150, 243, 0.8);
-		position: relative;
-		padding: 0;
+		border: dashed 2.5px rgba(33, 150, 243, 0.8);
+		// position: relative;
+		// padding: 0;
 		border-radius: 50%;
-		list-style: none;
-		box-sizing: content-box;
+		// list-style: none;
+		// box-sizing: content-box;
 	}
 
 	%orbiting-object {
@@ -298,29 +299,29 @@ icons
 */
 	$icons: (
 		('linkedin_svg', #b71c1c, white),
-		('coffee', #4caf50, #cddc39),
-		('safari', white, darkslateblue),
-		('firefox', #1565c0, #ff8f00),
-		('chrome', #fbc02d, #ef6c00),
-		('edge', #03a9f4, white),
-		('android', snow, limegreen),
-		('apple', #444, white),
-		('linux', white, #222),
-		('windows', white, #03a9f4),
-		('terminal', #222, #fff),
-		('html5', white, #e65100),
-		('css3', white, #2196f3),
-		('git', #222, white),
-		('free-code-camp', green, white),
-		('meetup', red, white),
-		('podcast', red, white),
-		('codepen', #333, white)
+		// ('coffee', #4caf50, #cddc39),
+		// ('safari', white, darkslateblue),
+		// ('firefox', #1565c0, #ff8f00),
+		// ('chrome', #fbc02d, #ef6c00),
+		// ('edge', #03a9f4, white),
+		// ('android', snow, limegreen),
+		// ('apple', #444, white),
+		// ('linux', white, #222),
+		// ('windows', white, #03a9f4),
+		// ('terminal', #222, #fff),
+		// ('html5', white, #e65100),
+		// ('css3', white, #2196f3),
+		// ('git', #222, white),
+		// ('free-code-camp', green, white),
+		// ('meetup', red, white),
+		// ('podcast', red, white),
+		// ('codepen', #333, white)
 	);
 
-	@each $icon in $icons {
-		.fa-#{nth($icon, 1)} {
-			background: nth($icon, 2);
-			color: nth($icon, 3);
-		}
-	}
+	// @each $icon in $icons {
+	// 	.fa-#{nth($icon, 1)} {
+	// 		background: nth($icon, 2);
+	// 		color: nth($icon, 3);
+	// 	}
+	// }
 </style>

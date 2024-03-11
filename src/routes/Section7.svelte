@@ -15,7 +15,7 @@
 		</h1>
 		<article
 			use:reveal={{ transition: 'slide', delay: 100, x: -100, duration: 500 }}
-			class="project_1 flex max-lg:flex-col card4 blurred-glass p-4 mx-4 opacity-95 hover:opacity-90 rounded-2xl border border-gray-400 relative max-md:text-center z-30"
+			class="project_1 flex max-lg:flex-col card4 blurred-glass p-4 mx-4  rounded-2xl border border-gray-400 relative max-md:text-center z-30"
 		>
 			<img
 				class="project__image m-3 h-full lg:w-[30%] rounded-xl self-center"
@@ -41,7 +41,7 @@
 		</article>
 		<article
 			use:reveal={{ transition: 'slide', delay: 100, x: 100, duration: 500 }}
-			class="project_2 flex flex-row-reverse max-lg:flex-col card4 blurred-glass p-4 m-4 opacity-95 hover:opacity-90 rounded-2xl border border-gray-400 relative max-md:text-center z-30"
+			class="project_2 flex flex-row-reverse max-lg:flex-col card4 blurred-glass p-4 m-4  rounded-2xl border border-gray-400 relative max-md:text-center z-30"
 		>
 			<img
 				class="project__image m-3 h-full lg:w-[30%] rounded-xl self-center"
@@ -74,7 +74,7 @@
 		</article>
 		<article
 			use:reveal={{ transition: 'slide', delay: 100, x: -100, duration: 500 }}
-			class="project_3 flex max-lg:flex-col card4 blurred-glass p-4 m-4 opacity-95 hover:opacity-90 rounded-2xl border border-gray-400 relative max-md:text-center z-30"
+			class="project_3 flex max-lg:flex-col card4 blurred-glass p-4 m-4  rounded-2xl border border-gray-400 relative max-md:text-center z-30"
 		>
 			<img
 				class="project__image m-3 h-full lg:w-[30%] rounded-xl self-center"
@@ -104,7 +104,7 @@
 
 		<!-- <article
 				use:reveal={{ transition: 'slide', delay: 200, x: 150, duration: 500 }}
-				class="card4 blurred-glass p-4 opacity-95 hover:opacity-90 rounded-2xl text-gray-100"
+				class="card4 blurred-glass p-4  rounded-2xl text-gray-100"
 			>
 				<p class="max-sm:text-xl max-md:text-2xl text-3xl">
 					With expertise in both front-end and back-end, I develop websites and applications that not
@@ -124,7 +124,7 @@
 	}
 
 	.project__image {
-		filter: drop-shadow(0 0 13px rgba(0, 0, 0, 0.45));
+		filter: drop-shadow(0 0 13px rgba(0, 0, 0));
 	}
 
 	/* .project__content {
@@ -133,7 +133,7 @@
 
 	.projects__link {
 		color: #373568;
-		box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+		box-shadow: 0 0 8px rgba(0, 0, 0);
 		border-radius: 99px;
 		/* display: inline-block; */
 		padding: 5px 14px;
@@ -141,7 +141,7 @@
 	}
 	#projects {
 		/* background: rgba(255, 255, 255, 0.5); */
-		-webkit-backdrop-filter: blur(5px);
-		backdrop-filter: blur(5px);
+		/* -webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px); */
 	}
 </style>
