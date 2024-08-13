@@ -12,8 +12,18 @@ export { default as heart_svg } from './assets/svgs/heart.svg';
 export { default as linkedin_svg } from './assets/svgs/linkedin.svg';
 export { default as twitter_svg } from './assets/svgs/twitter.svg';
 export { default as whatsapp_svg } from './assets/svgs/whatsapp.svg';
+export { default as fiverr_svg } from './assets/svgs/fiverr.svg';
+export { default as app_99_svg } from './assets/svgs/99.svg';
+export { default as upwork_svg } from './assets/svgs/upwork.svg';
 export { default as design_responsivo_webm } from './assets/videos/design_responsivo.webm';
 
 export { default as arabesco_tiny_webp } from './assets/images/project_cards/arabesco_tiny.webp';
+export { default as sys_vet_tiny_webp } from './assets/images/project_cards/sys_vet_tiny.webp';
+export { default as sistemawebvet1_webp } from './assets/images/project_cards/sistemawebvet1.webp';
+export { default as sistemawebvet2_webp } from './assets/images/project_cards/sistemawebvet2.webp';
+export { default as sistemawebvet3_webp } from './assets/images/project_cards/sistemawebvet3.webp';
+export { default as sistemawebvet4_webp } from './assets/images/project_cards/sistemawebvet4.webp';
+
+export { default as my_menthor_tiny_webp } from './assets/images/project_cards/my_menthor_tiny.webp';
 export { default as game_company_tiny_webp } from './assets/images/project_cards/game_company_tiny.webp';
 export { default as legend_of_heroes_tiny_webp } from './assets/images/project_cards/legend_of_heroes_tiny.webp';

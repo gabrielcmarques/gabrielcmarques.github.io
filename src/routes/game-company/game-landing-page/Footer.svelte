@@ -50,7 +50,7 @@
 
 		<div class="flex flex-col justify-center items-center">
 			<p class="my-6 text-xs lg:text-sm text-gray-900 dark:text-gray-50">
-				Gabriel Christo Marques 2023.
+				Gabriel Christo Marques 2024.
 			</p>
 		</div>
 	</footer>
