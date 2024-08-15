@@ -7,9 +7,8 @@
 	const copyToClipboard = async () => {
 		try {
 			await copy(phoneNumber);
-			alert('Número copiado para a área de transferência!\n Whatsapp +55 (41) 99827-2752');
+			alert('Number copied to the clipboard!\n Whatsapp +55 (41) 99827-2752');
 		} catch (error) {
-			alert('ERROR');
 			console.error('Erro ao copiar número: \n', error);
 		}
 	};
@@ -21,26 +20,32 @@
 			class="max-w-screen-xl text-5xl text-gray-300 max-md:text-center mx-auto p-3 text-center mt-16 mb-5 font-medium"
 			id="contato"
 		>
-			Entre em contato
+			Entre em Contato
 		</h1>
-		<div class="md:grid contact parent">
+		<div class="md:grid contact parent text-gray-200">
 			<a
-				use:reveal={{ transition: 'fly', y: -100, delay: 100, duration: 350 }}
-				class="card-contact c-1 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5 border border-gray-400"
-				href="https://github.com/gabrielcmarques"
+				href="https://www.99freelas.com.br/user/gabriel-de-christo-marques"
 				target="_blank"
+				class="card-contact c-3 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5 border border-gray-400 hover:border-white hover:text-white hover:text-sm"
 			>
-				<p class="p-4 text-2xl font-normal">Github</p>
+				<p class="p-4 text-2xl font-normal">99Freelas</p>
 			</a>
 			<a
-				use:reveal={{ transition: 'fly', y: -100, delay: 200, duration: 350 }}
-				href="https://twitter.com/gabrielchristom"
+				class="card-contact c-1 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5 border border-gray-400 hover:border-white hover:text-white hover:text-sm"
+				href="https://www.fiverr.com/gabriel_christo/build-high-performant-websites"
 				target="_blank"
-				class="card-contact c-2 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5 border border-gray-400"
 			>
-				<p class="p-4 text-2xl font-normal">Twitter</p>
+				<p class="p-4 text-2xl font-normal">Fiverr</p>
 			</a>
-			<div
+			<a
+				href="https://www.upwork.com/freelancers/~01b87c5ba2f0dd1342"
+				target="_blank"
+				class="card-contact c-2 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5 border border-gray-400 hover:border-white hover:text-white hover:text-sm"
+			>
+				<p class="p-4 text-2xl font-normal">Upwork</p>
+			</a>
+
+			<!-- <div
 				use:reveal={{ transition: 'fly', y: -100, delay: 300, duration: 350 }}
 				class="card-contact c-3 opacity-95 text-lg md:text-2xl rounded-full w-80 h-40 max-md:h-32 mx-auto m-5 border border-gray-400"
 			>
@@ -52,7 +57,7 @@
 				<button class="hover:text-blue-200 text-xl" on:click={copyToClipboard}
 					>+55 (41) 99827-2752</button
 				>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </section>
@@ -81,21 +86,14 @@
 	// }
 
 	.c-1 {
-		background-image: linear-gradient(to bottom, #786464, #332c2c);
-	}
-
-	.c-2 {
-		background-image: linear-gradient(to bottom, #336699, #003366);
+		background-image: linear-gradient(to bottom, #ff7b0094, #00ff809f);
 	}
 
 	.c-3 {
-		background-image: linear-gradient(to bottom, #009966, #006633);
+		background-image: linear-gradient(to bottom, #336699, #003366);
 	}
 
-	.c-1:hover,
-	.c-2:hover,
-	.c-3:hover {
-		transform: translateY(-5px);
-		box-shadow: 1px 1px 1px rgba(130, 130, 130, 0.5);
+	.c-2 {
+		background-image: linear-gradient(to bottom, #009966, #006633);
 	}
 </style>

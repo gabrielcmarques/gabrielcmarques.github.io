@@ -36,10 +36,6 @@
 	});
 </script>
 
-<svelte:head>
-	<title>Veterinarian System - Gabriel Christo | Home</title>
-</svelte:head>
-
 <section class="w-full">
 	<div class="slider-container max-w-screen-xl mx-auto">
 		<button class="slider-button left rounded" on:click={() => plusDivs(-1)}>&#10094;</button>
