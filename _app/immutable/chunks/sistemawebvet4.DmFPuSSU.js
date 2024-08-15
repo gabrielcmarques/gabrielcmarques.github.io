@@ -1,0 +1,1 @@
+const e=""+new URL("../assets/sistemawebvet1.C1_6tSrX.webp",import.meta.url).href,s=""+new URL("../assets/sistemawebvet2.DUyr28jS.webp",import.meta.url).href,t=""+new URL("../assets/sistemawebvet3.Dx6erDUU.webp",import.meta.url).href,a=""+new URL("../assets/sistemawebvet4.BS6c46tE.webp",import.meta.url).href;export{e as a,s as b,t as c,a as s};
