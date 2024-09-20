@@ -1,1 +1,1 @@
-export const env={}
+export const env={"PUBLIC_CONTACT_EMAIL":"gabrielchristomarques@gmail.com","PUBLIC_FACEBOOK_PAGE":"gabrielchmarques","PUBLIC_FACEBOOK_AUTHOR_PAGE":"gabrielchmarques","PUBLIC_GITHUB_PAGE":"gabrielcmarques","PUBLIC_LINKEDIN_PROFILE":"gabriel-christo-marques","PUBLIC_TELEGRAM_USERNAME":"","PUBLIC_TIKTOK_USERNAME":"","PUBLIC_TWITTER_USERNAME":"gabrielcm","PUBLIC_TWITTER_USER_ID":"","PUBLIC_WIRE_USERNAME":"","PUBLIC_DOMAIN":"gabrielcm.dev","PUBLIC_SITE_URL":"https://gabrielcm.dev","PUBLIC_SENTRY_ORG_ID":"","PUBLIC_SENTRY_PROJECT_ID":"","PUBLIC_SENTRY_KEY":""}
