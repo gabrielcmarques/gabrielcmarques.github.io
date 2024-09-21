@@ -40,10 +40,10 @@
 	<div class="slider-container max-w-screen-xl mx-auto">
 		<button class="slider-button left rounded" on:click={() => plusDivs(-1)}>&#10094;</button>
 		<div class="slider-content">
-			<img class="mySlides rounded-xl" src={sistemawebvet4_webp} />
-			<img class="mySlides rounded-xl" src={sistemawebvet1_webp} />
-			<img class="mySlides rounded-xl" src={sistemawebvet2_webp} />
-			<img class="mySlides rounded-xl" src={sistemawebvet3_webp} />
+			<img class="mySlides rounded-xl" alt="vet project" src={sistemawebvet4_webp} />
+			<img class="mySlides rounded-xl" alt="vet project" src={sistemawebvet1_webp} />
+			<img class="mySlides rounded-xl" alt="vet project" src={sistemawebvet2_webp} />
+			<img class="mySlides rounded-xl" alt="vet project" src={sistemawebvet3_webp} />
 		</div>
 		<button class="slider-button right rounded" on:click={() => plusDivs(1)}>&#10095;</button>
 	</div>

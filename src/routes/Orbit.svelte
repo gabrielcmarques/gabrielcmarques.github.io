@@ -1,4 +1,5 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages.js';
 	import { linkedin_svg } from '$lib';
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import { onDestroy } from 'svelte';
@@ -48,12 +49,13 @@
 	});
 </script>
 
-<h1
+<h2
 	use:reveal={{ transition: 'fly' }}
-	class="max-sm:text-2xl max-lg:text-5xl lg:text-6xl text-center font-normal"
+	class="max-sm:text-2xl max-lg:text-5xl lg:text-6xl text-center font-light max-w-lg max-sm:max-w-sm"
 >
-	Using modern <br />technologies and tools
-</h1>
+	{m.section3_using()}
+	<!-- Using modern <br />technologies and tools -->
+</h2>
 <div class="orbit">
 	<ul class="orbit-wrap">
 		<li class="orbit-center z-10">

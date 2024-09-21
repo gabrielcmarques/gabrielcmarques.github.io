@@ -19,7 +19,7 @@
 		>
 			<div class="flex items-center justify-between">
 				<a
-					class="logoHeader sm:text-lg text-xl font-bold text-white md:text-2xl hover:text-slate-300 transition-transform transform hover:-translate-y-1"
+					class="logoHeader sm:text-lg text-xl  text-white md:text-2xl hover:text-slate-300 transition-transform transform hover:-translate-y-1"
 					href="/game-company/game-landing-page"
 					>[Logo]
 				</a>

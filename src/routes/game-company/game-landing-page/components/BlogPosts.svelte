@@ -28,11 +28,11 @@ animate__animated animate__fadeInLeft"
 				</a>
 				<div class="p-5">
 					<a href="#blog_p" aria-label="Read Blog Post: Issue #9">
-						<h2 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 hover:text-blue-900">
+						<h2 class="text-gray-900  text-2xl tracking-tight mb-2 hover:text-blue-900">
 							Blog Post: Issue #9
 						</h2>
 					</a>
-					<p class="font-normal text-gray-700 my-3 text-ellipsis max-h-20">
+					<p class=" text-gray-700 my-3 text-ellipsis max-h-20">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos et mollitia atque saepe
 						repellat quia culpa eum deserunt placeat.
 					</p>
@@ -52,11 +52,11 @@ animate__animated animate__fadeInLeft"
 				</a>
 				<div class="p-5">
 					<a href="#blog_p" aria-label="Read Blog Post: Issue #9">
-						<h2 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 hover:text-blue-900">
+						<h2 class="text-gray-900  text-2xl tracking-tight mb-2 hover:text-blue-900">
 							New gameplay trailer
 						</h2>
 					</a>
-					<p class="font-normal text-gray-700 mb-3 overflow-ellipsis max-h-20">
+					<p class=" text-gray-700 mb-3 overflow-ellipsis max-h-20">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos et mollitia atque saepe
 						repellat quia culpa eum deserunt placeat.
 					</p>

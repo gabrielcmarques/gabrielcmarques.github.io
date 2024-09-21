@@ -15,7 +15,7 @@ export { default as whatsapp_svg } from './assets/svgs/whatsapp.svg';
 export { default as fiverr_svg } from './assets/svgs/fiverr.svg';
 export { default as app_99_svg } from './assets/svgs/99.svg';
 export { default as upwork_svg } from './assets/svgs/upwork.svg';
-export { default as design_responsivo_webm } from './assets/videos/design_responsivo.webm';
+// export { default as design_responsivo_webm } from './assets/videos/design_responsivo.webm';
 
 export { default as arabesco_tiny_webp } from './assets/images/project_cards/arabesco_tiny.webp';
 export { default as sys_vet_tiny_webp } from './assets/images/project_cards/sys_vet_tiny.webp';
@@ -27,3 +27,5 @@ export { default as sistemawebvet4_webp } from './assets/images/project_cards/si
 export { default as my_menthor_tiny_webp } from './assets/images/project_cards/my_menthor_tiny.webp';
 export { default as game_company_tiny_webp } from './assets/images/project_cards/game_company_tiny.webp';
 export { default as legend_of_heroes_tiny_webp } from './assets/images/project_cards/legend_of_heroes_tiny.webp';
+export { default as brazil_svg } from './assets/svgs/brazil.svg';
+export { default as usa_svg } from './assets/svgs/usa.svg';

@@ -1,1 +1,1 @@
-<h1 class="h1 mx-auto">💥 Error</h1>
+<p class="h1 mx-auto">💥 Error</p>

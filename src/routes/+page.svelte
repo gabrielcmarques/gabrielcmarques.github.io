@@ -1,20 +1,24 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages.js';
 	import Footer from '$lib/components/Footer.svelte';
 	import { reveal, setDefaultOptions } from 'svelte-reveal';
 	import '../app.postcss';
 
-	import og_image from '$lib/assets/images/og_image_html.webp';
-	import {
-		// DEFAULT_OG_IMAGE,
-		MY_TWITTER_HANDLE,
-		OG_IMAGE_HEIGHT,
-		OG_IMAGE_WIDTH,
-		SITE_DESCRIPTION,
-		SITE_TITLE,
-		SITE_URL
-	} from '$lib/siteConfig';
+	// import og_image from '$lib/assets/images/og_image.webp';
+	// import og_image from '$lib/assets/images/og_image_html.webp';
+	// import {
+	// 	// DEFAULT_OG_IMAGE,
+	// 	MY_TWITTER_HANDLE,
+	// 	OG_IMAGE_HEIGHT,
+	// 	OG_IMAGE_WIDTH,
+	// 	SITE_DESCRIPTION,
+	// 	SITE_TITLE,
+	// 	SITE_URL
+	// } from '$lib/siteConfig';
+	// import LanguageSelector from '$lib/components/LanguageSelector.svelte';
+	// ----=----=----=----=----= Imports ----=----=----=----=----=
 
-	import LanguageSelector from '$lib/components/LanguageSelector.svelte';
+	import { page } from '$app/stores';
 	import Header from './Header.svelte';
 	import Orbit from './Orbit.svelte';
 	import Section1 from './Section1.svelte';
@@ -24,28 +28,85 @@
 	import Section5 from './Section5.svelte';
 	import Section6 from './Section6.svelte';
 	import Section7 from './Section7.svelte';
+	import LanguageSwitcher from '$lib/components/LanguageSwitcher.svelte';
+
+	// ----=----=----=----=----= SEO ----=----=----=----=----=
+	import ogSquareImageSrc from '$lib/assets/home/home-open-graph-square.jpg';
+	import ogImageSrc from '$lib/assets/home/home-open-graph.jpg';
+	import twitterImageSrc from '$lib/assets/home/home-twitter.jpg';
+	import featuredImageSrc from '$lib/assets/home/home.jpg';
+	// import og_image from '$lib/assets/images/og_image.webp';
+	import website from '$lib/config/website';
+	import SEO from '$lib/components/SEO/index.svelte';
+
+	let pagePath = $page.url.pathname;
+	$: pagePath = $page.url.pathname;
+	const isPortuguese = pagePath.startsWith('/pt-br');
+
+	const { author, siteUrl } = website;
+	let title = isPortuguese ? 'Inicio' : 'Home';
+	const breadcrumbs = [
+		{
+			name: isPortuguese ? 'Início' : 'Home',
+			slug: ''
+		}
+	];
+	let metadescription = isPortuguese
+		? 'Engenheiro de software fullstack especializado em aplicações web de alto desempenho. Crio sites otimizados, acessíveis e com SEO eficiente, usando JavaScript, Python, SQL e mais.'
+		: 'Fullstack software engineer specializing in high-performance web applications. I create optimized, accessible, and SEO-friendly websites using JavaScript, Python, SQL, and more.';
+	const featuredImageAlt = isPortuguese
+		? 'Imagem em formato de carta escrito Gabriel de Christo Marques, apresentando o seu portfolio'
+		: 'Image in letter format written by Gabriel de Christo Marques, presenting his portfolio';
+	const featuredImage = {
+		url: featuredImageSrc,
+		alt: featuredImageAlt,
+		width: 672,
+		height: 448,
+		caption: 'Home page'
+	};
+	const ogImage = {
+		url: ogImageSrc,
+		alt: featuredImageAlt
+	};
+	const ogSquareImage = {
+		url: ogSquareImageSrc,
+		alt: featuredImageAlt
+	};
+
+	const twitterImage = {
+		url: twitterImageSrc,
+		alt: featuredImageAlt
+	};
+	const entityMeta = {
+		url: `${siteUrl}/`,
+		faviconWidth: 512,
+		faviconHeight: 512,
+		caption: author
+	};
+	const seoProps = {
+		title,
+		slug: '',
+		entityMeta,
+		datePublished: '2024-05-01T14:19:33.000+0100',
+		lastUpdated: '2024-09-05T14:19:33.000+0100',
+		breadcrumbs,
+		metadescription,
+		article: false,
+		featuredImage,
+		ogImage,
+		ogSquareImage,
+		twitterImage
+	};
 </script>
 
-<svelte:head>
-	<title>Freelance Developer - Gabriel Christo | Home</title>
-	<link rel="canonical" href={SITE_URL} />
-	<meta property="og:url" content={SITE_URL} />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content={SITE_TITLE} />
-	<meta name="Description" content={SITE_DESCRIPTION} />
-	<meta property="og:description" content={SITE_DESCRIPTION} />
-	<meta property="og:image" content={og_image} />
-	<meta property="og:image:width" content={OG_IMAGE_WIDTH} />
-	<meta property="og:image:height" content={OG_IMAGE_HEIGHT} />
-	<meta name="twitter:image" content={og_image} />
-	<meta name="twitter:card" content="Gabriel Christo - Freelancer Developer" />
-	<meta name="twitter:creator" content={'@' + MY_TWITTER_HANDLE} />
-	<meta name="twitter:title" content={SITE_TITLE} />
-	<meta name="twitter:description" content={SITE_DESCRIPTION} />
-</svelte:head>
+<SEO {...seoProps} />
+<!-- <svelte:head>
+	<title>Freelancer Developer - Gabriel Christo | Home</title>
+</svelte:head> -->
 
 <div>
-	<LanguageSelector />
+	<LanguageSwitcher />
+	<!-- <LanguageSelector /> -->
 	<div class="s1">
 		<Header />
 	</div>
@@ -63,6 +124,7 @@
 	<div class="s4" />
 
 	<Footer />
+	<!-- <CookieConsent on:consentAccepted={handleCookieConsent} /> -->
 </div>
 
 <style>

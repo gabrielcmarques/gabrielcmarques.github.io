@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
 	import {
 		arabesco_tiny_webp,
 		game_company_tiny_webp,
@@ -60,14 +60,14 @@
 
 		<!-- Modal body -->
 		<div class="my-projects-modal max-h-[50rem] overflow-y-scroll p-4">
-			<div class="max-w-screen-xl mx-auto font-normal">
-				<h1
+			<div class="max-w-screen-xl mx-auto">
+				<h2
 					id="projects"
 					use:reveal={{ transition: 'fly' }}
-					class="max-w-fit mx-auto text-5xl text-gray-100 text-center font-medium z-[30] relative p-5"
+					class="max-w-fit mx-auto text-5xl text-gray-100 text-center z-[30] relative p-5"
 				>
 					Meus projetos
-				</h1>
+				</h2>
 				<article
 					use:reveal={{ transition: 'slide', delay: 100, x: -100, duration: 500 }}
 					class="project_1 flex max-lg:flex-col card4 blurred-glass p-4 mx-4 rounded-2xl border border-gray-400 relative max-md:text-center z-30"
@@ -93,13 +93,13 @@
 						</p>
 						<!-- <details>
 							<summary
-								class="projects__link cursor-pointer bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 font-bold z-50"
+								class="projects__link cursor-pointer bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3  z-50"
 								>Image Gallery</summary
 							>
 							<SysVetSlider />
 						</details> -->
 						<!-- <a
-							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 font-bold"
+							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 "
 							href="/vetsystem"
 							target="_blank">Visite o Site</a
 						> -->
@@ -117,7 +117,7 @@
 
 					<div class="lg:w-[70%]">
 						<h2
-							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-200 py-2 font-medium max-lg:text-center"
+							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-200 py-2  max-lg:text-center"
 						>
 							Website My Menthor
 						</h2>
@@ -129,7 +129,7 @@
 						</p>
 
 						<a
-							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -left-5 m-3 font-bold"
+							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -left-5 m-3 "
 							href="https://www.mymenthor.com/"
 							target="_blank">Visite o Site</a
 						>
@@ -147,7 +147,7 @@
 
 					<div class="lg:w-[70%]">
 						<h2
-							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-100 py-2 font-medium max-lg:text-center"
+							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-100 py-2  max-lg:text-center"
 						>
 							Arabesco Cartonagem e Artesanato
 						</h2>
@@ -158,7 +158,7 @@
 							rápido, assegurando uma experiência suave e envolvente para os visitantes.
 						</p>
 						<a
-							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 font-bold"
+							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 "
 							href="https://arabescocartonagem.store/ "
 							target="_blank">Visite o Site</a
 						>
@@ -187,7 +187,7 @@
 							carregamento rápido.
 						</p>
 						<a
-							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 font-bold"
+							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 "
 							href="/game-company/game-landing-page"
 							target="_blank">Visite o Site</a
 						>
@@ -205,7 +205,7 @@
 
 					<div class="lg:w-[70%]">
 						<h2
-							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-200 py-2 font-medium max-lg:text-center"
+							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-200 py-2  max-lg:text-center"
 						>
 							LinkTree Clone
 						</h2>
@@ -221,7 +221,7 @@
 						</p>
 
 						<a
-							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -left-5 m-3 font-bold"
+							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -left-5 m-3 "
 							href="https://gabrielcm.dev/game-company"
 							target="_blank">Visite o Site</a
 						>
@@ -276,9 +276,9 @@
 		padding: 5px 14px;
 		transition: 25ms;
 	}
-	#projects {
+	/* #projects { */
 		/* background: rgba(255, 255, 255, 0.5); */
 		/* -webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px); */
-	}
+	/* } */
 </style>

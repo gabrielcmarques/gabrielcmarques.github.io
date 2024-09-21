@@ -1,24 +1,5 @@
-// const sleep = (ms: number) =>
-//     new Promise((resolve)) =>
-//         setTimeout(resolve, ms),
-//         );
+import { i18n } from '$lib/i18n';
+import { sequence } from '@sveltejs/kit/hooks';
 
-// import type { Handle, HandleServerError } from '@sveltejs/kit';
-
-// --- Internacionalização
-// export const handle: Handle = async ({ event, resolve }) => {
-// 	const locale = 'en';
-// 	event.locals.locale = locale;
-// 	return resolve(event, {
-// 		transformPageChunk: ({ html }) => html.replace('%lang%', locale)
-// 	});
-// };
-
-// --- Error Logging:
-// export const handleError: HandleServerError = async({ error, event}) => {
-//     console.log(error)
-
-//     return {
-//         message: 'ERRO!'
-//     }
-// }
+export const handle = sequence(i18n.handle());
+// export const handle = sequence(i18n.handle(disableAsyncLocalStorage: true, // @default = false));

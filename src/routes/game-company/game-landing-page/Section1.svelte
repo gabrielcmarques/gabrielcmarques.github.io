@@ -10,11 +10,11 @@
 		</div>
 		<div class="flex flex-col justify-center relative">
 			<div class="text-container text-left">
-				<h1
+				<h2
 					class=" ml-3 max-sm:text-3xl max-md:text-4xl text-5xl max-md:text-center hero-title text-slate-100"
 				>
 					Join this amazing adventure
-				</h1>
+				</h2>
 				<p class=" text-xl lg:text-2xl p-3 relative text-gray-200">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
 					been the industry's standard dummy text ever since the 1500s, when an unknown printer took

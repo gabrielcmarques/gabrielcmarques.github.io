@@ -16,9 +16,9 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: undefined,
+			fallback: null,
 			precompress: false,
-			strict: true
+			strict: false
 		}),
 		files: {
 			serviceWorker: 'src/service-worker.js'
@@ -26,6 +26,10 @@ const config = {
 		paths: {
 			// base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 			base: dev ? '' : process.env.BASE_PATH
+		},
+		prerender: {
+			entries: ['*'],
+			origin: 'https://gabrielcm.dev'
 		}
 	}
 };

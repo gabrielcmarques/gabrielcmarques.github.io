@@ -44,10 +44,10 @@
 	<div class="slider-container max-w-screen-xl mx-auto">
 		<button class="slider-button left" on:click={() => plusDivs(-1)}>&#10094;</button>
 		<div class="slider-content">
-			<img class="mySlides" src={sistemawebvet4_webp} />
-			<img class="mySlides" src={sistemawebvet1_webp} />
-			<img class="mySlides" src={sistemawebvet2_webp} />
-			<img class="mySlides" src={sistemawebvet3_webp} />
+			<img class="mySlides" alt="vet project" src={sistemawebvet4_webp} />
+			<img class="mySlides" alt="vet project" src={sistemawebvet1_webp} />
+			<img class="mySlides" alt="vet project" src={sistemawebvet2_webp} />
+			<img class="mySlides" alt="vet project" src={sistemawebvet3_webp} />
 		</div>
 		<button class="slider-button right" on:click={() => plusDivs(1)}>&#10095;</button>
 	</div>

@@ -1,9 +1,10 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages.js';
 	import { automation_webp, blog_vector_webp, web_dev_webp } from '$lib';
 </script>
 
 <section class="services p-3">
-	<div class="parent max-w-screen-xl text-center relative mx-auto rounded-lg font-normal z-10">
+	<div class="parent max-w-screen-xl text-center relative mx-auto rounded-lg  z-10">
 		<div
 			class="blurred-glass animate__animated animate__fadeInLeft div1 opacity-95 hover:opacity-90 h-96 relative z-10 rounded-lg mb-3"
 		>

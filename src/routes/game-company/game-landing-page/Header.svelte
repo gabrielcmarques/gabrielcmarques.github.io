@@ -18,11 +18,11 @@
 >
 	<div class="relative z-10 ml-10">
 		<!-- Heading -->
-		<h1
+		<h2
 			class="hero-title animate__animated animate__fadeInDown max-sm:text-5xl max-md:text-6xl text-7xl text-white tracking-tight"
 		>
 			The Legend of the Heroes
-		</h1>
+		</h2>
 		<h2
 			class="hero-title2 animate__animated animate__fadeInDown p-5 relative z-20 text-white rounded-lg max-sm:text-3xl max-md:text-4xl text-5xl tracking-tight"
 		>

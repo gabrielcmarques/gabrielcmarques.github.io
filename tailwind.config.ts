@@ -26,3 +26,20 @@ const config = {
 } satisfies Config;
 
 export default config;
+
+// content: ['./src/**/*.{html,js,ts,svelte,postcss}'],
+// theme: {
+// 	// extend: {}
+// 	extend: {
+// 		fontFamily: {
+// 			exo: ['Exo Variable', 'sans-serif'],
+// 			archivo: ['Archivo Variable', 'sans-serif']
+// 		},
+// 		fontWeight: {
+// 			regular: 400,
+// 			semibold: 600,
+// 			bold: 700
+// 		}
+// 	}
+// },
+// plugins: [require('@tailwindcss/typography')]

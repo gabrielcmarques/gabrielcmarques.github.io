@@ -1,4 +1,5 @@
-<script type="text/javascript">
+<script>
+	import * as m from '$lib/paraglide/messages.js';
 	import {
 		arabesco_tiny_webp,
 		game_company_tiny_webp,
@@ -37,8 +38,10 @@
 <div class="w-full mx-auto flex">
 	<button
 		class="bg-blue-500 text-white rounded-md px-4 py-2 hover:bg-blue-700 transition mx-auto"
-		onclick="openModal('modal')">View more</button
+		onclick="openModal('modal')"
 	>
+		{m.section4_viewmore()}
+	</button>
 </div>
 
 <div
@@ -60,14 +63,14 @@
 
 		<!-- Modal body -->
 		<div class="my-projects-modal max-h-[50rem] overflow-y-scroll p-4">
-			<div class="max-w-screen-xl mx-auto font-normal">
-				<h1
+			<div class="max-w-screen-xl mx-auto">
+				<h2
 					id="projects"
 					use:reveal={{ transition: 'fly' }}
-					class="max-w-fit mx-auto text-5xl text-gray-100 text-center font-medium z-[30] relative p-5"
+					class="max-w-fit mx-auto text-5xl text-gray-100 text-center z-[30] relative p-5"
 				>
-					My projects
-				</h1>
+					{m.section4_title()}
+				</h2>
 				<article
 					use:reveal={{ transition: 'slide', delay: 100, x: -100, duration: 500 }}
 					class="project_1 flex max-lg:flex-col card4 blurred-glass p-4 mx-4 rounded-2xl border border-gray-400 relative max-md:text-center z-30"
@@ -82,25 +85,22 @@
 						<h2
 							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-100 py-2 max-lg:text-center"
 						>
-							Veterinarian Management System
+							{m.section4_proj1_title()}
 						</h2>
 						<p class="max-sm:text-xl max-md:text-1xl text-2xl text-gray-200">
-							I developed a veterinarian management system using React JS and MantineUI for the
-							frontend, with a NodeJS and TypeORM-powered backend. The system includes full CRUD
-							functionality through intuitive forms, enabling the management of essential clinic
-							data such as Veterinarians, Owners, Pets, Medicines, Procedures, and more.
+							{m.section4_proj1_desc()}
 						</p>
 						<!-- <details>
 							<summary
-								class="projects__link cursor-pointer bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 font-bold z-50"
-								>Image Gallery</summary
+								class="projects__link cursor-pointer bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3  z-50"
+								>{m.section4_imggalery()}</summary
 							>
 							<SysVetSlider />
 						</details> -->
 						<!-- <a
-							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 font-bold"
+							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 "
 							href="/vetsystem"
-							target="_blank">Visit website</a
+							target="_blank">{m.section4_visitweb()}</a
 						> -->
 					</div>
 				</article>
@@ -116,21 +116,18 @@
 
 					<div class="lg:w-[70%]">
 						<h2
-							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-200 py-2 font-medium max-lg:text-center"
+							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-200 py-2 max-lg:text-center"
 						>
-							My Menthor Website
+							{m.section4_proj2_title()}
 						</h2>
 						<p class="max-sm:text-xl max-md:text-1xl text-2xl text-gray-100">
-							I developed the My Menthor website using SvelteKit and TailwindCSS, following a
-							detailed Figma design. Focused on delivering a fast and responsive user experience,
-							the site features a fully integrated blog, multi language support and integration with
-							Zoho CRM for lead generation.
+							{m.section4_proj2_desc()}
 						</p>
 
 						<a
-							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -left-5 m-3 font-bold"
+							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -left-5 m-3"
 							href="https://www.mymenthor.com/"
-							target="_blank">Visit Website</a
+							target="_blank">{m.section4_visitweb()}</a
 						>
 					</div>
 				</article>
@@ -146,20 +143,17 @@
 
 					<div class="lg:w-[70%]">
 						<h2
-							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-100 py-2 font-medium max-lg:text-center"
+							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-100 py-2 max-lg:text-center"
 						>
-							Arabesco Artisan Creations
+							{m.section4_proj3_title()}
 						</h2>
 						<p class="max-sm:text-xl max-md:text-1xl text-2xl text-gray-200">
-							As a freelance endeavor, I developed a showcase website for my sister's creative
-							works, encompassing cardboard designs, jewelry, and handmade crafts. The site is
-							designed to be fully responsive on all devices and prioritizes fast loading, ensuring
-							a smooth and engaging experience for visitors.
+							{m.section4_proj3_desc()}
 						</p>
 						<a
-							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 font-bold"
+							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3"
 							href="https://arabescocartonagem.store/ "
-							target="_blank">Visit Website</a
+							target="_blank">{m.section4_visitweb()}</a
 						>
 					</div>
 				</article>
@@ -177,18 +171,15 @@
 						<h2
 							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-100 py-2 max-lg:text-center"
 						>
-							Gaming Website
+							{m.section4_proj4_title()}
 						</h2>
 						<p class="max-sm:text-xl max-md:text-1xl text-2xl text-gray-200">
-							I like video-games, and I decided to channel that enthusiasm into crafting a
-							well-designed website. This project involved creating a fictional game website. The
-							website is fully responsive across all devices and meticulously optimized for swift
-							loading.
+							{m.section4_proj4_desc()}
 						</p>
 						<a
-							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3 font-bold"
+							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -right-5 m-3"
 							href="/game-company/game-landing-page"
-							target="_blank">Visit Website</a
+							target="_blank">{m.section4_visitweb()}</a
 						>
 					</div>
 				</article>
@@ -204,24 +195,18 @@
 
 					<div class="lg:w-[70%]">
 						<h2
-							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-200 py-2 font-medium max-lg:text-center"
+							class="max-sm:text-2xl max-md:text-1xl text-3xl text-gray-200 py-2 max-lg:text-center"
 						>
-							LinkTree Clone
+							{m.section4_proj5_title()}
 						</h2>
 						<p class="max-sm:text-xl max-md:text-1xl text-2xl text-gray-100">
-							Recognizing the utility of platforms like <a
-								href="https://linktr.ee/s/templates/"
-								target="_blank">LinkTree</a
-							> for content creators, artists, and companies to streamline social media links, I undertook
-							the development of a template tailored specifically for the fictional game website I created.
-							This template allows for a seamless presentation of various social media channels, enhancing
-							the overall user experience.
+							{@html m.section4_proj5_desc()}
 						</p>
 
 						<a
-							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -left-5 m-3 font-bold"
+							class="projects__link bg-white rounded hover:border-blue-600 hover:border-4 absolute -bottom-5 -left-5 m-3"
 							href="https://gabrielcm.dev/game-company"
-							target="_blank">Visit Website</a
+							target="_blank">{m.section4_visitweb()}</a
 						>
 					</div>
 				</article>
@@ -246,8 +231,10 @@
 		<div class="px-4 py-2 border-t border-t-gray-500 flex justify-end items-center space-x-4">
 			<button
 				class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"
-				onclick="closeModal('modal')">Close (ESC)</button
+				onclick="closeModal('modal')"
 			>
+				{m.modal_close()}
+			</button>
 		</div>
 	</div>
 </div>
@@ -274,9 +261,9 @@
 		padding: 5px 14px;
 		transition: 25ms;
 	}
-	#projects {
+	/* #projects { */
 		/* background: rgba(255, 255, 255, 0.5); */
 		/* -webkit-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px); */
-	}
+	/* } */
 </style>

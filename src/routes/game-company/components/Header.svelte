@@ -7,11 +7,11 @@
 >
 	<div class=" lg:ml-10 text-center">
 		<!-- Heading -->
-		<h1
-			class="h-title animate__animated animate__fadeInDown max-sm:text-4xl max-md:text-6xl text-7xl text-gray-50 font-bold mb-4"
+		<h2
+			class="h-title animate__animated animate__fadeInDown max-sm:text-4xl max-md:text-6xl text-7xl text-gray-50  mb-4"
 		>
 			Welcome to Gabriel's Game Company
-		</h1>
+		</h2>
 		<h2
 			class="h-title2 animate__animated animate__fadeInDown h2-header max-sm:text-2xl max-md:text-4xl text-4xl mt-3 text-gray-100 max-md:text-center"
 		>
