@@ -14,10 +14,6 @@
     <changefreq>monthly</changefreq>
     <priority>1.00</priority>
     <xhtml:link rel="alternate" hreflang="pt-br" href="https://gabrielcm.dev/pt-br/"/>
-    <image:image>
-      <image:loc>favicon.ico</image:loc>
-      <image:caption>Gabriel CM's Logo</image:caption>
-    </image:image>
   </url>
 
   <url>
