@@ -1,8 +1,12 @@
 <script lang="ts">
 	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
+	import { onCLS, onFID, onLCP } from 'web-vitals';
 	import { i18n } from '$lib/i18n';
 	import { page } from '$app/stores';
 	import 'animate.css';
+	import { onMount } from 'svelte';
+	import { loadGA } from '$lib/loadGTM';
+	import { browser } from '$app/environment';
 	// export let data;
 
 	const baseURL = 'https://www.gabrielcm.dev';
@@ -10,6 +14,27 @@
 		{ lang: 'en', url: `${baseURL}/` },
 		{ lang: 'pt-br', url: `${baseURL}/pt-br/` }
 	];
+
+	function sendToGoogleAnalytics(metric) {
+		const { name, delta, id } = metric;
+		if (typeof gtag === 'function') {
+			gtag('event', name, {
+				value: delta,
+				metric_id: id,
+				metric_value: delta,
+				metric_delta: delta
+			});
+		}
+	}
+
+	onMount(() => {
+		if (browser) {
+			onCLS(sendToGoogleAnalytics);
+			onFID(sendToGoogleAnalytics);
+			onLCP(sendToGoogleAnalytics);
+			loadGA();
+		}
+	});
 </script>
 
 <svelte:head>
@@ -20,7 +45,7 @@
 
 	<!-- <noscript>
 		<iframe
-			src="https://www.googletagmanager.com/ns.html?id=GTM-WSRLN9FV"
+			src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXXX"
 			height="0"
 			width="0"
 			style="display:none;visibility:hidden"
